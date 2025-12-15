@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-key="head.title"></title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="module" src="static/js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 data-key="header.title"></h1>
+        <p data-key="header.exp"></p>
+    </header>
+
+    <main>
+        <!-- FORM -->
+        <div class="card">
+            <h2 data-key="form.title"></h2>
+
+            <div class="form-group">
+                <label data-key="form.productName.label"></label>
+                <input type="text" data-key-placeholder="form.productName.placeholder" />
+            </div>
+
+            <div class="form-group">
+                <label data-key="form.target.label"></label>
+                <select>
+                    <option data-key="form.target.options.general"></option>
+                    <option data-key="form.target.options.professional"></option>
+                    <option data-key="form.target.options.student"></option>
+                    <option data-key="form.target.options.premium"></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label data-key="form.tech.label"></label>
+                <textarea data-key-placeholder="form.tech.placeholder"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label data-key="form.advantage.label"></label>
+                <textarea data-key-placeholder="form.advantage.placeholder"></textarea>
+            </div>
+
+            <button id="generateBtn" data-key="form.submit"></button>
+        </div>
+
+        <!-- INFO -->
+        <div class="card">
+            <h2 data-key="info.title"></h2>
+            <p class="muted" data-key="info.desc"></p>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="results" id="results">
+            <div class="card">
+                <h2 data-key="results.summary.title"></h2>
+                <div class="metrics">
+                    <div class="metric">
+                        <span id="score">8.6</span>
+                        <span data-key="results.summary.score"></span>
+                    </div>
+                    <div class="metric">
+                        <span id="price">₺24.999</span>
+                        <span data-key="results.summary.price"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 data-key="results.detail.title"></h2>
+
+                <div class="section">
+                    <h3 data-key="results.hardware.title"></h3>
+                    <ul>
+                        <li data-key="results.hardware.item1"></li>
+                        <li data-key="results.hardware.item2"></li>
+                        <li data-key="results.hardware.item3"></li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3 data-key="results.box.title"></h3>
+                    <ul>
+                        <li data-key="results.box.item1"></li>
+                        <li data-key="results.box.item2"></li>
+                        <li data-key="results.box.item3"></li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3 data-key="results.social.title"></h3>
+                    <ul>
+                        <li data-key="results.social.item1"></li>
+                        <li data-key="results.social.item2"></li>
+                        <li data-key="results.social.item3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

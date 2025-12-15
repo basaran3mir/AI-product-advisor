@@ -1,0 +1,135 @@
+{
+  "en": {
+    "head": {
+      "title": "AI Supported Product Advisor"
+    },
+    "header": {
+      "title": "AI Supported Product Advisor",
+      "exp": "Enter product features and see AI-supported recommendations"
+    },
+    "form": {
+      "title": "Product Info",
+      "productName": {
+        "label": "Product Name",
+        "placeholder": "e.g. Smartphone X"
+      },
+      "target": {
+        "label": "Target Audience",
+        "options": {
+          "general": "General Users",
+          "professional": "Professionals",
+          "student": "Students",
+          "premium": "Premium Segment"
+        }
+      },
+      "tech": {
+        "label": "Core Technical Specifications",
+        "placeholder": "CPU, RAM, Storage, Display, Battery..."
+      },
+      "advantage": {
+        "label": "Competitive Advantages",
+        "placeholder": "Key differentiators compared to competitors"
+      },
+      "submit": "Generate AI Recommendations"
+    },
+    "info": {
+      "title": "How It Works?",
+      "desc": "Entered product data is analyzed by AI in terms of pricing, positioning, and marketing. Results in this prototype are simulated."
+    },
+    "results": {
+      "summary": {
+        "title": "AI Product Score & Price Recommendation",
+        "score": "Product Score",
+        "price": "Recommended Price"
+      },
+      "detail": {
+        "title": "Detailed AI Recommendations"
+      },
+      "hardware": {
+        "title": "🔧 Hardware & Design",
+        "item1": "AMOLED display with 120Hz refresh rate",
+        "item2": "Matte black, light gray, and midnight blue color options",
+        "item3": "Graphene cooling solution for heat distribution"
+      },
+      "box": {
+        "title": "📦 Box & Contents",
+        "item1": "Minimalist, eco-friendly cardboard box",
+        "item2": "Transparent silicone case and fast charger included",
+        "item3": "Digital user manual via QR code"
+      },
+      "social": {
+        "title": "📣 Social Media & Marketing",
+        "item1": "\"Performance Powered by Silence\" slogan",
+        "item2": "Short-form Reels/TikTok comparison videos",
+        "item3": "Landing page with comparison tables and usage scenarios"
+      }
+    }
+  },
+
+  "tr": {
+    "head": {
+      "title": "Yapay Zeka Destekli Ürün Öneri Sistemi"
+    },
+    "header": {
+      "title": "Yapay Zeka Destekli Ürün Öneri Sistemi",
+      "exp": "Ürün özelliklerini gir, yapay zeka destekli önerileri anında gör"
+    },
+    "form": {
+      "title": "Ürün Bilgileri",
+      "productName": {
+        "label": "Ürün Adı",
+        "placeholder": "Örn: Akıllı Telefon X"
+      },
+      "target": {
+        "label": "Hedef Kitle",
+        "options": {
+          "general": "Genel Kullanıcı",
+          "professional": "Profesyonel",
+          "student": "Öğrenci",
+          "premium": "Premium Segment"
+        }
+      },
+      "tech": {
+        "label": "Temel Teknik Özellikler",
+        "placeholder": "İşlemci, RAM, Depolama, Ekran, Batarya..."
+      },
+      "advantage": {
+        "label": "Rekabetçi Avantajlar",
+        "placeholder": "Rakiplerden ayıran güçlü yönler"
+      },
+      "submit": "AI Önerilerini Oluştur"
+    },
+    "info": {
+      "title": "Nasıl Çalışır?",
+      "desc": "Girilen ürün verileri; fiyatlama, ürün konumlandırma ve pazarlama açısından yapay zeka tarafından analiz edilir. Bu prototipte sonuçlar örnek verilerle simüle edilmektedir."
+    },
+    "results": {
+      "summary": {
+        "title": "AI Ürün Skoru & Fiyat Önerisi",
+        "score": "Ürün Puanı",
+        "price": "Önerilen Fiyat"
+      },
+      "detail": {
+        "title": "Detaylı Yapay Zeka Önerileri"
+      },
+      "hardware": {
+        "title": "🔧 Donanım & Tasarım",
+        "item1": "120Hz yenileme hızına sahip AMOLED ekran",
+        "item2": "Mat siyah, açık gri ve gece mavisi renk seçenekleri",
+        "item3": "Isı dağılımı için grafen soğutma çözümü"
+      },
+      "box": {
+        "title": "📦 Kutu & İçerik",
+        "item1": "Minimalist ve sürdürülebilir karton kutu tasarımı",
+        "item2": "Şeffaf silikon kılıf ve hızlı şarj adaptörü",
+        "item3": "QR kod ile dijital kullanım kılavuzu"
+      },
+      "social": {
+        "title": "📣 Sosyal Medya & Pazarlama",
+        "item1": "\"Gücünü Sessizlikten Alan Performans\" sloganı",
+        "item2": "Kısa Reels/TikTok performans karşılaştırma videoları",
+        "item3": "Karşılaştırmalı tablo ve kullanıcı senaryoları içeren landing page"
+      }
+    }
+  }
+}
