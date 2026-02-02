@@ -150,7 +150,7 @@ def get_product_detail(product_url: str):
 # =========================
 def main():
     print("🚀 Popüler telefonlar alınıyor...")
-    products = get_popular_products(limit=100)
+    products = get_popular_products(limit=200)
     print(f"✅ {len(products)} ürün bulundu")
 
     all_data = []
