@@ -7,8 +7,8 @@ class DatasetProcessor:
     
     def __init__(self):
         self.base_dir = Path(__file__).resolve().parents[3]
-        self.raw_input = self.base_dir / 'app' / 'outputs' / 'datasets' / 'phones' / 'raw' / 'full_dataset.csv'
-        self.filtered_dataset = self.base_dir / 'app' / 'outputs' / 'datasets' / 'phones' / 'processed' / 'filtered_dataset.csv'
+        self.raw_input = self.base_dir / 'app' / 'outputs' / 'datasets' / 'full_dataset.csv'
+        self.filtered_dataset = self.base_dir / 'app' / 'outputs' / 'datasets' / 'filtered_dataset.csv'
 
         self.selected_features = [
             'urun_fiyat',

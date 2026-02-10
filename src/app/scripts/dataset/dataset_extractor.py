@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 # =========================
 BASE_URL = "https://www.epey.com"
 LIST_BASE = "https://www.epey.com/akilli-telefonlar"
-OUTPUT_CSV = "src/outputs/datasets/phones/raw/full_dataset.csv"
+OUTPUT_CSV = "src/app/outputs/datasets/full_dataset.csv"
 
 # =========================
 # CLOUDSCRAPER
@@ -150,7 +150,7 @@ def get_product_detail(product_url: str):
 # =========================
 def main():
     print("🚀 Popüler telefonlar alınıyor...")
-    products = get_popular_products(limit=200)
+    products = get_popular_products(limit=500)
     print(f"✅ {len(products)} ürün bulundu")
 
     all_data = []
@@ -158,12 +158,12 @@ def main():
     for i, p in enumerate(products, start=1):
         print(f"[{i}/{len(products)}] {p['urun_ad']}")
         try:
-            detail = get_product_detail(p["url"])
+            detail = get_product_detail(p["urun_url"])
             merged = {**p, **detail}
             all_data.append(merged)
             time.sleep(random.uniform(1.5, 3.0))
         except Exception as e:
-            print("❌ Hata:", p["url"], e)
+            print("❌ Hata:", p["urun_url"], e)
 
     df = pd.DataFrame(all_data)
 

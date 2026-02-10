@@ -1,0 +1,39 @@
+============================================================
+YAPAY ZEKA MODELI PERFORMANS METRİKLERİ
+============================================================
+
+VERİ SET BİLGİLERİ:
+------------------------------------------------------------
+Toplam veri sayısı: 500
+Eğitim veri sayısı: 400
+Test veri sayısı: 100
+Özellik sayısı: 391
+Hedef değişken: urun_fiyat
+Hariç tutulan özellikleri: urun_fiyat, urun_puan
+
+MODEL BİLGİLERİ:
+------------------------------------------------------------
+Model tipi: LightGBM Regressor
+Ağaç sayısı: 200
+Öğrenme oranı: 0.05
+Maksimum derinlik: 7
+
+EĞİTİM VERİ SETİ SONUÇLARI:
+------------------------------------------------------------
+Mean Squared Error (MSE): 20840075.96
+Root Mean Squared Error (RMSE): 4565.09
+Mean Absolute Error (MAE): 2728.55
+R² Skoru: 0.9715
+
+TEST VERİ SETİ SONUÇLARI:
+------------------------------------------------------------
+Mean Squared Error (MSE): 70303731.05
+Root Mean Squared Error (RMSE): 8384.73
+Mean Absolute Error (MAE): 5309.53
+R² Skoru: 0.8898
+
+ÖZET:
+------------------------------------------------------------
+Ortalama Tahmin Hatası (Test): ±5309.53 TL
+Model Açıklama Oranı (Test): 88.98%
+============================================================
