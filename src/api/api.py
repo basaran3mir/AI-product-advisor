@@ -1,5 +1,5 @@
 import os
-import sys
+import sys  
 import pandas as pd
 import json
 sys.path.append(os.path.dirname(__file__))
@@ -16,24 +16,6 @@ EXCLUDED_FEATURES = {
     "urun_fiyat",
     "urun_puan"
 }
-
-def detect_category(column, all_columns, min_group_size=2):
-    parts = column.split('_')
-    best_prefix = parts[0]
-    best_count = 0
-
-    for i in range(1, len(parts)):
-        prefix = '_'.join(parts[:i])
-        count = sum(
-            c.startswith(prefix + '_') or c == prefix
-            for c in all_columns
-        )
-
-        if count >= min_group_size and count > best_count:
-            best_prefix = prefix
-            best_count = count
-
-    return best_prefix
 
 @app.route('/')
 def home():
