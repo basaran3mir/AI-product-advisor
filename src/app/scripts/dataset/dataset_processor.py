@@ -13,7 +13,7 @@ from pathlib import Path
 # CONFIG
 # =============================
 INPUT_PATH = "src/app/output/dataset/raw/full_dataset.csv"
-OUTPUT_DIR = Path("src/app/output/dataset/processed_steps")
+OUTPUT_DIR = Path("src/app/output/dataset/processed_step")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 FINAL_OUTPUT_DIR = Path("src/app/output/dataset/final")
@@ -29,10 +29,19 @@ EXCLUDE = "urun_puan"
 def extract_numeric(value):
     if pd.isna(value):
         return np.nan
-    value = str(value).replace(".", "")
+    
+    value = str(value).strip()
+    
+    # Eğer birden fazla nokta varsa büyük ihtimalle binlik ayırıcıdır
+    if value.count(".") > 1:
+        value = value.replace(".", "")
+    
+    # Sayıyı yakala (ondalıklı dahil)
     match = re.search(r"\d+(\.\d+)?", value)
+    
     if match:
         return float(match.group())
+    
     return np.nan
 
 def clean_numeric_column(df, column):
@@ -143,28 +152,54 @@ binary_columns = [
 
 for col in binary_columns:
     if col in df.columns:
-        df[col] = df[col].map({"Var": 1, "Yok": 0})
+        df[col] = df[col].str.strip().str.lower().map({"var": 1,"yok": 0})
 
 df.to_csv(OUTPUT_DIR / "step5_binary_encoded.csv", index=False)
 
 # =============================
-# STEP 6 — HANDLE MISSING
+# STEP 6 — HANDLE MISSING (IMPROVED)
 # =============================
 
-# Numeric → median
+df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
+
+# 1️⃣ Binary kolonları önce doldur
+for col in binary_columns:
+    if col in df.columns:
+        df[col] = df[col].fillna(0)  # bilinmiyorsa "Yok" varsayımı
+
+# 2️⃣ Numeric olması gereken kolonları zorla numeric yap
+numeric_columns_expected = [
+    "batarya_hızlı_şarj_gücü_maks.",
+    "kamera_video_fps_değeri",
+    "temel_donanim_antutu_puanı_v10",
+    "tasarim_kalınlık",
+    "tasarim_ağırlık",
+    "kablosuz_bağlantilar_bluetooth_versiyonu"
+]
+
+for col in numeric_columns_expected:
+    if col in df.columns:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+
+# 3️⃣ Numeric kolonları median ile doldur
 numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
-numeric_cols.remove(TARGET)
+numeric_cols = [col for col in numeric_cols if col not in binary_columns]
+
+if TARGET in numeric_cols:
+    numeric_cols.remove(TARGET)
 
 for col in numeric_cols:
-    df[col].fillna(df[col].median(), inplace=True)
+    df[col] = df[col].fillna(df[col].median())
 
-# Categorical → Unknown
+# 4️⃣ Kategorik kolonları Unknown ile doldur
 categorical_cols = df.select_dtypes(include=["object"]).columns.tolist()
 
 for col in categorical_cols:
-    df[col].fillna("Unknown", inplace=True)
+    df[col] = df[col].fillna("Unknown")
 
 df.to_csv(OUTPUT_DIR / "step6_missing_handled.csv", index=False)
+
+print("Toplam kalan NaN:", df.isnull().sum().sum())
 
 # =============================
 # STEP 7 — ONE HOT ENCODING

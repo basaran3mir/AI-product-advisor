@@ -11,7 +11,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-DATASET_PATH = "src/app/outputs/datasets/final/step8_final_model_ready.csv"
+FILTERED_DATASET_PATH = "src/app/outputs/datasets/processed/filtered_dataset.csv"
 EXCLUDED_FEATURES = {
     "urun_fiyat",
     "urun_puan"
@@ -30,7 +30,7 @@ def predict():
 
 @app.route('/get_features', methods=['GET'])
 def get_features():
-    df = pd.read_csv(DATASET_PATH)
+    df = pd.read_csv(FILTERED_DATASET_PATH)
     features = [
         col for col in df.columns
         if col not in EXCLUDED_FEATURES
