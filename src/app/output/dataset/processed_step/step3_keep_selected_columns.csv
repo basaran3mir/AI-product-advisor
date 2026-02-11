@@ -1,0 +1,442 @@
+urun_fiyat,ekran_ekran_boyutu,ekran_ekran_teknolojisi,ekran_ekran_çözünürlüğü_standardı,ekran_ekran_yenileme_hızı,batarya_batarya_kapasitesi_tipik,batarya_hızlı_şarj,batarya_hızlı_şarj_gücü_maks.,batarya_kablosuz_şarj,kamera_kamera_çözünürlüğü,kamera_optik_görüntü_sabitleyici_ois,kamera_video_kayıt_çözünürlüğü,kamera_video_fps_değeri,kamera_ön_kamera_çözünürlüğü,temel_donanim_cpu_çekirdeği,temel_donanim_cpu_üretim_teknolojisi,temel_donanim_antutu_puanı_v10,temel_donanim_bellek_ram,temel_donanim_dahili_depolama,tasarim_kalınlık,tasarim_ağırlık,tasarim_gövde_malzemesi_kapak,ağ_bağlantilari_5g,kablosuz_bağlantilar_bluetooth_versiyonu,kablosuz_bağlantilar_nfc,i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi,özelli̇kler_suya_dayanıklılık
+11.445727410406752,6.9 İnç,OLED,FHD+,120 Hz,4832 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.697.900 Puan,12 GB,256 GB,8.75 mm,231 Gram,Cam,Var,6.0,Var,iOS,Var
+10.772686676876432,6.1 İnç,OLED,FHD+,60 Hz,3349 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.753.700 Puan,6 GB,128 GB,7.8 mm,171 Gram,Cam,Var,5.3,Var,iOS,Var
+10.355599259176323,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,4900 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,10 Çekirdek,4 nm,1.810.600 Puan,8 GB,256 GB,7.4 mm,190 Gram,Cam,Var,5.4,Var,Android,Var
+11.177452728682098,6.3 İnç,OLED,FHD+,120 Hz,3692 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.542.200 Puan,8 GB,256 GB,7.95 mm,177 Gram,Cam,Var,6.0,Var,iOS,Var
+10.581419567289593,6.83 İnç,AMOLED,FHD+,144 Hz,5500 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.393.700 Puan,12 GB,512 GB,7.96 mm,210 Gram,Fiberglass,Var,6.0,Var,Android,Var
+9.987185111557695,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,12 MP,8 Çekirdek,4 nm,910.500 Puan,8 GB,256 GB,7.4 mm,198 Gram,Cam,Var,5.3,Var,Android,Var
+11.466881526468821,6.3 İnç,OLED,FHD+,120 Hz,3988 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.430.600 Puan,12 GB,256 GB,8.75 mm,204 Gram,Cam,Var,6.0,Var,iOS,Var
+11.350406535472453,6.78 İnç,AMOLED,FHD+,120 Hz,7500 mAh,Var,80 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,3 nm,2.719.600 Puan,16 GB,512 GB,8.25 mm,224 Gram,,Var,6.0,Var,Android,Var
+10.977168112527893,6.1 İnç,OLED,FHD+,60 Hz,3561 mAh,Var,25 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.517.700 Puan,8 GB,128 GB,7.8 mm,170 Gram,Cam,Var,5.3,Var,iOS,Var
+10.658798875125242,6.83 İnç,AMOLED,FHD+,144 Hz,5500 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.393.700 Puan,12 GB,256 GB,7.96 mm,210 Gram,Fiberglass,Var,6.0,Var,Android,Var
+11.289781913656018,6.71 İnç,OLED,FHD+,120 Hz,7100 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,3 nm,,12 GB,512 GB,8.32 mm,219 Gram,,Var,6.0,Var,Android,Var
+10.086267337660777,6.1 İnç,OLED,FHD+,60 Hz,3227 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.550.800 Puan,4 GB,128 GB,7.65 mm,174 Gram,Cam,Var,5.0,Var,iOS,Var
+9.423388333887711,6.67 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,45 W,Yok,200 MP,Var,1080p (Full HD),60 fps,32 MP,8 Çekirdek,6 nm,423.900 Puan,8 GB,256 GB,8.24 mm,180 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+9.783860755696242,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,12 MP,8 Çekirdek,4 nm,655.200 Puan,8 GB,256 GB,7.4 mm,195 Gram,Cam,Var,5.4,Var,Android,Var
+9.998615897627705,6.67 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,1.700.100 Puan,12 GB,512 GB,8.29 mm,195 Gram,Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü),Var,6.0,Var,Android,Var
+10.492662142713096,6.7 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,100 W,Var,200 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,1.902.700 Puan,12 GB,512 GB,8.1 mm,205 Gram,,Var,5.4,Var,Android,Var
+11.23142464912873,6.9 İnç,Dynamic AMOLED,QHD+,120 Hz,5000 mAh,Var,45 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.551.600 Puan,12 GB,256 GB,8.2 mm,218 Gram,Cam,Var,5.4,Var,Android,Var
+10.774780918479548,6.2 İnç,Dynamic AMOLED,FHD+,120 Hz,4000 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.193.700 Puan,12 GB,256 GB,7.2 mm,162 Gram,Cam,Var,5.4,Var,Android,Var
+11.119882876860622,6.31 İnç,AMOLED,FHD+,120 Hz,6040 mAh,Var,90 W,Var,200 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,3 nm,2.554.000 Puan,16 GB,512 GB,7.95 mm,190 Gram,Cam,Var,6.0,Var,Android,Var
+10.605990828020099,6.1 İnç,OLED,FHD+,60 Hz,4005 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.405.700 Puan,8 GB,128 GB,7.8 mm,167 Gram,Cam,Var,5.3,Var,iOS,Var
+10.571316925111784,6.7 İnç,Dynamic AMOLED,QHD+,120 Hz,4900 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,10 Çekirdek,4 nm,1.827.100 Puan,12 GB,256 GB,7.7 mm,196 Gram,Cam,Var,5.3,Var,Android,Var
+10.362785959820085,6.2 İnç,Dynamic AMOLED,FHD+,120 Hz,4000 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,10 Çekirdek,4 nm,1.851.600 Puan,8 GB,256 GB,7.6 mm,167 Gram,Cam,Var,5.3,Var,Android,Var
+9.827457118251091,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,45 W,Yok,200 MP,Var,1080p (Full HD),60 fps,32 MP,8 Çekirdek,6 nm,,8 GB,256 GB,7.96 mm,195 Gram,,Yok,5.3,Var,Android,Var
+9.11363341713563,6.9 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,274.600 Puan,8 GB,256 GB,7.99 mm,205 Gram,,Yok,5.4,Var,Android,Var
+11.429201297364656,6.9 İnç,OLED,FHD+,120 Hz,4685 mAh,Var,30 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.949.200 Puan,8 GB,256 GB,8.25 mm,227 Gram,Cam,Var,5.3,Var,iOS,Var
+9.568014816247999,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,599.200 Puan,8 GB,256 GB,7.7 mm,200 Gram,Cam,Var,5.3,Var,Android,Var
+11.093947214225787,6.8 İnç,Dynamic AMOLED,QHD+,120 Hz,5000 mAh,Var,45 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,2.019.200 Puan,12 GB,256 GB,8.6 mm,232 Gram,Cam,Var,5.3,Var,Android,Var
+9.95227771670556,6.79 İnç,AMOLED,FHD+,120 Hz,7500 mAh,Var,66 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,754.200 Puan,8 GB,256 GB,7.76 mm,189 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Var
+8.955448122347393,6.7 İnç,PLS,HD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,394.400 Puan,4 GB,128 GB,7.6 mm,184 Gram,Plastik (Cam Görünümlü),Yok,5.3,Yok,Android,Var
+11.277297810511259,6.9 İnç,Dynamic AMOLED,QHD+,120 Hz,5000 mAh,Var,45 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.551.600 Puan,12 GB,512 GB,8.2 mm,218 Gram,Cam,Var,5.4,Var,Android,Var
+9.970722279392168,6.67 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,1.700.100 Puan,8 GB,256 GB,8.29 mm,195 Gram,Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü),Var,6.0,Var,Android,Var
+9.493039550406126,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,13 MP,8 Çekirdek,5 nm,463.100 Puan,8 GB,256 GB,7.5 mm,192 Gram,,Var,5.3,Var,Android,Var
+10.886501916453192,6.1 İnç,OLED,FHD+,60 Hz,3349 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.753.700 Puan,6 GB,256 GB,7.8 mm,171 Gram,Cam,Var,5.3,Var,iOS,Var
+11.26446410567173,6.3 İnç,OLED,FHD+,120 Hz,3582 mAh,Var,25 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.853.700 Puan,8 GB,128 GB,8.25 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+11.03488966402723,6.7 İnç,Dynamic AMOLED,QHD+,120 Hz,4900 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.258.900 Puan,12 GB,256 GB,7.3 mm,190 Gram,Cam,Var,5.4,Var,Android,Var
+9.425528361561735,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,583.300 Puan,6 GB,128 GB,7.7 mm,200 Gram,Cam,Var,5.3,Var,Android,Var
+10.356997467739063,6.83 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.640.700 Puan,12 GB,256 GB,7.5 mm,194 Gram,Plastik (Cam Görünümlü),Var,6.0,Var,Android,Var
+9.71807983845394,6.57 İnç,AMOLED,FHD+,120 Hz,7000 mAh,Var,80 W,Yok,50 MP,Yok,1080p (Full HD),60 fps,16 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8 mm,185 Gram,,Var,5.4,Var,Android,Var
+11.254326741944388,6.7 İnç,OLED,FHD+,120 Hz,4441 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.740.400 Puan,8 GB,256 GB,8.25 mm,221 Gram,Cam,Var,5.3,Var,iOS,Var
+11.400637565857323,6.78 İnç,AMOLED,FHD+,120 Hz,6510 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,50 MP,8 Çekirdek,3 nm,2.982.900 Puan,16 GB,512 GB,7.99 mm,226 Gram,Cam,Var,5.4,Var,Android,Var
+10.346986772628886,6.83 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,100 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,,8 GB,256 GB,8.47 mm,207.1 Gram,,Var,5.4,Var,Android,Var
+11.225243392518447,6.78 İnç,AMOLED,FHD+,165 Hz,7300 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.790.200 Puan,16 GB,512 GB,8.2 mm,215 Gram,,Var,6.0,Var,Android,Var
+10.925938480238674,6.8 İnç,OLED,FHD+,120 Hz,5850 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,3 nm,2.727.900 Puan,12 GB,512 GB,8.8 mm,223 Gram,Cam,Var,5.4,Var,Android,Var
+11.767567605824427,6.9 İnç,OLED,FHD+,120 Hz,4832 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.697.900 Puan,12 GB,512 GB,8.75 mm,231 Gram,Cam,Var,6.0,Var,iOS,Var
+10.190807059268902,6.83 İnç,AMOLED,FHD+,120 Hz,6580 mAh,Var,45 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,4 nm,,8 GB,256 GB,7.96 mm,210 Gram,,Var,5.4,Var,Android,Var
+11.222573163962569,6.5 İnç,OLED,FHD+,120 Hz,3149 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.123.800 Puan,12 GB,256 GB,5.64 mm,165 Gram,Cam,Var,6.0,Var,iOS,Var
+10.764571024654122,6.2 İnç,Dynamic AMOLED,FHD+,120 Hz,4000 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.193.700 Puan,12 GB,128 GB,7.2 mm,162 Gram,Cam,Var,5.4,Var,Android,Var
+9.336973022909548,6.9 İnç,IPS LCD,FHD+,144 Hz,7000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,372.100 Puan,8 GB,256 GB,8.4 mm,214 Gram,,Yok,5.0,Var,Android,Var
+10.346601626429049,6.83 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.640.700 Puan,12 GB,512 GB,7.5 mm,194 Gram,Plastik (Cam Görünümlü),Var,6.0,Var,Android,Var
+9.352107259626381,6.67 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),60 fps,20 MP,8 Çekirdek,6 nm,443.500 Puan,8 GB,256 GB,8.16 mm,196.5 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+9.694361544790091,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,12 MP,8 Çekirdek,4 nm,655.200 Puan,8 GB,128 GB,7.4 mm,195 Gram,Cam,Var,5.4,Var,Android,Var
+11.187388242559194,6.1 İnç,OLED,FHD+,120 Hz,3274 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.791.300 Puan,8 GB,128 GB,8.25 mm,187 Gram,Cam,Var,5.3,Var,iOS,Var
+9.644663713360154,6.67 İnç,AMOLED,FHD+,120 Hz,5100 mAh,Var,67 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,581.500 Puan,8 GB,256 GB,7.98 mm,187 Gram,Cam,Var,5.2,Var,Android,Var
+11.270737973483964,6.73 İnç,AMOLED,QHD+,120 Hz,5410 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.661.600 Puan,16 GB,512 GB,9.48 mm,226 Gram,,Var,6.0,Var,Android,Var
+10.807725945886109,6.7 İnç,Dynamic AMOLED,QHD+,120 Hz,3900 mAh,Var,25 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.161.200 Puan,12 GB,256 GB,5.8 mm,163 Gram,Cam,Var,5.4,Var,Android,Var
+10.292466168887824,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,4700 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,10 MP,10 Çekirdek,4 nm,1.832.742 Puan,8 GB,256 GB,8 mm,213 Gram,Cam,Var,5.3,Var,Android,Var
+10.898179029416,6.36 İnç,AMOLED,FHD+,120 Hz,5240 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.692.300 Puan,12 GB,512 GB,8.08 mm,191 Gram,,Var,6.0,Var,Android,Var
+9.8633424122317,6.78 İnç,AMOLED,FHD+,144 Hz,5200 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,733.500 Puan,8 GB,256 GB,7.29 mm,178 Gram,,Var,5.4,Var,Android,Var
+9.312896960301275,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,13 MP,8 Çekirdek,5 nm,445.300 Puan,6 GB,128 GB,7.5 mm,192 Gram,,Var,5.3,Var,Android,Var
+9.781428952165564,6.4 İnç,Dynamic AMOLED,FHD+,120 Hz,4500 mAh,Var,25 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,5 nm,955.800 Puan,8 GB,128 GB,7.9 mm,177 Gram,Polimer (Cam Görünümlü),Var,5.0,Var,Android,Var
+10.053576422944428,6.55 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,80 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,838.600 Puan,8 GB,256 GB,7.3 mm,184 Gram,,Var,5.4,Var,Android,Var
+9.367344120785848,6.67 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,,8 GB,256 GB,7.99 mm,194 Gram,,Var,5.4,Var,Android,Var
+9.602896516791432,6.78 İnç,AMOLED,FHD+,144 Hz,5160 mAh,Var,45 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,449.900 Puan,8 GB,256 GB,6.09 mm,156 Gram,,Var,5.4,Var,Android,Var
+11.12652741957929,6.7 İnç,OLED,FHD+,60 Hz,4674 mAh,Var,30 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.572.700 Puan,8 GB,128 GB,7.8 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+10.102338411281293,6.55 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,80 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,848.100 Puan,12 GB,256 GB,7.3 mm,184 Gram,,Var,5.4,Var,Android,Var
+10.19582128920296,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.359.000 Puan,12 GB,512 GB,7.8 mm,195 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+10.863332862022332,6.8 İnç,Dynamic AMOLED,QHD+,120 Hz,5000 mAh,Var,45 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,1.542.300 Puan,8 GB,256 GB,8.9 mm,233 Gram,Cam,Var,5.3,Var,Android,Var
+9.691901950055648,6.67 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,45 W,Yok,200 MP,Var,1080p (Full HD),60 fps,32 MP,8 Çekirdek,6 nm,452.700 Puan,12 GB,512 GB,8.24 mm,180 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+9.126958763037132,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,387.400 Puan,4 GB,128 GB,7.9 mm,200 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+10.399707023912757,6.59 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,80 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,1.384.000 Puan,12 GB,256 GB,7.42 mm,187 Gram,,Var,5.4,Var,Android,Var
+9.923290179832307,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,12 MP,8 Çekirdek,4 nm,910.500 Puan,8 GB,128 GB,7.4 mm,198 Gram,Cam,Var,5.3,Var,Android,Var
+10.915088464214607,6.9 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,100 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.720.000 Puan,12 GB,256 GB,8.05 mm,220 Gram,,Var,6.0,Var,Android,Var
+9.674019669730162,6.77 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),60 fps,20 MP,8 Çekirdek,6 nm,421.300 Puan,8 GB,256 GB,7.94 mm,183.7 Gram,,Yok,5.3,Var,Android,Var
+10.388102662282032,6.2 İnç,Dynamic AMOLED,FHD+,120 Hz,4000 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,10 Çekirdek,4 nm,1.588.900 Puan,8 GB,128 GB,7.6 mm,167 Gram,Cam,Var,5.3,Var,Android,Var
+11.002089507817516,6.85 İnç,AMOLED,FHD+,144 Hz,7500 mAh,Var,80 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,3 nm,2.974.500 Puan,12 GB,256 GB,8.9 mm,230 Gram,Cam,Var,5.4,Var,Android,Var
+10.389026137075234,6.1 İnç,OLED,FHD+,60 Hz,3279 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.381.900 Puan,6 GB,128 GB,7.8 mm,172 Gram,Cam,Var,5.3,Var,iOS,Var
+10.950806546816688,6.32 İnç,OLED,FHD+,120 Hz,6200 mAh,Var,80 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,,12 GB,512 GB,8.13 mm,188 Gram,,Var,5.4,Var,Android,Var
+9.792907326751548,6.4 İnç,Dynamic AMOLED,FHD+,120 Hz,4500 mAh,Var,25 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,5 nm,941.400 Puan,8 GB,128 GB,7.9 mm,177 Gram,Polimer (Cam Görünümlü),Var,5.0,Var,Android,Var
+10.799575577092764,6.31 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,1.939.800 Puan,12 GB,256 GB,7.99 mm,186 Gram,Cam,Var,5.4,Var,Android,Var
+9.993520194239013,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,120 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,742.500 Puan,12 GB,512 GB,8.9 mm,204.5 Gram,Cam,Var,5.3,Var,Android,Var
+9.635505487736227,6.57 İnç,AMOLED,FHD+,120 Hz,7000 mAh,Var,80 W,Yok,50 MP,Yok,1080p (Full HD),60 fps,16 MP,8 Çekirdek,6 nm,428.000 Puan,8 GB,256 GB,8 mm,188 Gram,,Yok,5.4,Var,Android,Var
+9.472704636443673,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,6 nm,599.600 Puan,8 GB,256 GB,7.87 mm,190 Gram,Kauçuk/Plastik (Deri Görünümlü),Var,5.2,Var,Android,Var
+11.018629143155449,6.9 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,100 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.964.400 Puan,16 GB,512 GB,8.05 mm,220 Gram,,Var,6.0,Var,Android,Var
+9.721097193375345,6.78 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,45 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.003.900 Puan,12 GB,256 GB,8.15 mm,194 Gram,,Var,,Var,Android,Var
+11.002099841204238,6.85 İnç,AMOLED,FHD+,144 Hz,7200 mAh,Var,80 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,3 nm,2.941.800 Puan,16 GB,512 GB,8.6 mm,227 Gram,Cam,Var,6.0,Var,Android,Var
+11.652687407345388,6.3 İnç,OLED,FHD+,120 Hz,3988 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.430.600 Puan,12 GB,512 GB,8.75 mm,204 Gram,Cam,Var,6.0,Var,iOS,Var
+10.096397025661302,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,45 W,Yok,200 MP,Var,1080p (Full HD),60 fps,32 MP,8 Çekirdek,6 nm,,12 GB,512 GB,7.96 mm,195 Gram,,Yok,5.3,Var,Android,Var
+10.621327345686446,6.59 İnç,AMOLED,FHD+,120 Hz,6210 mAh,Var,100 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,30 fps,20 MP,8 Çekirdek,3 nm,,12 GB,256 GB,8 mm,199 Gram,,Var,5.4,Var,Android,Var
+9.210340371976184,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,428.100 Puan,4 GB,128 GB,7.5 mm,190 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+10.522720665218625,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,4 nm,2.017.000 Puan,12 GB,512 GB,8.39 mm,209 Gram,Cam,Var,5.4,Var,Android,Var
+10.757902880692196,6.59 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,80 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,7.89 mm,197 Gram,,Var,5.4,Var,Android,Var
+10.596634733096073,6.67 İnç,AMOLED,FHD+,120 Hz,5150 mAh,Var,65 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,8.99 mm,218 Gram,,Var,6.0,Var,Android,Var
+10.308952660644293,6.67 İnç,AMOLED,FHD+,120 Hz,5110 mAh,Var,120 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,4 nm,750.300 Puan,12 GB,512 GB,8.75 mm,210 Gram,Cam | Kauçuk/Plastik (Deri Görünümlü),Var,5.4,Var,Android,Var
+11.172511028078391,6.8 İnç,Dynamic AMOLED,QHD+,120 Hz,5000 mAh,Var,45 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,2.043.500 Puan,12 GB,512 GB,8.6 mm,232 Gram,Cam,Var,5.3,Var,Android,Var
+10.077440859659566,6.83 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,100 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,,8 GB,256 GB,8.31 mm,205.9 Gram,,Var,5.4,Var,Android,Var
+9.62911649414402,6.9 İnç,IPS LCD,FHD+,144 Hz,7000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.4 mm,217 Gram,,Var,5.1,Var,Android,Var
+10.520155875690683,6.36 İnç,AMOLED,FHD+,120 Hz,4610 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,32 MP,8 Çekirdek,4 nm,1.996.900 Puan,12 GB,256 GB,8.20 mm,193 Gram,Cam,Var,5.4,Var,Android,Var
+9.158967074388462,6.88 İnç,IPS LCD,HD+,120 Hz,5160 mAh,Var,,Yok,50 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,12 nm,270.100 Puan,8 GB,256 GB,8.22 mm,211 Gram,Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü),Yok,5.4,Yok,Android,Var
+9.410995340041932,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,6 nm,585.100 Puan,8 GB,256 GB,7.9 mm,187 Gram,Cam,Var,5.2,Var,Android,Var
+9.190137664658664,6.78 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,412.400 Puan,8 GB,256 GB,7.62 mm,180 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+10.776661993336655,6.1 İnç,OLED,FHD+,60 Hz,4005 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.405.700 Puan,8 GB,256 GB,7.8 mm,167 Gram,Cam,Var,5.3,Var,iOS,Var
+11.326595886778735,6.3 İnç,OLED,FHD+,120 Hz,3582 mAh,Var,25 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.853.700 Puan,8 GB,256 GB,8.25 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+10.766820447545506,6.83 İnç,AMOLED,FHD+,144 Hz,5500 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,3 nm,2.393.700 Puan,12 GB,1 TB,7.96 mm,210 Gram,Fiberglass,Var,6.0,Var,Android,Var
+9.5643970913544,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,200 MP,Var,1080p (Full HD),60 fps,16 MP,8 Çekirdek,6 nm,430.200 Puan,8 GB,256 GB,7.98 mm,188 Gram,Cam,Yok,5.2,Var,Android,Var
+11.35739383206604,6.9 İnç,Dynamic AMOLED,QHD+,120 Hz,5000 mAh,Var,45 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.551.600 Puan,12 GB,1 TB,8.2 mm,218 Gram,Cam,Var,5.4,Var,Android,Var
+10.793452789392733,6.67 İnç,AMOLED,QHD+,120 Hz,5300 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,32 MP,8 Çekirdek,3 nm,2.634.300 Puan,16 GB,512 GB,8.39 mm,212 Gram,Cam,Var,6.0,Var,Android,Var
+11.156237806664954,6.85 İnç,AMOLED,FHD+,144 Hz,7500 mAh,Var,80 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,3 nm,3.229.800 Puan,16 GB,512 GB,8.9 mm,230 Gram,Cam,Var,5.4,Var,Android,Var
+10.596634733096073,6.1 İnç,Dynamic AMOLED,FHD+,120 Hz,3700 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,10 MP,8 Çekirdek,4 nm,1.206.700 Puan,8 GB,128 GB,7.6 mm,168 Gram,Cam,Var,5.2,Var,Android,Var
+7.24422751560335,4.0 İnç,Super AMOLED,SD,60 Hz,1500 mAh,Yok,,Yok,5 MP,Yok,720p (HD),30 fps,0.3 MP,2 Çekirdek,45 nm,,1 GB,8 GB,9.9 mm,120 Gram,,Yok,4.0,Yok,Android,Yok
+11.41765828424143,6.5 İnç,Dynamic AMOLED,FHD+,120 Hz,4400 mAh,Var,25 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,10 MP,8 Çekirdek,3 nm,1.995.100 Puan,12 GB,256 GB,8.9 mm,215 Gram,Cam,Var,5.4,Var,Android,Var
+10.896739325546411,6.83 İnç,AMOLED,FHD+,165 Hz,7400 mAh,Var,80 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,3 nm,,12 GB,512 GB,8.3 mm,215 Gram,,Var,6.0,Var,Android,Var
+9.400633405292153,6.67 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),60 fps,20 MP,8 Çekirdek,6 nm,443.500 Puan,8 GB,128 GB,8.16 mm,196.5 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+10.257565677657576,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.359.000 Puan,12 GB,256 GB,7.8 mm,195 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+10.307312983775264,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,120 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,24 fps,20 MP,8 Çekirdek,4 nm,1.527.500 Puan,12 GB,512 GB,8.62 mm,206 Gram,Cam | Kauçuk/Plastik (Deri Görünümlü),Var,5.4,Var,Android,Var
+9.975854724662028,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,100 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,6 nm,545.400 Puan,8 GB,256 GB,8.7 mm,191 Gram,Kauçuk/Plastik (Deri Görünümlü),Var,5.2,Var,Android,Yok
+10.239959789157341,6.79 İnç,AMOLED,FHD+,120 Hz,7500 mAh,Var,66 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,754.200 Puan,8 GB,512 GB,7.76 mm,189 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Var
+9.566545205430295,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,6 nm,,8 GB,256 GB,7.59 mm,194 Gram,,Yok,5.0,Var,Android,Var
+9.082507000466299,6.72 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,314.800 Puan,8 GB,256 GB,7.59 mm,185 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+9.391035607025554,6.75 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,18 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,5 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.14 mm,199 Gram,,Var,5.4,Var,Android,Var
+11.382816779623209,6.3 İnç,OLED,FHD+,120 Hz,3692 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.542.200 Puan,8 GB,512 GB,7.95 mm,177 Gram,Cam,Var,6.0,Var,iOS,Var
+10.929977076708358,6.8 İnç,OLED,FHD+,120 Hz,5170 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,1.105.100 Puan,12 GB,512 GB,8.3 mm,219 Gram,Cam,Yok,5.2,Var,Android,Var
+9.966206920016589,6.67 İnç,AMOLED,FHD+,120 Hz,5100 mAh,Var,67 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,601.700 Puan,12 GB,512 GB,7.98 mm,187 Gram,Cam,Var,5.2,Var,Android,Var
+10.114599007626499,6.1 İnç,IPS LCD,HD+,60 Hz,3110 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,7 nm,950.700 Puan,4 GB,64 GB,8.3 mm,194 Gram,Cam,Yok,5.0,Var,iOS,Var
+11.119156687322887,6.7 İnç,OLED,FHD+,60 Hz,4383 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.417.400 Puan,6 GB,128 GB,7.8 mm,201 Gram,Cam,Var,5.3,Var,iOS,Var
+11.289781913656018,6.1 İnç,OLED,FHD+,120 Hz,3095 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.484.600 Puan,6 GB,128 GB,7.65 mm,204 Gram,Cam,Var,5.0,Var,iOS,Var
+11.356271654924852,6.8 İnç,OLED,FHD+,120 Hz,5170 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,1.160.300 Puan,16 GB,512 GB,8.3 mm,233.5 Gram,Cam,Yok,5.2,Var,Android,Var
+10.601679238158788,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,4000 mAh,Var,25 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,10 MP,8 Çekirdek,4 nm,1.511.600 Puan,12 GB,256 GB,6.9 mm,187 Gram,Cam,Var,5.3,Var,Android,Var
+9.648595302907339,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,615.500 Puan,8 GB,256 GB,8.75 mm,190 Gram,,Var,5.2,Var,Android,Var
+10.416311178964792,6.57 İnç,AMOLED,FHD+,120 Hz,7000 mAh,Var,80 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,8.27 mm,202 Gram,,Var,5.1,Var,Android,Var
+10.170916278633152,6.57 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,677.736 Puan,12 GB,256 GB,7.78 mm,180 Gram,,Var,5.1,Var,Android,Var
+10.043292972227004,6.6 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,740.800 Puan,8 GB,128 GB,8.2 mm,213 Gram,Cam,Var,5.3,Var,Android,Var
+9.847712123108694,6.4 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,5 nm,623.500 Puan,8 GB,128 GB,8.2 mm,202 Gram,Cam,Var,5.3,Var,Android,Var
+10.239959789157341,6.55 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,80 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,848.100 Puan,12 GB,512 GB,7.3 mm,184 Gram,,Var,5.4,Var,Android,Var
+11.22390916950531,6.7 İnç,OLED,FHD+,60 Hz,4674 mAh,Var,30 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.572.700 Puan,8 GB,256 GB,7.8 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+10.668955394675699,6.59 İnç,AMOLED,FHD+,120 Hz,6210 mAh,Var,100 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,30 fps,20 MP,8 Çekirdek,3 nm,,12 GB,512 GB,8 mm,199 Gram,,Var,5.4,Var,Android,Var
+10.97678254604033,6.9 İnç,Dynamic AMOLED,FHD+,120 Hz,4300 mAh,Var,25 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,10 MP,10 Çekirdek,3 nm,1.943.900 Puan,12 GB,256 GB,6.5 mm,188 Gram,Cam,Var,5.4,Var,Android,Var
+9.457200449907708,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,5 nm,435.900 Puan,8 GB,256 GB,7.9 mm,200 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Var
+9.748849837459789,6.6 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,612.100 Puan,8 GB,128 GB,8.2 mm,209 Gram,Cam,Var,5.3,Var,Android,Var
+11.104494713686279,6.73 İnç,AMOLED,QHD+,120 Hz,5000 mAh,Var,90 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,4 nm,2.114.700 Puan,16 GB,512 GB,9.2 mm,219.8 Gram,Cam | Kauçuk/Plastik (Deri Görünümlü),Var,5.4,Var,Android,Var
+10.550591841714537,6.9 İnç,Dynamic AMOLED,QHD+,120 Hz,4500 mAh,Var,25 W,Var,108 MP,Var,4320p (Ultra HD) 8K,24 fps,10 MP,8 Çekirdek,7 nm,,8 GB,256 GB,8.1 mm,208 Gram,Cam,Yok,5.0,Var,Android,Var
+10.714417768752456,6.1 İnç,Dynamic AMOLED,FHD+,120 Hz,3900 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,1.524.200 Puan,8 GB,128 GB,7.6 mm,168 Gram,Cam,Var,5.3,Var,Android,Var
+9.20804273442746,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,16 MP,8 Çekirdek,6 nm,415.200 Puan,8 GB,256 GB,7.96 mm,188 Gram,Cam,Yok,5.2,Var,Android,Yok
+10.10608384738666,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,4 nm,934.100 Puan,12 GB,256 GB,8.62 mm,197 Gram,Cam | Kauçuk/Plastik (Deri Görünümlü),Var,5.4,Var,Android,Var
+11.440365524765756,6.5 İnç,Dynamic AMOLED,FHD+,120 Hz,4400 mAh,Var,25 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,10 MP,8 Çekirdek,3 nm,1.995.100 Puan,12 GB,512 GB,8.9 mm,215 Gram,Cam,Var,5.4,Var,Android,Var
+9.159047077588632,6.72 İnç,IPS LCD,FHD+,90 Hz,5828 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,279.100 Puan,8 GB,128 GB,7.99 mm,196 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+8.810704242316461,6.3 İnç,IPS LCD,FHD+,60 Hz,4000 mAh,Var,18 W,Yok,48 MP,Yok,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,11 nm,250.300 Puan,4 GB,64 GB,8.35 mm,190 Gram,Cam,Yok,4.2,Yok,Android,Var
+10.921396707163876,6.7 İnç,Dynamic AMOLED,QHD+,120 Hz,3900 mAh,Var,25 W,Var,200 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,3 nm,2.161.200 Puan,12 GB,512 GB,5.8 mm,163 Gram,Cam,Var,5.4,Var,Android,Var
+10.431273532876919,6.1 İnç,Dynamic AMOLED,FHD+,120 Hz,3900 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,1.591.500 Puan,8 GB,256 GB,7.6 mm,168 Gram,Cam,Var,5.3,Var,Android,Var
+10.077020603297003,6.78 İnç,AMOLED,FHD+,144 Hz,5200 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,733.500 Puan,12 GB,256 GB,7.29 mm,178 Gram,,Var,5.4,Var,Android,Var
+10.594156665220533,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,4900 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,10 Çekirdek,4 nm,1.810.600 Puan,8 GB,512 GB,7.4 mm,190 Gram,Cam,Var,5.4,Var,Android,Var
+9.457200449907708,6.78 İnç,AMOLED,FHD+,144 Hz,5200 mAh,Var,45 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,446.000 Puan,8 GB,256 GB,6.69 mm,170 Gram,Plastik (Cam Görünümlü),Yok,5.4,Var,Android,Var
+9.791440285861468,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,1.134.500 Puan,12 GB,256 GB,7.9 mm,181 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Var
+10.036633745980971,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,1.510.100 Puan,12 GB,512 GB,7.8 mm,179 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.791440285861468,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,1.134.500 Puan,12 GB,256 GB,7.9 mm,181 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Var
+10.036633745980971,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,1.510.100 Puan,12 GB,512 GB,7.8 mm,179 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+10.286430258110272,6.4 İnç,Dynamic AMOLED,FHD+,120 Hz,4500 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,10 MP,8 Çekirdek,4 nm,1.257.500 Puan,8 GB,128 GB,8.2 mm,209 Gram,Cam,Var,5.3,Var,Android,Var
+9.415095894977114,6.9 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,419.900 Puan,8 GB,256 GB,8.2 mm,211 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+10.593749324305026,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,4 nm,2.017.000 Puan,12 GB,256 GB,8.39 mm,209 Gram,Cam,Var,5.4,Var,Android,Var
+11.097410021008562,6.85 İnç,AMOLED,FHD+,144 Hz,7200 mAh,Var,80 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,3 nm,2.941.800 Puan,16 GB,1 TB,8.6 mm,227 Gram,Cam,Var,6.0,Var,Android,Var
+11.991117043779226,6.9 İnç,OLED,FHD+,120 Hz,4832 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.697.900 Puan,12 GB,2 TB,8.75 mm,231 Gram,Cam,Var,6.0,Var,iOS,Var
+9.266830340233932,6.67 İnç,IPS LCD,HD+,120 Hz,5200 mAh,Var,45 W,Yok,50 MP,Yok,,,8 MP,8 Çekirdek,12 nm,,8 GB,256 GB,7.67 mm,188 Gram,,Yok,5.4,Var,Android,Var
+9.598998361767967,6.78 İnç,AMOLED,FHD+,120 Hz,5200 mAh,Var,45 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,432.400 Puan,8 GB,256 GB,7.34 mm,177 Gram,,Yok,5.4,Var,Android,Var
+10.373491181781864,6.73 İnç,AMOLED,QHD+,120 Hz,4820 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,32 MP,8 Çekirdek,4 nm,1.559.800 Puan,12 GB,256 GB,8.38 mm,229 Gram,,Var,5.3,Var,Android,Var
+9.126958763037132,6.9 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,264.000 Puan,6 GB,128 GB,7.99 mm,205 Gram,,Yok,5.4,Var,Android,Var
+10.439980923050696,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,7.75 mm,200 Gram,Cam | Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+8.824677891164198,6.74 İnç,IPS LCD,HD+,90 Hz,5500 mAh,Var,15 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,248.100 Puan,4 GB,128 GB,8.19 mm,199 Gram,Plastik (Cam Görünümlü),Yok,5.4,Yok,Android,Var
+10.358250632365579,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,4700 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,10 MP,10 Çekirdek,4 nm,1.788.500 Puan,8 GB,128 GB,8 mm,213 Gram,Cam,Var,5.3,Var,Android,Var
+9.464300187022932,6.67 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,646.600 Puan,8 GB,128 GB,9 mm,197 Gram,Plastik,Var,5.3,Yok,Android,Var
+10.26291011830247,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,6 nm,,8 GB,128 GB,7.6 mm,181 Gram,,Var,5.0,Var,Android,Var
+10.268025799514616,6.83 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,100 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,837.700 Puan,12 GB,512 GB,8.31 mm,205.9 Gram,,Var,5.4,Var,Android,Var
+10.126631103850338,6.77 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,50 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,770.100 Puan,12 GB,256 GB,8.35 mm,201 Gram,Cam,Var,5.4,Var,Android,Var
+11.501553650287464,6.7 İnç,OLED,FHD+,120 Hz,4323 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.761.400 Puan,6 GB,256 GB,7.85 mm,240 Gram,Cam,Var,5.3,Var,iOS,Var
+9.69482304709609,6.6 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,48 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,6 nm,560.100 Puan,8 GB,256 GB,8.2 mm,199 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Var
+9.277999020449997,6.67 İnç,IPS LCD,HD+,90 Hz,6000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,11 nm,,8 GB,256 GB,7.99 mm,193 Gram,,Yok,5.0,Var,Android,Var
+9.60245002503719,6.78 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,68 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,6 nm,774.700 Puan,8 GB,256 GB,7.9 mm,185 Gram,Cam,Var,,Var,Android,Var
+10.126631103850338,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Yok,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,,12 GB,256 GB,7.69 mm,194 Gram,,Var,5.4,Var,Android,Var
+10.18572834805452,6.5 İnç,Super AMOLED,FHD+,120 Hz,4500 mAh,Var,25 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,7 nm,802.900 Puan,6 GB,128 GB,8.4 mm,190 Gram,Polimer (Cam Görünümlü),Yok,5.0,Var,Android,Var
+11.84939770159144,6.9 İnç,OLED,FHD+,120 Hz,4832 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.697.900 Puan,12 GB,1 TB,8.75 mm,231 Gram,Cam,Var,6.0,Var,iOS,Var
+10.499220340989032,6.83 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,2.024.800 Puan,12 GB,256 GB,8.2 mm,215.7 Gram,Cam,Var,6.0,Var,Android,Var
+9.415095894977114,6.9 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,419.900 Puan,8 GB,256 GB,8.2 mm,211 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+10.593749324305026,6.67 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,32 MP,8 Çekirdek,4 nm,2.017.000 Puan,12 GB,256 GB,8.39 mm,209 Gram,Cam,Var,5.4,Var,Android,Var
+11.097410021008562,6.85 İnç,AMOLED,FHD+,144 Hz,7200 mAh,Var,80 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,3 nm,2.941.800 Puan,16 GB,1 TB,8.6 mm,227 Gram,Cam,Var,6.0,Var,Android,Var
+11.991117043779226,6.9 İnç,OLED,FHD+,120 Hz,4832 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.697.900 Puan,12 GB,2 TB,8.75 mm,231 Gram,Cam,Var,6.0,Var,iOS,Var
+9.266830340233932,6.67 İnç,IPS LCD,HD+,120 Hz,5200 mAh,Var,45 W,Yok,50 MP,Yok,,,8 MP,8 Çekirdek,12 nm,,8 GB,256 GB,7.67 mm,188 Gram,,Yok,5.4,Var,Android,Var
+9.598998361767967,6.78 İnç,AMOLED,FHD+,120 Hz,5200 mAh,Var,45 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,432.400 Puan,8 GB,256 GB,7.34 mm,177 Gram,,Yok,5.4,Var,Android,Var
+10.373491181781864,6.73 İnç,AMOLED,QHD+,120 Hz,4820 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,32 MP,8 Çekirdek,4 nm,1.559.800 Puan,12 GB,256 GB,8.38 mm,229 Gram,,Var,5.3,Var,Android,Var
+9.40729435081445,6.5 İnç,PLS,HD+,60 Hz,5000 mAh,Var,15 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,8 nm,,4 GB,64 GB,8.9 mm,192 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Yok
+9.126958763037132,6.9 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,264.000 Puan,6 GB,128 GB,7.99 mm,205 Gram,,Yok,5.4,Var,Android,Var
+10.439980923050696,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,7.75 mm,200 Gram,Cam | Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+8.824677891164198,6.74 İnç,IPS LCD,HD+,90 Hz,5500 mAh,Var,15 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,248.100 Puan,4 GB,128 GB,8.19 mm,199 Gram,Plastik (Cam Görünümlü),Yok,5.4,Yok,Android,Var
+10.358250632365579,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,4700 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,10 MP,10 Çekirdek,4 nm,1.788.500 Puan,8 GB,128 GB,8 mm,213 Gram,Cam,Var,5.3,Var,Android,Var
+9.464300187022932,6.67 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,646.600 Puan,8 GB,128 GB,9 mm,197 Gram,Plastik,Var,5.3,Yok,Android,Var
+10.26291011830247,6.7 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,6 nm,,8 GB,128 GB,7.6 mm,181 Gram,,Var,5.0,Var,Android,Var
+10.268025799514616,6.83 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,100 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,837.700 Puan,12 GB,512 GB,8.31 mm,205.9 Gram,,Var,5.4,Var,Android,Var
+10.126631103850338,6.77 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,50 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,770.100 Puan,12 GB,256 GB,8.35 mm,201 Gram,Cam,Var,5.4,Var,Android,Var
+11.501553650287464,6.7 İnç,OLED,FHD+,120 Hz,4323 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.761.400 Puan,6 GB,256 GB,7.85 mm,240 Gram,Cam,Var,5.3,Var,iOS,Var
+9.69482304709609,6.6 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,48 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,6 nm,560.100 Puan,8 GB,256 GB,8.2 mm,199 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Var
+9.422362306749882,6.47 İnç,AMOLED,FHD+,60 Hz,5260 mAh,Var,30 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,8 nm,370.700 Puan,6 GB,128 GB,9.67 mm,208 Gram,Cam,Yok,5.0,Var,Android,Yok
+9.277999020449997,6.67 İnç,IPS LCD,HD+,90 Hz,6000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,11 nm,,8 GB,256 GB,7.99 mm,193 Gram,,Yok,5.0,Var,Android,Var
+9.60245002503719,6.78 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,68 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,6 nm,774.700 Puan,8 GB,256 GB,7.9 mm,185 Gram,Cam,Var,,Var,Android,Var
+9.32562963409582,6.5 İnç,PLS,HD+,60 Hz,5000 mAh,Var,15 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,152.800 Puan,4 GB,64 GB,8.9 mm,205 Gram,Plastik,Yok,5.0,Yok,Android,Yok
+10.166236358442697,6.78 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,70 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,937.100 Puan,12 GB,512 GB,7.68 mm,187 Gram,,Var,5.3,Var,Android,
+10.5320959452918,6.74 İnç,OLED,FHD+,120 Hz,4700 mAh,Var,66 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,4 nm,1.255.000 Puan,8 GB,256 GB,8.5 mm,209 Gram,,Yok,5.2,Var,Android,Var
+9.209990310711888,6.67 İnç,IPS LCD,FHD+,120 Hz,5160 mAh,Var,33 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,8 nm,403.800 Puan,6 GB,128 GB,9.4 mm,215 Gram,Plastik (Cam Görünümlü),Yok,5.1,Var,Android,Var
+10.304810761476958,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,644.700 Puan,8 GB,256 GB,8.75 mm,196 Gram,,Var,5.2,Var,Android,Var
+9.806205429729575,6.4 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,48 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,450.500 Puan,6 GB,128 GB,8.1 mm,186 Gram,Plastik (Cam Görünümlü),Var,5.1,Var,Android,Var
+10.292145542327912,6.1 İnç,IPS LCD,HD+,60 Hz,2942 mAh,Var,15 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,7 MP,6 Çekirdek,7 nm,736.800 Puan,3 GB,64 GB,8.3 mm,194 Gram,Cam,Yok,5.0,Var,iOS,Var
+9.566545205430295,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,6 nm,,8 GB,256 GB,7.59 mm,194 Gram,,Yok,5.0,Var,Android,Var
+8.98994927917021,6.67 İnç,IPS LCD,FHD+,60 Hz,5020 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,402.600 Puan,6 GB,64 GB,8.8 mm,209 Gram,Cam,Yok,5.0,Var,Android,Var
+9.080815798462762,6.67 İnç,IPS LCD,FHD+,60 Hz,5020 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,402.600 Puan,6 GB,128 GB,8.8 mm,209 Gram,Cam,Yok,5.0,Var,Android,Var
+10.338792329587958,6.67 İnç,AMOLED,QHD+,120 Hz,5000 mAh,Var,120 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,24 fps,16 MP,8 Çekirdek,4 nm,1.538.700 Puan,12 GB,512 GB,8.21 mm,209 Gram,Cam,Var,5.3,Var,Android,Var
+10.868568448579715,6.1 İnç,OLED,FHD+,60 Hz,3227 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.550.800 Puan,4 GB,256 GB,7.65 mm,174 Gram,Cam,Var,5.0,Var,iOS,Var
+9.391035607025554,6.75 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,18 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,5 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.14 mm,199 Gram,,Var,5.4,Var,Android,Var
+11.382816779623209,6.3 İnç,OLED,FHD+,120 Hz,3692 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.542.200 Puan,8 GB,512 GB,7.95 mm,177 Gram,Cam,Var,6.0,Var,iOS,Var
+8.95157482435255,6.51 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,48 MP,,1080p (Full HD),30 fps,24 MP,8 Çekirdek,12 nm,274.900 Puan,8 GB,256 GB,9 mm,,,Yok,5.0,,Android,Yok
+8.841020097504185,6.74 İnç,,HD+,60 Hz,4000 mAh,Yok,,Yok,64 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,248.300 Puan,8 GB,128 GB,,,,Yok,5.0,Yok,Android,Yok
+9.769956159911606,6.78 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,70 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,50 MP,8 Çekirdek,6 nm,506.700 Puan,12 GB,512 GB,7.83 mm,190 Gram,,Var,5.3,Var,Android,Var
+9.602382459752207,6.5 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,402.900 Puan,6 GB,128 GB,8.3 mm,195 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Yok
+10.929977076708358,6.8 İnç,OLED,FHD+,120 Hz,5170 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,1.105.100 Puan,12 GB,512 GB,8.3 mm,219 Gram,Cam,Yok,5.2,Var,Android,Var
+11.14692214672325,6.7 İnç,OLED,FHD+,60 Hz,4383 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.417.400 Puan,6 GB,256 GB,7.8 mm,201 Gram,Cam,Var,5.3,Var,iOS,Var
+11.356271654924852,6.8 İnç,OLED,FHD+,120 Hz,5170 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,1.160.300 Puan,16 GB,512 GB,8.3 mm,233.5 Gram,Cam,Yok,5.2,Var,Android,Var
+10.205442284274628,6.78 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,120 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.489.800 Puan,12 GB,256 GB,8.65 mm,191 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.188888926125463,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,432.900 Puan,8 GB,256 GB,7.82 mm,185 Gram,,Yok,5.2,Var,Android,Var
+10.668397099322965,6.6 İnç,Dynamic AMOLED,FHD+,120 Hz,4700 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,1.515.500 Puan,8 GB,256 GB,7.6 mm,195 Gram,Cam,Var,5.3,Var,Android,Var
+9.123478801946748,6.47 İnç,AMOLED,FHD+,60 Hz,5260 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,,6 GB,128 GB,9.67 mm,204 Gram,Cam,Yok,5.0,Var,Android,Yok
+9.491604895944155,6.43 İnç,AMOLED,FHD+,90 Hz,5000 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,397.500 Puan,8 GB,128 GB,8.09 mm,179 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+10.416311178964792,6.57 İnç,AMOLED,FHD+,120 Hz,7000 mAh,Var,80 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,8.27 mm,202 Gram,,Var,5.1,Var,Android,Var
+10.170916278633152,6.57 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,677.736 Puan,12 GB,256 GB,7.78 mm,180 Gram,,Var,5.1,Var,Android,Var
+10.254502810625418,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,8 nm,,8 GB,128 GB,8.4 mm,203 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+10.868568448579715,6.1 İnç,OLED,FHD+,60 Hz,3227 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.550.800 Puan,4 GB,256 GB,7.65 mm,174 Gram,Cam,Var,5.0,Var,iOS,Var
+9.391035607025554,6.75 İnç,IPS LCD,HD+,120 Hz,6000 mAh,Var,18 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,5 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.14 mm,199 Gram,,Var,5.4,Var,Android,Var
+11.382816779623209,6.3 İnç,OLED,FHD+,120 Hz,3692 mAh,Var,40 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.542.200 Puan,8 GB,512 GB,7.95 mm,177 Gram,Cam,Var,6.0,Var,iOS,Var
+8.95157482435255,6.51 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,48 MP,,1080p (Full HD),30 fps,24 MP,8 Çekirdek,12 nm,274.900 Puan,8 GB,256 GB,9 mm,,,Yok,5.0,,Android,Yok
+8.841020097504185,6.74 İnç,,HD+,60 Hz,4000 mAh,Yok,,Yok,64 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,248.300 Puan,8 GB,128 GB,,,,Yok,5.0,Yok,Android,Yok
+9.769956159911606,6.78 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,70 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,50 MP,8 Çekirdek,6 nm,506.700 Puan,12 GB,512 GB,7.83 mm,190 Gram,,Var,5.3,Var,Android,Var
+9.602382459752207,6.5 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,402.900 Puan,6 GB,128 GB,8.3 mm,195 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Yok
+10.929977076708358,6.8 İnç,OLED,FHD+,120 Hz,5170 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,1.105.100 Puan,12 GB,512 GB,8.3 mm,219 Gram,Cam,Yok,5.2,Var,Android,Var
+11.14692214672325,6.7 İnç,OLED,FHD+,60 Hz,4383 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.417.400 Puan,6 GB,256 GB,7.8 mm,201 Gram,Cam,Var,5.3,Var,iOS,Var
+10.819778284410283,6.8 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,80 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,4 nm,2.213.700 Puan,16 GB,512 GB,8.9 mm,229 Gram,Cam,Var,5.3,Var,Android,Yok
+11.356271654924852,6.8 İnç,OLED,FHD+,120 Hz,5170 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,1.160.300 Puan,16 GB,512 GB,8.3 mm,233.5 Gram,Cam,Yok,5.2,Var,Android,Var
+10.205442284274628,6.78 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,120 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.489.800 Puan,12 GB,256 GB,8.65 mm,191 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.188888926125463,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,432.900 Puan,8 GB,256 GB,7.82 mm,185 Gram,,Yok,5.2,Var,Android,Var
+10.668397099322965,6.6 İnç,Dynamic AMOLED,FHD+,120 Hz,4700 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,1.515.500 Puan,8 GB,256 GB,7.6 mm,195 Gram,Cam,Var,5.3,Var,Android,Var
+9.123478801946748,6.47 İnç,AMOLED,FHD+,60 Hz,5260 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,,6 GB,128 GB,9.67 mm,204 Gram,Cam,Yok,5.0,Var,Android,Yok
+9.491604895944155,6.43 İnç,AMOLED,FHD+,90 Hz,5000 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,397.500 Puan,8 GB,128 GB,8.09 mm,179 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+10.416311178964792,6.57 İnç,AMOLED,FHD+,120 Hz,7000 mAh,Var,80 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,,12 GB,256 GB,8.27 mm,202 Gram,,Var,5.1,Var,Android,Var
+10.170916278633152,6.57 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,677.736 Puan,12 GB,256 GB,7.78 mm,180 Gram,,Var,5.1,Var,Android,Var
+10.298902324790792,6.76 İnç,OLED,FHD+,120 Hz,5000 mAh,Var,100 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,60 MP,8 Çekirdek,7 nm,653.300 Puan,12 GB,512 GB,7.82 mm,209 Gram,,Yok,5.2,Var,Android,Yok
+10.254502810625418,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,8 nm,,8 GB,128 GB,8.4 mm,203 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+10.239959789157341,6.55 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,80 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,848.100 Puan,12 GB,512 GB,7.3 mm,184 Gram,,Var,5.4,Var,Android,Var
+8.626961976361729,6.6 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Yok,,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,28 nm,154.100 Puan,4 GB,128 GB,8.6 mm,199 Gram,,Yok,5.2,Var,Android,Yok
+9.055093758499632,6.56 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,22.5 W,Yok,108 MP,Yok,2160p (Ultra HD) 4K,30 fps,8 MP,8 Çekirdek,6 nm,469.100 Puan,6 GB,256 GB,8.6 mm,205.5 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Yok
+10.039766916027851,6.5 İnç,Super AMOLED,FHD+,120 Hz,6000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,488.200 Puan,6 GB,128 GB,8.8 mm,208 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Yok
+10.668955394675699,6.59 İnç,AMOLED,FHD+,120 Hz,6210 mAh,Var,100 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,30 fps,20 MP,8 Çekirdek,3 nm,,12 GB,512 GB,8 mm,199 Gram,,Var,5.4,Var,Android,Var
+10.97678254604033,6.9 İnç,Dynamic AMOLED,FHD+,120 Hz,4300 mAh,Var,25 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,10 MP,10 Çekirdek,3 nm,1.943.900 Puan,12 GB,256 GB,6.5 mm,188 Gram,Cam,Var,5.4,Var,Android,Var
+9.740968623038354,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,200 MP,Var,1080p (Full HD),60 fps,16 MP,8 Çekirdek,6 nm,438.300 Puan,12 GB,512 GB,7.98 mm,188 Gram,Cam,Yok,5.2,Var,Android,Var
+7.24422751560335,4.0 İnç,Super AMOLED,SD,60 Hz,1500 mAh,Yok,,Yok,5 MP,Yok,720p (HD),30 fps,0.3 MP,2 Çekirdek,45 nm,,1 GB,8 GB,9.9 mm,120 Gram,,Yok,4.0,Yok,Android,Yok
+9.846917201047734,6.78 İnç,AMOLED,FHD+,144 Hz,5160 mAh,Var,45 W,Yok,50 MP,,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,449.900 Puan,8 GB,256 GB,5.95 mm,155 Gram,Plastik (Cam Görünümlü),Yok,5.4,Var,Android,Var
+9.627345306096418,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Yok,1080p (Full HD),60 fps,32 MP,8 Çekirdek,6 nm,438.900 Puan,12 GB,256 GB,7.79 mm,197 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.104979856318357,6.8 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,12 nm,,8 GB,256 GB,8.46 mm,208 Gram,Cam,Yok,5.0,Var,Android,Yok
+10.799575577092764,6.1 İnç,OLED,FHD+,60 Hz,3279 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.381.900 Puan,6 GB,256 GB,7.8 mm,172 Gram,Cam,Var,5.3,Var,iOS,Var
+9.15461622320382,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,24 MP,8 Çekirdek,6 nm,,8 GB,256 GB,7.9 mm,190 Gram,,Yok,5.0,Var,Android,Yok
+9.680344001221918,6.4 İnç,IPS LCD,FHD+,60 Hz,4200 mAh,Var,40 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,7 nm,452.300 Puan,6 GB,128 GB,8.7 mm,183 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Yok
+8.999920529866408,6.53 İnç,IPS LCD,FHD+,60 Hz,4500 mAh,Var,18 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,12 nm,439.200 Puan,6 GB,128 GB,8.8 mm,199 Gram,Cam,Yok,5.0,Var,Android,Var
+8.77971129020447,6.74 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Yok,,Yok,32 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,261.200 Puan,6 GB,128 GB,7.84 mm,187 Gram,,Yok,5.0,Yok,Android,Var
+9.268775304053268,6.6 İnç,IPS LCD,FHD+,120 Hz,4500 mAh,Var,22.5 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,447.700 Puan,8 GB,256 GB,7.98 mm,189 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Yok
+9.903487552536127,6.6 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,612.100 Puan,8 GB,256 GB,8.2 mm,209 Gram,Cam,Var,5.3,Var,Android,Var
+10.166236358442697,6.78 İnç,AMOLED,FHD+,144 Hz,5000 mAh,Var,70 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,937.100 Puan,12 GB,512 GB,7.68 mm,187 Gram,,Var,5.3,Var,Android,
+10.5320959452918,6.74 İnç,OLED,FHD+,120 Hz,4700 mAh,Var,66 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,4 nm,1.255.000 Puan,8 GB,256 GB,8.5 mm,209 Gram,,Yok,5.2,Var,Android,Var
+9.209990310711888,6.67 İnç,IPS LCD,FHD+,120 Hz,5160 mAh,Var,33 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,8 nm,403.800 Puan,6 GB,128 GB,9.4 mm,215 Gram,Plastik (Cam Görünümlü),Yok,5.1,Var,Android,Var
+9.066603941777775,6.79 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,280.200 Puan,8 GB,256 GB,8.17 mm,198.5 Gram,Cam,Yok,5.3,Yok,Android,Var
+9.553720834618575,6.78 İnç,AMOLED,FHD+,144 Hz,5160 mAh,Var,45 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,474.900 Puan,8 GB,256 GB,6.08 mm,157 Gram,,Yok,5.4,Var,Android,Var
+8.743742137785201,6.74 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Yok,,Yok,32 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,252.600 Puan,4 GB,128 GB,7.84 mm,187 Gram,,Yok,5.0,Yok,Android,Var
+10.304810761476958,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,644.700 Puan,8 GB,256 GB,8.75 mm,196 Gram,,Var,5.2,Var,Android,Var
+9.806205429729575,6.4 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,48 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,450.500 Puan,6 GB,128 GB,8.1 mm,186 Gram,Plastik (Cam Görünümlü),Var,5.1,Var,Android,Var
+10.292145542327912,6.1 İnç,IPS LCD,HD+,60 Hz,2942 mAh,Var,15 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,7 MP,6 Çekirdek,7 nm,736.800 Puan,3 GB,64 GB,8.3 mm,194 Gram,Cam,Yok,5.0,Var,iOS,Var
+9.245426588326154,6.74 İnç,IPS LCD,HD+,90 Hz,5500 mAh,Var,15 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.19 mm,199 Gram,,Var,5.4,,Android,Var
+9.128153700988236,6.67 İnç,IPS LCD,HD+,90 Hz,6000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,11 nm,,6 GB,128 GB,7.99 mm,193 Gram,,Yok,5.0,Var,Android,Var
+8.98994927917021,6.67 İnç,IPS LCD,FHD+,60 Hz,5020 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,402.600 Puan,6 GB,64 GB,8.8 mm,209 Gram,Cam,Yok,5.0,Var,Android,Var
+9.613474766079394,6.78 İnç,AMOLED,FHD+,144 Hz,5160 mAh,Var,45 W,Yok,50 MP,,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,,8 GB,256 GB,6.6 mm,170 Gram,,Yok,5.4,Var,Android,Var
+11.302204433654575,6.45 İnç,OLED,FHD+,120 Hz,5110 mAh,Var,66 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,8 MP,12 Çekirdek,7 nm,1.321.200 Puan,12 GB,512 GB,9.85 mm,239 Gram,Kauçuk/Plastik (Deri Görünümlü),Yok,5.2,Var,Android,Var
+9.080815798462762,6.67 İnç,IPS LCD,FHD+,60 Hz,5020 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,402.600 Puan,6 GB,128 GB,8.8 mm,209 Gram,Cam,Yok,5.0,Var,Android,Var
+11.736069016284437,6.9 İnç,OLED,FHD+,120 Hz,4685 mAh,Var,30 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.949.200 Puan,8 GB,1 TB,8.25 mm,227 Gram,Cam,Var,5.3,Var,iOS,Var
+10.338792329587958,6.67 İnç,AMOLED,QHD+,120 Hz,5000 mAh,Var,120 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,24 fps,16 MP,8 Çekirdek,4 nm,1.538.700 Puan,12 GB,512 GB,8.21 mm,209 Gram,Cam,Var,5.3,Var,Android,Var
+10.868568448579715,6.1 İnç,OLED,FHD+,60 Hz,3227 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.550.800 Puan,4 GB,256 GB,7.65 mm,174 Gram,Cam,Var,5.0,Var,iOS,Var
+8.95157482435255,6.51 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,48 MP,,1080p (Full HD),30 fps,24 MP,8 Çekirdek,12 nm,274.900 Puan,8 GB,256 GB,9 mm,,,Yok,5.0,,Android,Yok
+8.841020097504185,6.74 İnç,,HD+,60 Hz,4000 mAh,Yok,,Yok,64 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,248.300 Puan,8 GB,128 GB,,,,Yok,5.0,Yok,Android,Yok
+8.999742789830492,6.6 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,,8 GB,256 GB,8.9 mm,196 Gram,,Yok,5.0,Var,Android,Yok
+9.769956159911606,6.78 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,70 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,50 MP,8 Çekirdek,6 nm,506.700 Puan,12 GB,512 GB,7.83 mm,190 Gram,,Var,5.3,Var,Android,Var
+9.602382459752207,6.5 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,402.900 Puan,6 GB,128 GB,8.3 mm,195 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Yok
+9.646682506937053,6.77 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,6 nm,383.500 Puan,8 GB,256 GB,7.79 mm,196 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+11.14692214672325,6.7 İnç,OLED,FHD+,60 Hz,4383 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.417.400 Puan,6 GB,256 GB,7.8 mm,201 Gram,Cam,Var,5.3,Var,iOS,Var
+10.819778284410283,6.8 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,80 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,4 nm,2.213.700 Puan,16 GB,512 GB,8.9 mm,229 Gram,Cam,Var,5.3,Var,Android,Yok
+10.205442284274628,6.78 İnç,AMOLED,FHD+,120 Hz,5500 mAh,Var,120 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.489.800 Puan,12 GB,256 GB,8.65 mm,191 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.188888926125463,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,432.900 Puan,8 GB,256 GB,7.82 mm,185 Gram,,Yok,5.2,Var,Android,Var
+10.668397099322965,6.6 İnç,Dynamic AMOLED,FHD+,120 Hz,4700 mAh,Var,45 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,12 MP,8 Çekirdek,4 nm,1.515.500 Puan,8 GB,256 GB,7.6 mm,195 Gram,Cam,Var,5.3,Var,Android,Var
+9.123478801946748,6.47 İnç,AMOLED,FHD+,60 Hz,5260 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,,6 GB,128 GB,9.67 mm,204 Gram,Cam,Yok,5.0,Var,Android,Yok
+9.491604895944155,6.43 İnç,AMOLED,FHD+,90 Hz,5000 mAh,Var,33 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,397.500 Puan,8 GB,128 GB,8.09 mm,179 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+9.78481605981863,6.78 İnç,AMOLED,FHD+,120 Hz,5200 mAh,Var,45 W,Yok,50 MP,Var,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,444.300 Puan,12 GB,256 GB,7.34 mm,177 Gram,,Yok,5.4,Var,Android,Var
+9.64049093817758,6.67 İnç,AMOLED,FHD+,120 Hz,5800 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),60 fps,32 MP,8 Çekirdek,6 nm,426.400 Puan,8 GB,256 GB,7.76 mm,192 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+10.298902324790792,6.76 İnç,OLED,FHD+,120 Hz,5000 mAh,Var,100 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,60 MP,8 Çekirdek,7 nm,653.300 Puan,12 GB,512 GB,7.82 mm,209 Gram,,Yok,5.2,Var,Android,Yok
+8.983193819332154,6.78 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,18 W,Yok,64 MP,Yok,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,12 nm,283.300 Puan,8 GB,128 GB,7.7 mm,188 Gram,Plastik (Cam Görünümlü),Yok,,Var,Android,Var
+10.254502810625418,6.7 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,8 nm,,8 GB,128 GB,8.4 mm,203 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+8.626961976361729,6.6 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Yok,,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,28 nm,154.100 Puan,4 GB,128 GB,8.6 mm,199 Gram,,Yok,5.2,Var,Android,Yok
+9.055093758499632,6.56 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,22.5 W,Yok,108 MP,Yok,2160p (Ultra HD) 4K,30 fps,8 MP,8 Çekirdek,6 nm,469.100 Puan,6 GB,256 GB,8.6 mm,205.5 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Yok
+10.039766916027851,6.5 İnç,Super AMOLED,FHD+,120 Hz,6000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,488.200 Puan,6 GB,128 GB,8.8 mm,208 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Yok
+9.035986984831405,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,,,8 MP,8 Çekirdek,6 nm,,8 GB,128 GB,8.75 mm,205 Gram,,Yok,5.0,Var,Android,
+9.047821442478408,6.7 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,18 W,Yok,48 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,,8 GB,256 GB,8.1 mm,185.6 Gram,Plastik (Cam Görünümlü),Yok,,,Android,Var
+9.740968623038354,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,200 MP,Var,1080p (Full HD),60 fps,16 MP,8 Çekirdek,6 nm,438.300 Puan,12 GB,512 GB,7.98 mm,188 Gram,Cam,Yok,5.2,Var,Android,Var
+8.971415447275781,6.74 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,15 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,263.600 Puan,8 GB,256 GB,7.84 mm,188 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+9.210440366976517,6.79 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,278.500 Puan,4 GB,128 GB,8.17 mm,198.5 Gram,Cam,Yok,5.3,Yok,Android,Var
+10.308952660644293,6.5 İnç,Super AMOLED,FHD+,60 Hz,6000 mAh,Var,25 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,10 nm,,6 GB,128 GB,9.3 mm,203 Gram,Polikarbonat,Yok,5.0,Var,Android,Yok
+11.104957978523363,6.1 İnç,OLED,FHD+,60 Hz,3349 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.753.700 Puan,6 GB,512 GB,7.8 mm,171 Gram,Cam,Var,5.3,Var,iOS,Var
+9.683152553543957,6.5 İnç,Super AMOLED,FHD+,120 Hz,4500 mAh,Var,25 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,7 nm,743.100 Puan,6 GB,128 GB,8.4 mm,190 Gram,Polimer (Cam Görünümlü),Yok,5.0,Var,Android,Var
+9.029297996680608,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,12 nm,,6 GB,128 GB,8.35 mm,200 Gram,,Yok,5.0,Var,Android,Yok
+9.045147281860693,6.67 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,18 W,Yok,48 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,268.800 Puan,8 GB,256 GB,7.8 mm,192 Gram,Plastik (Cam Görünümlü),Yok,,Var,Android,Var
+9.375091807576673,6.5 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,390.700 Puan,4 GB,128 GB,8.4 mm,200 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Yok
+10.996894651009443,6.2 İnç,Super AMOLED,HD+,120 Hz,4400 mAh,Var,25 W,Var,50 MP,Var,4320p (Ultra HD) 8K,30 fps,10 MP,8 Çekirdek,4 nm,1.513.900 Puan,12 GB,256 GB,13.4 mm,253 Gram,Cam,Var,5.3,Var,Android,Var
+10.070538521809826,6.4 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,5 nm,623.500 Puan,8 GB,256 GB,8.2 mm,202 Gram,Cam,Var,5.3,Var,Android,Var
+11.359191714882353,6.5 İnç,OLED,FHD+,120 Hz,3149 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.123.800 Puan,12 GB,512 GB,5.64 mm,165 Gram,Cam,Var,6.0,Var,iOS,Var
+9.726637002454627,6.67 İnç,AMOLED,FHD+,120 Hz,5110 mAh,Var,45 W,Yok,50 MP,Var,1080p (Full HD),30 fps,20 MP,8 Çekirdek,6 nm,475.500 Puan,12 GB,256 GB,7.99 mm,190 Gram,,Var,5.3,Var,Android,Var
+9.346517636193289,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,348.500 Puan,6 GB,128 GB,7.85 mm,183.5 Gram,,Yok,5.0,Yok,Android,Var
+8.936795233848184,6.53 İnç,IPS LCD,FHD+,60 Hz,6000 mAh,Var,18 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,11 nm,253.600 Puan,4 GB,128 GB,9.6 mm,198 Gram,Plastik,Yok,5.0,,Android,Var
+9.998797732340453,6.77 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,691.700 Puan,8 GB,128 GB,8.3 mm,199 Gram,Cam,Var,5.4,Var,Android,Var
+11.061467359471514,6.9 İnç,Dynamic AMOLED,FHD+,120 Hz,4300 mAh,Var,25 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,10 MP,10 Çekirdek,3 nm,1.943.900 Puan,12 GB,512 GB,6.5 mm,188 Gram,Cam,Var,5.4,Var,Android,Var
+10.039189961797659,6.7 İnç,AMOLED,FHD+,120 Hz,5200 mAh,Var,100 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,792.700 Puan,8 GB,256 GB,7.7 mm,187 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Yok
+8.87213663717682,6.67 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,15 W,Yok,8 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,270.800 Puan,4 GB,128 GB,8.25 mm,187 Gram,,Yok,,Var,Android,Var
+11.44571671527678,6.3 İnç,OLED,FHD+,120 Hz,3582 mAh,Var,25 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.853.700 Puan,8 GB,512 GB,8.25 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+8.816186055013885,6.67 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,15 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,254.900 Puan,4 GB,128 GB,8.35 mm,189 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+11.695247021764184,6.7 İnç,OLED,FHD+,120 Hz,4441 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.740.400 Puan,8 GB,512 GB,8.25 mm,221 Gram,Cam,Var,5.3,Var,iOS,Var
+10.157482274507444,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,66 W,Yok,200 MP,Yok,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,701.900 Puan,12 GB,512 GB,7.8 mm,183 Gram,,Var,5.2,Var,Android,Yok
+8.6400301013753,6.52 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Var,15 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,,4 GB,128 GB,8.9 mm,190 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Yok
+10.499220340989032,6.83 İnç,AMOLED,FHD+,120 Hz,6500 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,2.024.800 Puan,12 GB,256 GB,8.2 mm,215.7 Gram,Cam,Var,6.0,Var,Android,Var
+10.789299695294453,6.8 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,80 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,30 fps,16 MP,8 Çekirdek,4 nm,2.088.900 Puan,16 GB,512 GB,7.85 mm,205 Gram,,Var,5.4,Var,Android,Var
+8.909235279192261,6.67 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,15 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,,4 GB,128 GB,8.25 mm,,Plastik (Cam Görünümlü),Yok,,Yok,Android,Var
+11.26446410567173,6.1 İnç,OLED,FHD+,60 Hz,3561 mAh,Var,25 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.517.700 Puan,8 GB,512 GB,7.8 mm,170 Gram,Cam,Var,5.3,Var,iOS,Var
+11.652687407345388,6.7 İnç,OLED,FHD+,120 Hz,4323 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.761.400 Puan,6 GB,1 TB,7.85 mm,240 Gram,Cam,Var,5.3,Var,iOS,Var
+8.84825366798702,6.7 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,48 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,264.500 Puan,6 GB,256 GB,8.7 mm,207 Gram,,Yok,5.0,Yok,Android,Yok
+8.724207360800564,6.56 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Yok,,Yok,13 MP,Yok,,,8 MP,8 Çekirdek,28 nm,,4 GB,128 GB,8.7 mm,,,Yok,,Var,Android,Yok
+8.902962946474135,6.67 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,18 W,Yok,48 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,249.200 Puan,4 GB,128 GB,7.8 mm,192 Gram,Plastik (Cam Görünümlü),Yok,,Var,Android,Var
+8.94105470980255,6.56 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,12 nm,260.700 Puan,8 GB,256 GB,8.3 mm,190 Gram,,Yok,5.0,Var,Android,Yok
+9.455325255328814,6.67 İnç,AMOLED,FHD+,120 Hz,4500 mAh,Var,67 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,7 nm,840.900 Puan,6 GB,128 GB,7.7 mm,195 Gram,Cam,Var,5.2,Var,Android,Yok
+9.358846580275406,6.6 İnç,PLS,FHD+,90 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,,4 GB,128 GB,8.4 mm,195 Gram,Plastik,Yok,5.0,Var,Android,Yok
+9.40729435081445,6.5 İnç,PLS,HD+,60 Hz,5000 mAh,Var,15 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,8 nm,,4 GB,64 GB,8.9 mm,192 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Yok
+8.949685745244903,6.71 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,273.400 Puan,4 GB,128 GB,8.77 mm,192 Gram,Plastik,Yok,5.1,Yok,Android,Yok
+11.538602958260002,6.1 İnç,OLED,FHD+,120 Hz,3200 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.432.800 Puan,6 GB,1 TB,7.85 mm,206 Gram,Cam,Var,5.3,Var,iOS,Var
+10.231898815201978,6.73 İnç,AMOLED,QHD+,120 Hz,4600 mAh,Var,120 W,Var,50 MP,Var,4320p (Ultra HD) 8K,24 fps,32 MP,8 Çekirdek,4 nm,1.119.400 Puan,12 GB,256 GB,8.16 mm,205 Gram,Cam,Var,5.2,Var,Android,Yok
+8.86014439413516,6.74 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,15 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,259.800 Puan,6 GB,128 GB,7.84 mm,188 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+9.206131527202128,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,,,16 MP,8 Çekirdek,6 nm,413.000 Puan,8 GB,256 GB,7.96 mm,,,Yok,,Var,Android,Yok
+9.878169744551839,6.82 İnç,IPS LCD,HD+,90 Hz,7000 mAh,Var,18 W,Yok,16 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,,6 GB,128 GB,9.63 mm,230 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Yok
+9.1495016647451,6.67 İnç,IPS LCD,HD+,90 Hz,5100 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,11 nm,249.600 Puan,6 GB,128 GB,7.68 mm,186 Gram,,Yok,5.0,Var,Android,Var
+9.20029003612268,6.68 İnç,IPS LCD,HD+,90 Hz,6000 mAh,Var,44 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,278.200 Puan,8 GB,256 GB,8.09 mm,199 Gram,,Yok,5.0,Var,Android,Var
+10.547236221420816,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,3700 mAh,Var,25 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,10 MP,8 Çekirdek,4 nm,1.507.300 Puan,8 GB,256 GB,6.9 mm,187 Gram,Cam,Var,5.3,Var,Android,Var
+9.047821442478408,6.72 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,1080p (Full HD),60 fps,8 MP,8 Çekirdek,12 nm,,6 GB,128 GB,7.89 mm,189.5 Gram,Plastik (Cam Görünümlü),Yok,5.2,Var,Android,Yok
+9.426812116200054,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,6 nm,585.100 Puan,8 GB,128 GB,7.9 mm,187 Gram,Cam,Var,5.2,Var,Android,Var
+9.422362306749882,6.47 İnç,AMOLED,FHD+,60 Hz,5260 mAh,Var,30 W,Yok,108 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,8 nm,370.700 Puan,6 GB,128 GB,9.67 mm,208 Gram,Cam,Yok,5.0,Var,Android,Yok
+9.336091577281744,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,64 MP,Yok,,,32 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.75 mm,208 Gram,,Yok,5.0,Var,Android,
+9.134759777584858,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,6 nm,437.600 Puan,8 GB,256 GB,7.7 mm,187 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+10.756538972268421,6.8 İnç,OLED,FHD+,120 Hz,5050 mAh,Var,100 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,13 MP,8 Çekirdek,7 nm,929.200 Puan,12 GB,512 GB,8.4 mm,220 Gram,Cam,Yok,5.2,Var,Android,Var
+11.231281791304093,6.8 İnç,OLED,FHD+,120 Hz,5600 mAh,Var,80 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,50 MP,8 Çekirdek,4 nm,2.051.100 Puan,12 GB,512 GB,8.9 mm,229 Gram,Cam | Kauçuk/Plastik (Deri Görünümlü),Var,5.3,Var,Android,Var
+8.435557882893606,6.51 İnç,IPS LCD,HD+,60 Hz,4000 mAh,,,Yok,13 MP,Yok,,,8 MP,8 Çekirdek,28 nm,,4 GB,128 GB,9.45 mm,180 Gram,,Yok,,,Android,Yok
+11.502875129116727,6.7 İnç,OLED,FHD+,120 Hz,4352 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.438.500 Puan,6 GB,512 GB,7.65 mm,240 Gram,Cam,Var,5.0,Var,iOS,Var
+9.32562963409582,6.5 İnç,PLS,HD+,60 Hz,5000 mAh,Var,15 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,152.800 Puan,4 GB,64 GB,8.9 mm,205 Gram,Plastik,Yok,5.0,Yok,Android,Yok
+9.519966160310158,6.78 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,13 MP,8 Çekirdek,6 nm,446.100 Puan,8 GB,256 GB,6.8 mm,162 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+9.101644299528855,6.7 İnç,PLS,HD+,60 Hz,5000 mAh,Var,25 W,Yok,50 MP,Yok,1080p (Full HD),60 fps,8 MP,8 Çekirdek,12 nm,247.700 Puan,4 GB,128 GB,8 mm,189 Gram,Plastik,Yok,5.3,Yok,Android,Yok
+9.433483923290392,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,108 MP,Yok,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,439.300 Puan,8 GB,256 GB,8.4 mm,206 Gram,,Yok,5.2,Var,Android,Var
+9.852246888342531,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,100 W,Yok,200 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,6 nm,560.400 Puan,12 GB,512 GB,8.7 mm,189 Gram,,Var,5.2,Var,Android,Yok
+8.83837773592202,6.53 İnç,IPS LCD,HD+,90 Hz,5000 mAh,,,Yok,50 MP,Yok,,,13 MP,8 Çekirdek,12 nm,,6 GB,128 GB,,,,Yok,5.0,,Android,Yok
+9.61857364517762,6.4 İnç,Super AMOLED,FHD+,60 Hz,4000 mAh,Var,15 W,Yok,25 MP,Yok,1080p (Full HD),30 fps,25 MP,8 Çekirdek,10 nm,274.900 Puan,6 GB,64 GB,7.7 mm,166 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Yok
+8.81478351462791,6.56 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,154.300 Puan,6 GB,128 GB,9 mm,203 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Var
+9.14711725198573,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,45 W,Yok,64 MP,Yok,1440p (Quad HD) 2K,30 fps,16 MP,8 Çekirdek,6 nm,438.000 Puan,8 GB,256 GB,8.58 mm,219 Gram,,Yok,,Var,Android,Var
+11.407564949312402,6.1 İnç,OLED,FHD+,120 Hz,3095 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.484.600 Puan,6 GB,256 GB,7.65 mm,204 Gram,Cam,Var,5.0,Var,iOS,Var
+8.839769322845338,6.53 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,13 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,141.900 Puan,3 GB,64 GB,9.0 mm,196 Gram,Plastik,Yok,5.0,Yok,Android,Var
+8.962009773358902,6.74 İnç,IPS LCD,HD+,90 Hz,5500 mAh,Var,15 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,,6 GB,256 GB,8.19 mm,199 Gram,Plastik (Cam Görünümlü),Yok,5.4,Yok,Android,Var
+9.104979856318357,6.7 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,22.5 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,12 nm,,8 GB,256 GB,8.2 mm,,,Yok,,,Android,Yok
+9.471043257117008,6.67 İnç,OLED,FHD+,120 Hz,5000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,6 nm,374.000 Puan,8 GB,256 GB,7.76 mm,187 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Var
+10.000432758592607,6.7 İnç,OLED,FHD+,120 Hz,5000 mAh,Var,100 W,Yok,50 MP,Yok,2160p (Ultra HD) 4K,30 fps,60 MP,8 Çekirdek,7 nm,595.800 Puan,12 GB,256 GB,6.98 mm,195 Gram,,Yok,5.2,Var,Android,Yok
+10.322230781590136,6.95 İnç,IPS LCD,FHD+,144 Hz,5000 mAh,Var,33 W,Yok,100 MP,Yok,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,1.019.600 Puan,12 GB,256 GB,8 mm,230 Gram,Metal,Var,5.2,Var,Android,Yok
+9.210340371976184,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,32 MP,8 Çekirdek,12 nm,,6 GB,256 GB,8.35 mm,200 Gram,,Yok,5.0,Var,Android,Yok
+11.611172691064748,6.7 İnç,OLED,FHD+,120 Hz,4441 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.740.400 Puan,8 GB,1 TB,8.25 mm,221 Gram,Cam,Var,5.3,Var,iOS,Var
+10.494075844768336,6.1 İnç,OLED,FHD+,60 Hz,2815 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.250.400 Puan,4 GB,256 GB,7.4 mm,164 Gram,Cam,Var,5.0,Var,iOS,Var
+8.873466654772425,6.53 İnç,IPS LCD,FHD+,60 Hz,5020 mAh,Var,18 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,280.700 Puan,4 GB,64 GB,9.1 mm,198 Gram,Plastik,Yok,5.0,Yok,Android,Yok
+10.41887764325511,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,4 nm,696.600 Puan,12 GB,512 GB,8.75 mm,196 Gram,,Var,5.2,Var,Android,Var
+11.218554404367652,6.7 İnç,OLED,FHD+,60 Hz,4383 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.417.400 Puan,6 GB,512 GB,7.8 mm,201 Gram,Cam,Var,5.3,Var,iOS,Var
+9.480205664031953,6.67 İnç,IPS LCD,HD+,90 Hz,5800 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,11 nm,,8 GB,256 GB,7.86 mm,195 Gram,,Yok,5.0,Var,Android,Var
+10.805129310200986,6.86 İnç,AMOLED,FHD+,120 Hz,4780 mAh,Var,67 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,24 fps,32 MP,8 Çekirdek,4 nm,1.960.500 Puan,12 GB,512 GB,7.8 mm,190 Gram,,Var,5.4,Var,Android,Yok
+10.088492173359143,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,120 W,Yok,200 MP,Var,4320p (Ultra HD) 8K,24 fps,20 MP,8 Çekirdek,4 nm,1.345.300 Puan,12 GB,256 GB,8.6 mm,205 Gram,Cam,Var,5.2,Var,Android,Var
+11.547819523947549,6.7 İnç,OLED,FHD+,120 Hz,4323 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,4 nm,1.761.400 Puan,6 GB,512 GB,7.85 mm,240 Gram,Cam,Var,5.3,Var,iOS,Var
+9.903487552536127,6.67 İnç,IPS LCD,FHD+,144 Hz,5000 mAh,Var,33 W,Yok,108 MP,Var,4320p (Ultra HD) 8K,30 fps,20 MP,8 Çekirdek,7 nm,861.000 Puan,8 GB,128 GB,9.33 mm,218 Gram,Cam,Var,5.1,Var,Android,Yok
+9.159047077588632,6.7 İnç,IPS LCD,HD+,120 Hz,5160 mAh,Var,45 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,274.600 Puan,6 GB,128 GB,7.7 mm,188 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+9.923290179832307,6.7 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,6 nm,595.600 Puan,8 GB,256 GB,7.54 mm,177 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Var
+9.648659816955295,6.43 İnç,AMOLED,FHD+,60 Hz,5000 mAh,Var,33 W,Yok,48 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,11 nm,,4 GB,128 GB,7.95 mm,175 Gram,Plastik (Cam Görünümlü),Yok,5.0,Var,Android,Yok
+9.262379538132215,6.47 İnç,AMOLED,FHD+,60 Hz,5260 mAh,Var,30 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,,6 GB,64 GB,9.67 mm,204 Gram,Cam,Yok,5.0,Var,Android,Yok
+9.070100815561595,6.4 İnç,PLS,HD+,60 Hz,4000 mAh,Var,15 W,Yok,13 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,14 nm,,2 GB,32 GB,8 mm,177 Gram,Plastik,Yok,4.2,Yok,Android,Yok
+11.407564949312402,6.5 İnç,OLED,FHD+,120 Hz,3149 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,18 MP,6 Çekirdek,3 nm,2.123.800 Puan,12 GB,1 TB,5.64 mm,165 Gram,Cam,Var,6.0,Var,iOS,Var
+9.04924865881459,6.7 İnç,IPS LCD,HD+,120 Hz,5000 mAh,Var,18 W,Yok,48 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,261.600 Puan,6 GB,128 GB,8.1 mm,185.6 Gram,Plastik (Cam Görünümlü),Yok,,,Android,Var
+9.798127036878302,6.67 İnç,AMOLED,FHD+,120 Hz,5020 mAh,Var,33 W,Yok,108 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,417.800 Puan,8 GB,256 GB,8.1 mm,193 Gram,Cam,Yok,5.1,Var,Android,Var
+9.574986263338012,6.5 İnç,IPS LCD,FHD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,255.300 Puan,4 GB,128 GB,8.92 mm,181 Gram,Plastik (Cam Görünümlü),Yok,5.1,Yok,Android,Yok
+9.433563920090563,6.3 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,13 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,,3 GB,64 GB,9.04 mm,185 Gram,,Yok,5.0,Var,Android,Yok
+9.525151111816216,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,50 MP,Var,1080p (Full HD),30 fps,16 MP,8 Çekirdek,6 nm,367.500 Puan,8 GB,512 GB,7.92 mm,187 Gram,,Yok,5.0,Var,Android,Var
+11.355101379776661,6.7 İnç,OLED,FHD+,60 Hz,4674 mAh,Var,30 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.572.700 Puan,8 GB,512 GB,7.8 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+9.80615252410878,6.5 İnç,Super AMOLED,FHD+,120 Hz,5000 mAh,Var,25 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,13 MP,8 Çekirdek,5 nm,485.500 Puan,8 GB,256 GB,8.3 mm,197 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Yok
+9.358760377094455,6.6 İnç,PLS,FHD+,60 Hz,5000 mAh,Var,15 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,8 nm,,4 GB,64 GB,8.8 mm,195 Gram,Plastik,Yok,5.0,Yok,Android,Yok
+10.085800775962026,6.67 İnç,AMOLED,FHD+,120 Hz,5110 mAh,Var,45 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,4 nm,646.600 Puan,8 GB,256 GB,8.4 mm,190 Gram,Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.90353755128617,6.67 İnç,AMOLED,FHD+,120 Hz,5100 mAh,Var,67 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,605.800 Puan,12 GB,512 GB,7.98 mm,181 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Var
+9.478074806618269,6.67 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,6 nm,334.900 Puan,8 GB,128 GB,7.68 mm,186 Gram,,Yok,5.0,Var,Android,Var
+9.832023773727578,6.78 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,70 W,Yok,108 MP,Yok,1440p (Quad HD) 2K,30 fps,32 MP,8 Çekirdek,6 nm,439.200 Puan,12 GB,256 GB,7.88 mm,195 Gram,Plastik (Cam Görünümlü),Var,5.3,Var,Android,Var
+9.67213414236826,6.67 İnç,AMOLED,FHD+,60 Hz,4700 mAh,Var,30 W,Yok,64 MP,Yok,4320p (Ultra HD) 8K,30 fps,20 MP,8 Çekirdek,7 nm,756.200 Puan,8 GB,256 GB,8.9 mm,219 Gram,Cam,Var,5.1,Var,Android,Yok
+11.05089000537367,6.1 İnç,OLED,FHD+,60 Hz,4005 mAh,Var,20 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.405.700 Puan,8 GB,512 GB,7.8 mm,167 Gram,Cam,Var,5.3,Var,iOS,Var
+11.05089000537367,6.42 İnç,AMOLED,FHD+,120 Hz,5750 mAh,Var,70 W,Var,50 MP,Var,2160p (Ultra HD) 4K,60 fps,32 MP,8 Çekirdek,4 nm,1.157.000 Puan,12 GB,512 GB,11.98 mm,249 Gram,,Var,5.3,Var,Android,Var
+8.848078421168667,6.68 İnç,IPS LCD,HD+,90 Hz,5500 mAh,Var,15 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,12 nm,247.100 Puan,4 GB,128 GB,8.1 mm,198 Gram,Plastik (Metalik Görünümlü),Yok,5.0,Yok,Android,Var
+9.375939552625749,6.74 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,18 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,276.600 Puan,8 GB,256 GB,8.09 mm,192 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+9.367344120785848,6.4 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,67 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,6 nm,427.200 Puan,8 GB,256 GB,7.95 mm,178 Gram,,Yok,5.2,Var,Android,Yok
+9.209990310711888,6.55 İnç,AMOLED,FHD+,90 Hz,4250 mAh,Var,33 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,411.900 Puan,6 GB,128 GB,6.81 mm,157 Gram,Cam,Yok,5.1,Var,Android,Yok
+9.865670413911111,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,200 MP,Var,1080p (Full HD),60 fps,16 MP,8 Çekirdek,6 nm,433.200 Puan,12 GB,512 GB,7.98 mm,179 Gram,,Yok,5.3,Var,Android,Var
+9.02401079378469,6.67 İnç,IPS LCD,HD+,90 Hz,5000 mAh,Var,45 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,273.000 Puan,8 GB,128 GB,7.64 mm,185 Gram,,Yok,5.0,Var,Android,Var
+10.018651606095347,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,60 fps,20 MP,8 Çekirdek,4 nm,1.628.600 Puan,8 GB,256 GB,7.8 mm,179 Gram,Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.175488023608962,6.4 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,67 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,6 nm,427.200 Puan,8 GB,128 GB,7.95 mm,178 Gram,,Yok,5.2,Var,Android,Yok
+9.103311799217659,6.4 İnç,Super AMOLED,FHD+,90 Hz,5000 mAh,Var,33 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,6 nm,408.000 Puan,8 GB,128 GB,7.95 mm,178 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Yok
+10.811452924576287,6.1 İnç,OLED,FHD+,60 Hz,3227 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.550.800 Puan,4 GB,512 GB,7.65 mm,174 Gram,Cam,Var,5.0,Var,iOS,Var
+8.922279561145409,6.67 İnç,IPS LCD,FHD+,60 Hz,5020 mAh,Var,18 W,Yok,48 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,8 nm,396.000 Puan,4 GB,64 GB,8.8 mm,209 Gram,Cam,Yok,5.0,Yok,Android,Var
+8.006367567650246,5.5 İnç,Super AMOLED,HD,60 Hz,3000 mAh,Yok,,Yok,13 MP,Yok,1080p (Full HD),30 fps,5 MP,8 Çekirdek,28 nm,,1.5 GB,16 GB,7.5 mm,171 Gram,Plastik,Yok,4.1,Yok,Android,Yok
+10.320512256990977,6.77 İnç,AMOLED,FHD+,120 Hz,6000 mAh,Var,90 W,Yok,50 MP,Var,2160p (Ultra HD) 4K,30 fps,50 MP,8 Çekirdek,4 nm,806.100 Puan,12 GB,256 GB,7.39 mm,199 Gram,Cam | Plastik (Cam Görünümlü),Var,5.4,Var,Android,Var
+9.852061617773284,6.67 İnç,AMOLED,FHD+,120 Hz,5100 mAh,Var,67 W,Yok,64 MP,Var,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,4 nm,605.800 Puan,12 GB,256 GB,7.98 mm,181 Gram,Plastik (Cam Görünümlü),Var,5.2,Var,Android,Var
+9.686574550972555,6.7 İnç,OLED,FHD+,120 Hz,4500 mAh,Var,66 W,Yok,50 MP,Yok,2160p (Ultra HD) 4K,30 fps,60 MP,8 Çekirdek,6 nm,590.900 Puan,8 GB,256 GB,6.88 mm,168 Gram,,Yok,5.2,Var,Android,Yok
+10.868568448579715,6.1 İnç,OLED,FHD+,60 Hz,3279 mAh,Var,20 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,5 nm,1.381.900 Puan,6 GB,512 GB,7.8 mm,172 Gram,Cam,Var,5.3,Var,iOS,Var
+9.768125914605452,6.55 İnç,AMOLED,FHD+,120 Hz,4300 mAh,Var,67 W,Yok,108 MP,Yok,2160p (Ultra HD) 4K,30 fps,32 MP,8 Çekirdek,6 nm,598.100 Puan,8 GB,256 GB,7.29 mm,173 Gram,Cam,Var,5.2,Var,Android,Yok
+9.621551606102532,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,108 MP,Yok,1080p (Full HD),30 fps,16 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.12 mm,205 Gram,Plastik (Cam Görünümlü),Var,5.1,Var,Android,Var
+9.723867343813835,6.67 İnç,AMOLED,FHD+,120 Hz,5000 mAh,Var,67 W,Yok,108 MP,Yok,2160p (Ultra HD) 4K,30 fps,16 MP,8 Çekirdek,6 nm,808.800 Puan,8 GB,128 GB,8.8 mm,203 Gram,Cam,Var,5.2,Var,Android,Var
+8.237743803890933,5.5 İnç,IPS LCD,HD+,60 Hz,3000 mAh,Yok,,Yok,8 MP,Yok,1080p (Full HD),30 fps,5 MP,4 Çekirdek,12 nm,,2 GB,32 GB,9.95 mm,172 Gram,Plastik,Yok,4.2,Yok,Android,Yok
+9.210340371976184,6.52 İnç,IPS LCD,HD+,60 Hz,5000 mAh,Yok,,Yok,13 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,,4 GB,64 GB,8.4 mm,190 Gram,Plastik (Cam Görünümlü),Yok,5.0,Yok,Android,Yok
+8.987196820661973,6.53 İnç,IPS LCD,FHD+,60 Hz,4500 mAh,Var,18 W,Yok,64 MP,Yok,2160p (Ultra HD) 4K,30 fps,20 MP,8 Çekirdek,12 nm,439.200 Puan,6 GB,64 GB,8.8 mm,199 Gram,Cam,Yok,5.0,Var,Android,Var
+10.738702276399117,6.67 İnç,AMOLED,QHD+,120 Hz,6000 mAh,Var,90 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,24 fps,20 MP,8 Çekirdek,4 nm,2.065.300 Puan,12 GB,512 GB,8.12 mm,206 Gram,Cam,Var,5.4,Var,Android,Var
+9.268609280100158,6.7 İnç,IPS LCD,HD+,120 Hz,5160 mAh,Var,45 W,Yok,50 MP,Yok,1440p (Quad HD) 2K,30 fps,8 MP,8 Çekirdek,12 nm,280.300 Puan,8 GB,256 GB,7.7 mm,188 Gram,Plastik (Cam Görünümlü),Yok,5.3,Var,Android,Var
+8.850230965588816,6.78 İnç,IPS LCD,FHD+,120 Hz,5000 mAh,Var,,Yok,64 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,,8 GB,256 GB,8.35 mm,,,Yok,5.2,Var,Android,Yok
+10.545245118280386,6.7 İnç,Dynamic AMOLED,FHD+,120 Hz,3700 mAh,Var,25 W,Var,12 MP,Var,2160p (Ultra HD) 4K,60 fps,10 MP,8 Çekirdek,4 nm,1.258.400 Puan,8 GB,128 GB,6.9 mm,187 Gram,Cam,Var,5.2,Var,Android,Var
+8.58456020858473,6.75 İnç,IPS LCD,HD+,90 Hz,5000 mAh,,,Yok,48 MP,Yok,,,16 MP,8 Çekirdek,12 nm,,4 GB,128 GB,8.6 mm,,,Yok,5.0,,Android,
+11.487607656985938,6.3 İnç,OLED,FHD+,120 Hz,3582 mAh,Var,25 W,Var,48 MP,Var,2160p (Ultra HD) 4K,60 fps,12 MP,6 Çekirdek,3 nm,1.853.700 Puan,8 GB,1 TB,8.25 mm,199 Gram,Cam,Var,5.3,Var,iOS,Var
+8.696175846944678,6.75 İnç,IPS LCD,HD+,90 Hz,5200 mAh,Var,22.5 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,8 MP,8 Çekirdek,12 nm,222.200 Puan,6 GB,128 GB,8.3 mm,204 Gram,Plastik,Yok,5.2,Var,Android,Yok
+9.542735738013972,6.5 İnç,Super AMOLED,FHD+,90 Hz,6000 mAh,Var,25 W,Yok,50 MP,Yok,1080p (Full HD),30 fps,13 MP,8 Çekirdek,6 nm,370.300 Puan,4 GB,128 GB,9.3 mm,217 Gram,Plastik,Var,5.3,Var,Android,Yok
+11.047243683073516,6.7 İnç,AMOLED,QHD+,120 Hz,5000 mAh,Var,100 W,Yok,50 MP,Var,4320p (Ultra HD) 8K,24 fps,16 MP,8 Çekirdek,4 nm,1.516.900 Puan,16 GB,256 GB,8.53 mm,205 Gram,Cam,Var,5.3,Var,Android,Var

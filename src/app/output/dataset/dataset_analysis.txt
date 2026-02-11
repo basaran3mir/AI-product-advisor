@@ -1,0 +1,526 @@
+============================================================
+DATASET ANALYSIS REPORT
+============================================================
+Generated at: 2026-02-11 09:32:25.163392
+
+------------------------------------------------------------
+GENERAL INFORMATION
+------------------------------------------------------------
+Toplam Ürün Sayısı: 500
+Toplam Feature Sayısı (Target dahil): 211
+Modelde Kullanılacak Feature Sayısı (urun_puan hariç): 209
+Toplam Eksik Hücre Sayısı: 46225
+
+------------------------------------------------------------
+DATA TYPE DISTRIBUTION
+------------------------------------------------------------
+str        207
+float64      4
+
+------------------------------------------------------------
+COLUMN BAZLI EKSİK VERİ ANALİZİ
+------------------------------------------------------------
+                                                                  missing_count  missing_percentage
+kamera_dxomark_eski_v1                                                      499                99.8
+temel_donanim_antutu_puanı_v5                                               499                99.8
+kamera_beşinci_arka_kamera_çözünürlüğü                                      498                99.6
+kamera_beşinci_arka_kamera_özellikleri                                      498                99.6
+temel_donanim_antutu_puanı_v4                                               498                99.6
+batarya_konuşma_süresi_2g                                                   498                99.6
+batarya_bekleme_süresi_2g                                                   498                99.6
+kamera_beşinci_arka_kamera                                                  498                99.6
+çoklu_ortam_ses_çıkış_özellikleri                                           498                99.6
+kamera_beşinci_arka_kamera_diyafram                                         498                99.6
+kamera_üçüncü_arka_kamera_diyafram_maks                                     497                99.4
+çoklu_ortam_radyo_özellikleri                                               497                99.4
+özelli̇kler_desteklenen_aksesuarlar                                         496                99.2
+temel_donanim_kullanılabilir_boş_hafıza                                     495                99.0
+temel_donanim_ram_kanalları                                                 494                98.8
+kablosuz_bağlantilar_nfc_özellikleri                                        494                98.8
+batarya_bekleme_süresi_3g                                                   494                98.8
+temel_donanim_antutu_puanı_v6                                               493                98.6
+temel_bi̇lgi̇ler_kullanım_amacı                                             493                98.6
+kamera_dxomark_2017_v2                                                      492                98.4
+batarya_batarya_kapasitesi_notu                                             491                98.2
+tasarim_kalınlık_en_i̇nce_noktada                                           490                98.0
+batarya_i̇nternet_kullanımı_3g                                              490                98.0
+tasarim_en_katlanmış_açılmış_durumda                                        490                98.0
+batarya_karma_kullanım                                                      488                97.6
+tasarim_kalınlık_katlanmış_durumda                                          488                97.6
+kamera_i̇kinci_ön_kamera_diyafram                                           488                97.6
+tasarim_boy_katlanmış_açılmış_durumda                                       487                97.4
+ekran_i̇kinci_ekran_yoğunluğu                                               487                97.4
+ekran_i̇kinci_ekran_çözünürlüğü                                             487                97.4
+ekran_i̇kinci_ekran_arka                                                    487                97.4
+ekran_i̇kinci_ekran_boyutu                                                  487                97.4
+ekran_i̇kinci_ekran_özellikleri                                             487                97.4
+kamera_i̇kinci_ön_kamera_çözünürlüğü                                        485                97.0
+temel_bi̇lgi̇ler_not                                                        483                96.6
+kablosuz_bağlantilar_nfc_notu                                               483                96.6
+kamera_diyafram_açıklığı_maks                                               482                96.4
+kamera_i̇kinci_ön_kamera_özellikleri                                        482                96.4
+temel_bi̇lgi̇ler_diğer_adları                                               482                96.4
+kamera_i̇kinci_ön_kamera                                                    481                96.2
+batarya_konuşma_süresi_3g                                                   481                96.2
+kamera_dxomark_camera_v3                                                    481                96.2
+i̇şleti̇m_si̇stemi̇_planlanan_yükseltilebilir_versiyon                      479                95.8
+temel_donanim_diğer_chipset_seçenekleri                                     476                95.2
+ağ_bağlantilari_4g_frekansları_notu                                         474                94.8
+özelli̇kler_led_özelliği                                                    473                94.6
+tasarim_ağırlık_seçenekleri                                                 472                94.4
+batarya_bekleme_süresi_4g                                                   472                94.4
+temel_donanim_antutu_puanı_v7                                               469                93.8
+kamera_dxomark_camera_v6                                                    466                93.2
+batarya_şarj_döngü_sayısı_üretici                                           461                92.2
+temel_bi̇lgi̇ler_çıkış_tarihi                                               454                90.8
+kamera_dxomark_camera_v4                                                    451                90.2
+batarya_oyun                                                                449                89.8
+batarya_müzik_oynatma_notu                                                  447                89.4
+kamera_dördüncü_arka_kamera_diyafram                                        443                88.6
+kamera_dördüncü_arka_kamera_çözünürlüğü                                     442                88.4
+ağ_bağlantilari_4g_karşıya_yükleme                                          440                88.0
+kamera_dördüncü_arka_kamera_özellikleri                                     440                88.0
+kamera_dördüncü_arka_kamera                                                 440                88.0
+ağ_bağlantilari_4g_teknolojisi                                              440                88.0
+ağ_bağlantilari_4g_i̇ndirme                                                 440                88.0
+kamera_ois_özelliği                                                         429                85.8
+batarya_i̇nternet_kullanımı_4g                                              421                84.2
+batarya_i̇nternet_kullanımı_wifi                                            418                83.6
+kamera_ön_kamera_sensör_boyutu                                              416                83.2
+temel_donanim_antutu_puanı_v8                                               411                82.2
+kamera_kayıpsız_yakınlaştırma                                               389                77.8
+batarya_konuşma_süresi_4g                                                   386                77.2
+batarya_şarj_süresi_üretici_verisi                                          366                73.2
+kamera_dxomark_camera_v5                                                    364                72.8
+batarya_video_oynatma_notu                                                  349                69.8
+temel_donanim_2._yardımcı_i̇şlemci                                          348                69.6
+temel_bi̇lgi̇ler_kullanım_kılavuzu                                          347                69.4
+kablosuz_bağlantilar_bluetooth_özellikleri                                  345                69.0
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_onarılabilirlik_sınıfı                   335                67.0
+batarya_batarya_özellikleri                                                 335                67.0
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_şarj_sonrası_pil_süresi                  335                67.0
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_düşme_direnci_sınıfı                     335                67.0
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_şarj_döngü_sayısı_ab                     335                67.0
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_suya_ya_da_toza_direnç_sınıfı            335                67.0
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_enerji_sınıfı                            335                67.0
+batarya_kablosuz_şarj_özellikleri                                           332                66.4
+temel_donanim_antutu_puanı_v9                                               329                65.8
+temel_donanim_geekbench_5_multi_core                                        307                61.4
+temel_donanim_geekbench_5_single_core                                       307                61.4
+temel_donanim_hafıza_kartı_maks._kapasitesi                                 304                60.8
+temel_donanim_antutu_puanı_v11                                              303                60.6
+kamera_odak_uzaklığı                                                        297                59.4
+batarya_müzik_oynatma                                                       297                59.4
+kamera_kamera_sensör_boyutu                                                 290                58.0
+temel_donanim_dahili_depolama_biçimi                                        272                54.4
+temel_donanim_gpu_frekansı                                                  253                50.6
+di̇ğer_bağlantilar_çift_hat_özelliği                                        252                50.4
+ağ_bağlantilari_4g_frekansları                                              249                49.8
+ağ_bağlantilari_2g_frekansları                                              244                48.8
+ağ_bağlantilari_3g_frekansları                                              244                48.8
+temel_donanim_diğer_bellek_ram_seçenekleri                                  238                47.6
+batarya_batarya_teknolojisi                                                 236                47.2
+temel_donanim_ram_tipi                                                      236                47.2
+batarya_video_oynatma                                                       218                43.6
+i̇şleti̇m_si̇stemi̇_yükseltilebilir_versiyon                                217                43.4
+kamera_üçüncü_arka_kamera_diyafram                                          207                41.4
+kamera_üçüncü_arka_kamera_çözünürlüğü                                       198                39.6
+kamera_üçüncü_arka_kamera_özellikleri                                       195                39.0
+kamera_üçüncü_arka_kamera                                                   180                36.0
+ekran_ekran_dayanıklılığı                                                   168                33.6
+kamera_ağır_çekim_kayıt_seçenekleri                                         162                32.4
+temel_bi̇lgi̇ler_alt_seri                                                   152                30.4
+tasarim_gövde_malzemesi_kapak                                               136                27.2
+özelli̇kler_toza_dayanıklılık_seviyesi                                      125                25.0
+i̇şleti̇m_si̇stemi̇_lansman_arayüz_versiyonu                                124                24.8
+özelli̇kler_suya_dayanıklılık_seviyesi                                      108                21.6
+i̇şleti̇m_si̇stemi̇_kullanıcı_arayüzü                                       108                21.6
+ağ_bağlantilari_4g_özellikleri                                              100                20.0
+özelli̇kler_kutu_i̇çeriği                                                    97                19.4
+temel_donanim_geekbench_6_single_core                                        93                18.6
+temel_donanim_geekbench_6_multi_core                                         93                18.6
+temel_donanim_antutu_puanı_v10                                               92                18.4
+özelli̇kler_parmak_izi_okuyucu_özellikleri                                   91                18.2
+tasarim_gövde_malzemesi_çerçeve                                              81                16.2
+kamera_i̇kinci_arka_kamera_diyafram                                          80                16.0
+temel_donanim_diğer_hafıza_seçenekleri                                       76                15.2
+urun_puan                                                                    65                13.0
+kamera_i̇kinci_arka_kamera_özellikleri                                       64                12.8
+urun_fiyat                                                                   59                11.8
+özelli̇kler_bildirim_işığı_led                                               59                11.8
+kamera_i̇kinci_arka_kamera_çözünürlüğü                                       58                11.6
+çoklu_ortam_hoparlör_özellikleri                                             50                10.0
+özelli̇kler_sar_değeri_10g_baş                                               46                 9.2
+özelli̇kler_sar_değeri_10g_vücut                                             46                 9.2
+çoklu_ortam_radyo                                                            46                 9.2
+kamera_video_kayıt_özellikleri                                               39                 7.8
+batarya_hızlı_şarj_özellikleri                                               37                 7.4
+kamera_video_kayıt_seçenekleri                                               37                 7.4
+di̇ğer_bağlantilar_usb_özellikleri                                           31                 6.2
+batarya_hızlı_şarj_gücü_maks.                                                31                 6.2
+temel_bi̇lgi̇ler_seri                                                        28                 5.6
+kamera_i̇kinci_arka_kamera                                                   27                 5.4
+kablosuz_bağlantilar_kızılötesi                                              24                 4.8
+kamera_ön_kamera_diyafram_açıklığı                                           24                 4.8
+kamera_diyafram_açıklığı                                                     20                 4.0
+özelli̇kler_sensörler                                                        20                 4.0
+ekran_ekran_oranı_aspect_ratio                                               18                 3.6
+kamera_ön_kamera_fps_değeri                                                  16                 3.2
+kablosuz_bağlantilar_bluetooth_versiyonu                                     15                 3.0
+ekran_ekran___gövde_oranı                                                    13                 2.6
+tasarim_ağırlık                                                              13                 2.6
+kablosuz_bağlantilar_nfc                                                     12                 2.4
+temel_donanim_hafıza_kartı_desteği                                           11                 2.2
+kamera_ön_kamera_video_çözünürlüğü                                           11                 2.2
+kamera_ön_kamera_özellikleri                                                  9                 1.8
+kamera_video_fps_değeri                                                       9                 1.8
+kamera_video_kayıt_çözünürlüğü                                                9                 1.8
+temel_donanim_1._yardımcı_i̇şlemci                                            9                 1.8
+kablosuz_bağlantilar_wi_fi_kanalları                                          8                 1.6
+kablosuz_bağlantilar_wi_fi_özellikleri                                        8                 1.6
+ekran_piksel_yoğunluğu                                                        7                 1.4
+özelli̇kler_toza_dayanıklılık                                                 6                 1.2
+tasarim_en                                                                    5                 1.0
+tasarim_boy                                                                   5                 1.0
+kamera_optik_görüntü_sabitleyici_ois                                          5                 1.0
+çoklu_ortam_ses_çıkışı                                                        5                 1.0
+di̇ğer_bağlantilar_hat_sayısı                                                 5                 1.0
+özelli̇kler_suya_dayanıklılık                                                 5                 1.0
+özelli̇kler_görüntülü_konuşma_uygulama                                        4                 0.8
+tasarim_kalınlık                                                              4                 0.8
+özelli̇kler_servis_ve_uygulamalar                                             4                 0.8
+ekran_ekran_alanı                                                             3                 0.6
+ekran_ekran_teknolojisi                                                       3                 0.6
+ekran_renk_sayısı                                                             3                 0.6
+kablosuz_bağlantilar_navigasyon_özellikleri                                   3                 0.6
+temel_bi̇lgi̇ler_duyurulma_tarihi                                             3                 0.6
+batarya_hızlı_şarj                                                            3                 0.6
+di̇ğer_bağlantilar_sim                                                        2                 0.4
+temel_donanim_i̇şlemci_mimarisi                                               2                 0.4
+temel_donanim_grafik_i̇şlemcisi_gpu                                           2                 0.4
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_versiyonu                                2                 0.4
+ekran_ekran_çözünürlüğü                                                       1                 0.2
+temel_bi̇lgi̇ler_çıkış_yılı                                                   1                 0.2
+di̇ğer_bağlantilar_usb_bağlantı_tipi                                          1                 0.2
+özelli̇kler_parmak_izi_okuyucu                                                1                 0.2
+di̇ğer_bağlantilar_usb_versiyonu                                              1                 0.2
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi                                          0                 0.0
+ağ_bağlantilari_5g                                                            0                 0.0
+ağ_bağlantilari_4.5g_desteği                                                  0                 0.0
+ağ_bağlantilari_4g                                                            0                 0.0
+temel_donanim_ana_i̇şlemci_cpu                                                0                 0.0
+temel_donanim_cpu_çekirdeği                                                   0                 0.0
+temel_donanim_cpu_frekansı                                                    0                 0.0
+temel_donanim_yonga_seti_chipset                                              0                 0.0
+ağ_bağlantilari_2g                                                            0                 0.0
+ağ_bağlantilari_3g                                                            0                 0.0
+tasarim_renk_seçenekleri                                                      0                 0.0
+temel_donanim_dahili_depolama                                                 0                 0.0
+batarya_şarj                                                                  0                 0.0
+kamera_kamera_özellikleri                                                     0                 0.0
+kamera_flaş                                                                   0                 0.0
+kamera_kamera_çözünürlüğü                                                     0                 0.0
+batarya_kablosuz_şarj                                                         0                 0.0
+ekran_ekran_çözünürlüğü_standardı                                             0                 0.0
+ekran_ekran_özellikleri                                                       0                 0.0
+batarya_batarya_kapasitesi_tipik                                              0                 0.0
+ekran_ekran_yenileme_hızı                                                     0                 0.0
+urun_ad                                                                       0                 0.0
+urun_url                                                                      0                 0.0
+ekran_ekran_boyutu                                                            0                 0.0
+temel_donanim_bellek_ram                                                      0                 0.0
+temel_donanim_cpu_üretim_teknolojisi                                          0                 0.0
+batarya_değişir_batarya                                                       0                 0.0
+kamera_ön_kamera_çözünürlüğü                                                  0                 0.0
+
+------------------------------------------------------------
+ÜRÜN BAZLI EKSİK FEATURE DAĞILIMI
+------------------------------------------------------------
+eksiksiz_urun: 0
+1_3_eksik: 0
+4_7_eksik: 0
+8_15_eksik: 0
+15_plus_eksik: 500
+
+------------------------------------------------------------
+UNIQUE VALUE (CARDINALITY) ANALİZİ
+------------------------------------------------------------
+urun_url                                                            400
+urun_fiyat                                                          338
+urun_ad                                                             309
+özelli̇kler_servis_ve_uygulamalar                                   273
+temel_donanim_antutu_puanı_v10                                      261
+kamera_kamera_özellikleri                                           245
+ekran_ekran___gövde_oranı                                           237
+ekran_ekran_özellikleri                                             230
+temel_donanim_geekbench_6_multi_core                                225
+kamera_ön_kamera_özellikleri                                        207
+tasarim_boy                                                         180
+temel_donanim_geekbench_6_single_core                               178
+özelli̇kler_sar_değeri_10g_baş                                      173
+tasarim_renk_seçenekleri                                            171
+özelli̇kler_sar_değeri_10g_vücut                                    171
+tasarim_en                                                          144
+ekran_ekran_alanı                                                   143
+temel_bi̇lgi̇ler_alt_seri                                           133
+temel_donanim_yonga_seti_chipset                                    129
+kamera_i̇kinci_arka_kamera_özellikleri                              129
+temel_donanim_antutu_puanı_v11                                      127
+tasarim_kalınlık                                                    114
+temel_donanim_geekbench_5_multi_core                                113
+temel_donanim_antutu_puanı_v9                                       107
+temel_donanim_ana_i̇şlemci_cpu                                      103
+özelli̇kler_kutu_i̇çeriği                                           100
+temel_bi̇lgi̇ler_kullanım_kılavuzu                                   98
+temel_donanim_geekbench_5_single_core                                94
+tasarim_ağırlık                                                      92
+kamera_üçüncü_arka_kamera_özellikleri                                89
+kablosuz_bağlantilar_wi_fi_özellikleri                               89
+batarya_batarya_kapasitesi_tipik                                     86
+temel_bi̇lgi̇ler_seri                                                81
+temel_bi̇lgi̇ler_duyurulma_tarihi                                    78
+temel_donanim_grafik_i̇şlemcisi_gpu                                  76
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_şarj_sonrası_pil_süresi           75
+urun_puan                                                            74
+temel_donanim_1._yardımcı_i̇şlemci                                   71
+ekran_piksel_yoğunluğu                                               70
+ekran_ekran_çözünürlüğü                                              69
+i̇şleti̇m_si̇stemi̇_lansman_arayüz_versiyonu                         69
+kamera_video_kayıt_özellikleri                                       68
+batarya_müzik_oynatma                                                67
+kamera_video_kayıt_seçenekleri                                       60
+temel_donanim_antutu_puanı_v8                                        60
+ağ_bağlantilari_4g_frekansları                                       50
+ekran_ekran_boyutu                                                   49
+kamera_dxomark_camera_v5                                             47
+batarya_şarj_süresi_üretici_verisi                                   46
+kablosuz_bağlantilar_bluetooth_özellikleri                           46
+temel_donanim_cpu_frekansı                                           44
+batarya_batarya_özellikleri                                          44
+batarya_hızlı_şarj_özellikleri                                       44
+özelli̇kler_sensörler                                                43
+kablosuz_bağlantilar_navigasyon_özellikleri                          43
+kamera_ağır_çekim_kayıt_seçenekleri                                  38
+temel_donanim_gpu_frekansı                                           37
+batarya_video_oynatma                                                37
+temel_donanim_2._yardımcı_i̇şlemci                                   32
+batarya_konuşma_süresi_4g                                            31
+ekran_ekran_dayanıklılığı                                            31
+kamera_kamera_sensör_boyutu                                          25
+kamera_diyafram_açıklığı                                             24
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_versiyonu                       24
+temel_donanim_antutu_puanı_v7                                        21
+tasarim_ağırlık_seçenekleri                                          21
+i̇şleti̇m_si̇stemi̇_kullanıcı_arayüzü                                21
+batarya_hızlı_şarj_gücü_maks.                                        21
+kamera_dxomark_camera_v4                                             20
+temel_donanim_diğer_hafıza_seçenekleri                               18
+batarya_oyun                                                         18
+kamera_dördüncü_arka_kamera_özellikleri                              18
+kamera_ön_kamera_sensör_boyutu                                       18
+kamera_dxomark_camera_v6                                             18
+kamera_flaş                                                          17
+batarya_i̇nternet_kullanımı_4g                                       17
+batarya_i̇nternet_kullanımı_wifi                                     17
+kamera_ön_kamera_çözünürlüğü                                         16
+temel_bi̇lgi̇ler_çıkış_tarihi                                        15
+batarya_bekleme_süresi_4g                                            15
+ekran_ekran_oranı_aspect_ratio                                       15
+kamera_üçüncü_arka_kamera_diyafram                                   15
+temel_bi̇lgi̇ler_diğer_adları                                        15
+kamera_kamera_çözünürlüğü                                            14
+temel_donanim_diğer_bellek_ram_seçenekleri                           14
+i̇şleti̇m_si̇stemi̇_yükseltilebilir_versiyon                         14
+kamera_üçüncü_arka_kamera_çözünürlüğü                                14
+kamera_i̇kinci_arka_kamera_çözünürlüğü                               14
+tasarim_gövde_malzemesi_kapak                                        13
+temel_donanim_cpu_üretim_teknolojisi                                 13
+temel_bi̇lgi̇ler_çıkış_yılı                                          13
+temel_donanim_diğer_chipset_seçenekleri                              12
+kamera_dxomark_camera_v3                                             12
+özelli̇kler_suya_dayanıklılık_seviyesi                               12
+batarya_kablosuz_şarj_özellikleri                                    12
+kamera_odak_uzaklığı                                                 11
+ağ_bağlantilari_4g_teknolojisi                                       11
+kamera_ön_kamera_diyafram_açıklığı                                   11
+temel_donanim_dahili_depolama                                         9
+temel_donanim_bellek_ram                                              9
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_şarj_döngü_sayısı_ab               9
+temel_donanim_dahili_depolama_biçimi                                  9
+kablosuz_bağlantilar_bluetooth_versiyonu                              9
+tasarim_boy_katlanmış_açılmış_durumda                                 9
+ekran_i̇kinci_ekran_özellikleri                                       9
+di̇ğer_bağlantilar_usb_özellikleri                                    8
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_suya_ya_da_toza_direnç_sınıfı      8
+ekran_i̇kinci_ekran_boyutu                                            8
+ağ_bağlantilari_4g_i̇ndirme                                           8
+tasarim_kalınlık_en_i̇nce_noktada                                     8
+kamera_i̇kinci_ön_kamera_özellikleri                                  8
+tasarim_kalınlık_katlanmış_durumda                                    8
+temel_donanim_ram_tipi                                                8
+ağ_bağlantilari_3g_frekansları                                        8
+kamera_i̇kinci_arka_kamera_diyafram                                   8
+batarya_konuşma_süresi_3g                                             8
+ekran_i̇kinci_ekran_çözünürlüğü                                       8
+ekran_i̇kinci_ekran_yoğunluğu                                         8
+temel_donanim_hafıza_kartı_maks._kapasitesi                           8
+çoklu_ortam_hoparlör_özellikleri                                      8
+batarya_karma_kullanım                                                7
+özelli̇kler_parmak_izi_okuyucu_özellikleri                            7
+kablosuz_bağlantilar_wi_fi_kanalları                                  7
+tasarim_en_katlanmış_açılmış_durumda                                  7
+kamera_dxomark_2017_v2                                                7
+kamera_dördüncü_arka_kamera_diyafram                                  7
+kamera_dördüncü_arka_kamera_çözünürlüğü                               7
+ekran_ekran_teknolojisi                                               7
+tasarim_gövde_malzemesi_çerçeve                                       7
+ekran_ekran_çözünürlüğü_standardı                                     6
+temel_donanim_antutu_puanı_v6                                         6
+temel_donanim_cpu_çekirdeği                                           6
+kamera_ön_kamera_video_çözünürlüğü                                    5
+kamera_video_kayıt_çözünürlüğü                                        5
+ekran_ekran_yenileme_hızı                                             5
+di̇ğer_bağlantilar_sim                                                5
+kamera_i̇kinci_ön_kamera_çözünürlüğü                                  5
+ağ_bağlantilari_4g_karşıya_yükleme                                    5
+di̇ğer_bağlantilar_çift_hat_özelliği                                  5
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_düşme_direnci_sınıfı               4
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_enerji_sınıfı                      4
+batarya_şarj_döngü_sayısı_üretici                                     4
+temel_donanim_kullanılabilir_boş_hafıza                               4
+batarya_i̇nternet_kullanımı_3g                                        4
+batarya_bekleme_süresi_3g                                             4
+kamera_i̇kinci_ön_kamera_diyafram                                     4
+batarya_batarya_kapasitesi_notu                                       4
+özelli̇kler_led_özelliği                                              3
+kamera_diyafram_açıklığı_maks                                         3
+batarya_şarj                                                          3
+batarya_video_oynatma_notu                                            3
+kamera_kayıpsız_yakınlaştırma                                         3
+kamera_video_fps_değeri                                               3
+ekran_renk_sayısı                                                     3
+özelli̇kler_desteklenen_aksesuarlar                                   3
+çoklu_ortam_ses_çıkışı                                                3
+özelli̇kler_toza_dayanıklılık_seviyesi                                3
+kablosuz_bağlantilar_nfc_özellikleri                                  3
+ağ_bağlantilari_2g_frekansları                                        3
+di̇ğer_bağlantilar_usb_bağlantı_tipi                                  3
+di̇ğer_bağlantilar_usb_versiyonu                                      3
+özelli̇kler_bildirim_işığı_led                                        2
+kablosuz_bağlantilar_nfc                                              2
+kamera_ois_özelliği                                                   2
+kamera_optik_görüntü_sabitleyici_ois                                  2
+özelli̇kler_suya_dayanıklılık                                         2
+özelli̇kler_toza_dayanıklılık                                         2
+di̇ğer_bağlantilar_hat_sayısı                                         2
+ağ_bağlantilari_4.5g_desteği                                          2
+ağ_bağlantilari_4g_özellikleri                                        2
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi                                  2
+kamera_ön_kamera_fps_değeri                                           2
+temel_donanim_hafıza_kartı_desteği                                    2
+batarya_değişir_batarya                                               2
+batarya_kablosuz_şarj                                                 2
+batarya_hızlı_şarj                                                    2
+batarya_batarya_teknolojisi                                           2
+ağ_bağlantilari_4g                                                    2
+ağ_bağlantilari_5g                                                    2
+batarya_müzik_oynatma_notu                                            2
+i̇şleti̇m_si̇stemi̇_planlanan_yükseltilebilir_versiyon                2
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_onarılabilirlik_sınıfı             2
+çoklu_ortam_radyo                                                     2
+kablosuz_bağlantilar_kızılötesi                                       2
+özelli̇kler_parmak_izi_okuyucu                                        2
+kamera_i̇kinci_arka_kamera                                            1
+kamera_üçüncü_arka_kamera                                             1
+ağ_bağlantilari_2g                                                    1
+ağ_bağlantilari_3g                                                    1
+temel_donanim_i̇şlemci_mimarisi                                       1
+özelli̇kler_görüntülü_konuşma_uygulama                                1
+kamera_dördüncü_arka_kamera                                           1
+kamera_i̇kinci_ön_kamera                                              1
+kablosuz_bağlantilar_nfc_notu                                         1
+temel_bi̇lgi̇ler_kullanım_amacı                                       1
+batarya_bekleme_süresi_2g                                             1
+batarya_konuşma_süresi_2g                                             1
+ağ_bağlantilari_4g_frekansları_notu                                   1
+ekran_i̇kinci_ekran_arka                                              1
+temel_bi̇lgi̇ler_not                                                  1
+temel_donanim_antutu_puanı_v4                                         1
+çoklu_ortam_radyo_özellikleri                                         1
+kamera_üçüncü_arka_kamera_diyafram_maks                               1
+kamera_beşinci_arka_kamera                                            1
+temel_donanim_ram_kanalları                                           1
+kamera_beşinci_arka_kamera_diyafram                                   1
+kamera_beşinci_arka_kamera_çözünürlüğü                                1
+kamera_beşinci_arka_kamera_özellikleri                                1
+çoklu_ortam_ses_çıkış_özellikleri                                     1
+kamera_dxomark_eski_v1                                                1
+temel_donanim_antutu_puanı_v5                                         1
+
+High Cardinality Columns (>50 unique value):
+urun_url                                                      400
+urun_fiyat                                                    338
+urun_ad                                                       309
+özelli̇kler_servis_ve_uygulamalar                             273
+temel_donanim_antutu_puanı_v10                                261
+kamera_kamera_özellikleri                                     245
+ekran_ekran___gövde_oranı                                     237
+ekran_ekran_özellikleri                                       230
+temel_donanim_geekbench_6_multi_core                          225
+kamera_ön_kamera_özellikleri                                  207
+tasarim_boy                                                   180
+temel_donanim_geekbench_6_single_core                         178
+özelli̇kler_sar_değeri_10g_baş                                173
+tasarim_renk_seçenekleri                                      171
+özelli̇kler_sar_değeri_10g_vücut                              171
+tasarim_en                                                    144
+ekran_ekran_alanı                                             143
+temel_bi̇lgi̇ler_alt_seri                                     133
+temel_donanim_yonga_seti_chipset                              129
+kamera_i̇kinci_arka_kamera_özellikleri                        129
+temel_donanim_antutu_puanı_v11                                127
+tasarim_kalınlık                                              114
+temel_donanim_geekbench_5_multi_core                          113
+temel_donanim_antutu_puanı_v9                                 107
+temel_donanim_ana_i̇şlemci_cpu                                103
+özelli̇kler_kutu_i̇çeriği                                     100
+temel_bi̇lgi̇ler_kullanım_kılavuzu                             98
+temel_donanim_geekbench_5_single_core                          94
+tasarim_ağırlık                                                92
+kamera_üçüncü_arka_kamera_özellikleri                          89
+kablosuz_bağlantilar_wi_fi_özellikleri                         89
+batarya_batarya_kapasitesi_tipik                               86
+temel_bi̇lgi̇ler_seri                                          81
+temel_bi̇lgi̇ler_duyurulma_tarihi                              78
+temel_donanim_grafik_i̇şlemcisi_gpu                            76
+ab_ürün_kayit_ve_enerji̇_eti̇keti̇_şarj_sonrası_pil_süresi     75
+urun_puan                                                      74
+temel_donanim_1._yardımcı_i̇şlemci                             71
+ekran_piksel_yoğunluğu                                         70
+ekran_ekran_çözünürlüğü                                        69
+i̇şleti̇m_si̇stemi̇_lansman_arayüz_versiyonu                   69
+kamera_video_kayıt_özellikleri                                 68
+batarya_müzik_oynatma                                          67
+kamera_video_kayıt_seçenekleri                                 60
+temel_donanim_antutu_puanı_v8                                  60
+
+------------------------------------------------------------
+NUMERIC FEATURE SUMMARY
+------------------------------------------------------------
+                                          count          mean           std     min      25%      50%      75%        max
+urun_fiyat                                441.0  31985.541224  28252.678604  1399.0  11599.0  21500.0  42999.0  161314.45
+urun_puan                                 435.0     63.156322     16.086272    11.0     51.0     63.0     75.0     100.00
+kablosuz_bağlantilar_bluetooth_versiyonu  485.0      5.235670      0.321711     4.0      5.0      5.3      5.4       6.00
+temel_bi̇lgi̇ler_çıkış_yılı               499.0   2023.108216      2.182514  2012.0   2022.0   2024.0   2025.0    2026.00
+
+------------------------------------------------------------
+TARGET (urun_fiyat) ANALYSIS
+------------------------------------------------------------
+count       441.000000
+mean      31985.541224
+std       28252.678604
+min        1399.000000
+25%       11599.000000
+50%       21500.000000
+75%       42999.000000
+max      161314.450000

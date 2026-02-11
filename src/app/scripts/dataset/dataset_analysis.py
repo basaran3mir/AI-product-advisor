@@ -13,8 +13,8 @@ from datetime import datetime
 # =============================
 # CONFIG
 # =============================
-INPUT_PATH = "src/app/outputs/datasets/filtered_dataset.csv"   # Dosya yolunu değiştir
-OUTPUT_PATH = "src/app/outputs/datasets/dataset_analysis.txt"
+INPUT_PATH = "src/app/output/dataset/raw/full_dataset.csv"   # Dosya yolunu değiştir
+OUTPUT_PATH = "src/app/output/dataset/dataset_analysis.txt"
 
 TARGET_COLUMN = "urun_fiyat"
 EXCLUDE_COLUMN = "urun_puan"
