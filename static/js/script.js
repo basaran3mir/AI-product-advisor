@@ -754,7 +754,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         placeholder.textContent =
             getCurrentLang() === "en"
                 ? "Feature list is loading from /get_features ..."
-                : "Ozellik listesi /get_features uzerinden yukleniyor...";
+                : "Özellik listesi /get_features uzerinden yukleniyor...";
         dom.featureContainer.appendChild(placeholder);
     }
 
