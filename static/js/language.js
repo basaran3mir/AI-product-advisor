@@ -1,12 +1,13 @@
 let currentLang = "tr";
 let cachedStrings = null;
+const STRINGS_PATH = "./static/assets/strings.json";
 
 export async function loadStrings() {
     if (!cachedStrings) {
-        const response = await fetch("../static/assets/strings.json");
+        const response = await fetch(STRINGS_PATH);
         cachedStrings = await response.json();
     }
-    return cachedStrings[currentLang];
+    return cachedStrings[currentLang] || cachedStrings.tr || {};
 }
 
 function resolveValue(obj, path) {

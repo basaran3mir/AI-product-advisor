@@ -1,0 +1,134 @@
+{
+  "tr": {
+    "brand": {
+      "title": "AI Product Advisor",
+      "subtitle": "Ürün Konumlandırma Asistanı"
+    },
+    "status": {
+      "idle": "API durumu: Bekleniyor"
+    },
+    "actions": {
+      "lang": "EN / TR",
+      "start": "Planlamaya Başla",
+      "refreshFeatures": "Özellikleri Yenile",
+      "generate": "Öneri Oluştur"
+    },
+    "hero": {
+      "eyebrow": "Yapay Zeka Destekli Ürün Geliştirme",
+      "title": "Pazarla uyumlu ürünleri daha hızlı tasarlayın",
+      "text": "Ürün fikriniz için teknik özellik, tasarım dili ve fiyat konumlandırmasını aynı ekranda planlayın. get_features API uç noktasından çekilen veri ile öneri akışınızı dinamik hale getirin."
+    },
+    "builder": {
+      "title": "Ürün Konsepti Oluşturucu",
+      "text": "Formu doldurun, teknik öncelikleri seçin ve ürününüz için stratejik önerileri anında alın."
+    },
+    "form": {
+      "productName": {
+        "label": "Ürün / Seri Adı"
+      },
+      "category": {
+        "label": "Ürün Kategorisi"
+      },
+      "segment": {
+        "label": "Hedef Segment"
+      },
+      "designTone": {
+        "label": "Tasarım Dili"
+      },
+      "features": {
+        "title": "Teknik Öncelikler",
+        "note": "Aşağıdaki seçenekler doğrudan api.py içindeki get_features çağrısından yüklenir.",
+        "counterZero": "Seçilen özellik: 0"
+      }
+    },
+    "results": {
+      "title": "AI Strateji Çıktısı",
+      "subtitle": "Pazar, teknik yapı ve görsel iletişim ekseninde öneriler",
+      "positioning": {
+        "title": "Pazar Konumlandırması",
+        "placeholder": "Öneri oluşturduğunuzda burada görünecek."
+      },
+      "technical": {
+        "title": "Teknik Özellik Tavsiyeleri",
+        "placeholder": "Seçtiğiniz özelliklere göre listelenecek."
+      },
+      "design": {
+        "title": "Marka Görsel Tasarımı",
+        "placeholder": "Görsel dil ve tasarım kalıbı önerileri burada yer alacak."
+      },
+      "marketing": {
+        "title": "Kampanya Kalıbı",
+        "placeholder": "Reklam ve pazarlama şablonu önerileri burada üretilecek."
+      }
+    },
+    "footer": {
+      "note": "Not: Bu ekran ilk stratejik yönlendirme için tasarlanmıştır; nihai karar öncesi pazar ve maliyet analizi ile doğrulama önerilir."
+    }
+  },
+  "en": {
+    "brand": {
+      "title": "AI Product Advisor",
+      "subtitle": "Product Positioning Assistant"
+    },
+    "status": {
+      "idle": "API status: Waiting"
+    },
+    "actions": {
+      "lang": "TR / EN",
+      "start": "Start Planning",
+      "refreshFeatures": "Refresh Features",
+      "generate": "Generate Insight"
+    },
+    "hero": {
+      "eyebrow": "AI-Powered Product Development",
+      "title": "Design market-fit products faster",
+      "text": "Plan technical specs, design language, and price positioning in one screen. Data is loaded dynamically from the get_features API endpoint."
+    },
+    "builder": {
+      "title": "Product Concept Builder",
+      "text": "Complete the form, choose technical priorities, and get strategic recommendations instantly."
+    },
+    "form": {
+      "productName": {
+        "label": "Product / Series Name"
+      },
+      "category": {
+        "label": "Product Category"
+      },
+      "segment": {
+        "label": "Target Segment"
+      },
+      "designTone": {
+        "label": "Design Tone"
+      },
+      "features": {
+        "title": "Technical Priorities",
+        "note": "The options below are loaded directly from get_features in api.py.",
+        "counterZero": "Selected features: 0"
+      }
+    },
+    "results": {
+      "title": "AI Strategy Output",
+      "subtitle": "Recommendations for market fit, technical setup, and visual communication",
+      "positioning": {
+        "title": "Market Positioning",
+        "placeholder": "Your recommendation will appear here after generation."
+      },
+      "technical": {
+        "title": "Technical Feature Advice",
+        "placeholder": "This list will be created from selected features."
+      },
+      "design": {
+        "title": "Brand Visual Direction",
+        "placeholder": "Visual language and template suggestions will appear here."
+      },
+      "marketing": {
+        "title": "Campaign Template",
+        "placeholder": "Advertising and campaign pattern suggestions will be produced here."
+      }
+    },
+    "footer": {
+      "note": "Note: This interface provides initial strategic direction; validate with market and cost analysis before final decisions."
+    }
+  }
+}
