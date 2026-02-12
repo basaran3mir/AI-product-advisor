@@ -347,6 +347,51 @@ select:focus {
     padding: 10px 12px 12px;
 }
 
+.feature-sub-dropdown {
+    border: 1px solid rgba(73, 209, 197, 0.18);
+    background: rgba(255, 255, 255, 0.015);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.feature-sub-dropdown + .feature-sub-dropdown {
+    margin-top: 8px;
+}
+
+.feature-sub-dropdown summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 9px 10px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+.feature-sub-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.feature-sub-dropdown summary::after {
+    content: "▾";
+    color: var(--text-muted);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.feature-sub-dropdown[open] summary {
+    border-bottom: 1px solid rgba(73, 209, 197, 0.22);
+}
+
+.feature-sub-dropdown[open] summary::after {
+    transform: rotate(180deg);
+    color: var(--accent);
+}
+
+.feature-sub-dropdown-body {
+    padding: 10px;
+}
+
 .feature-select {
     width: 100%;
 }
