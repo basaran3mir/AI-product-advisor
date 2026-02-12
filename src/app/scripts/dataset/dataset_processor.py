@@ -1,7 +1,5 @@
 # ============================================================
-# FULL DATA PREPROCESSING PIPELINE
-# Target: urun_fiyat (log transform uygulanacak)
-# urun_puan model dışında tutulacak
+# FULL DATA PREPROCESSING PIPELINE (CLASS VERSION)
 # ============================================================
 
 import pandas as pd
@@ -9,219 +7,275 @@ import numpy as np
 import re
 from pathlib import Path
 
-# =============================
-# CONFIG
-# =============================
-INPUT_PATH = "src/app/output/dataset/raw/full_dataset.csv"
-OUTPUT_DIR = Path("src/app/output/dataset/processed_step")
-OUTPUT_DIR.mkdir(exist_ok=True)
 
-FINAL_OUTPUT_DIR = Path("src/app/output/dataset/final")
-FINAL_OUTPUT_DIR.mkdir(exist_ok=True)
+class ProductDataPreprocessor:
 
-TARGET = "urun_fiyat"
-EXCLUDE = "urun_puan"
+    def __init__(self,
+                 input_path: str,
+                 process_dir: str,
+                 output_dir: str,
+                 target: str = "urun_fiyat",
+                 exclude: str = "urun_puan"):
 
-# =============================
-# HELPER FUNCTIONS
-# =============================
+        self.input_path = input_path
+        self.process_dir = Path(process_dir)
+        self.output_dir = Path(output_dir)
 
-def extract_numeric(value):
-    if pd.isna(value):
+        self.process_dir.mkdir(parents=True, exist_ok=True)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+
+        self.TARGET = target
+        self.EXCLUDE = exclude
+
+        self.df = None
+
+    # ========================================================
+    # HELPER FUNCTIONS
+    # ========================================================
+
+    @staticmethod
+    def extract_numeric(value):
+        if pd.isna(value):
+            return np.nan
+
+        value = str(value).strip()
+
+        if value.count(".") > 1:
+            value = value.replace(".", "")
+
+        match = re.search(r"\d+(\.\d+)?", value)
+
+        if match:
+            return float(match.group())
+
         return np.nan
-    
-    value = str(value).strip()
-    
-    # Eğer birden fazla nokta varsa büyük ihtimalle binlik ayırıcıdır
-    if value.count(".") > 1:
-        value = value.replace(".", "")
-    
-    # Sayıyı yakala (ondalıklı dahil)
-    match = re.search(r"\d+(\.\d+)?", value)
-    
-    if match:
-        return float(match.group())
-    
-    return np.nan
 
-def clean_numeric_column(df, column):
-    df[column] = df[column].apply(extract_numeric)
-    return df
+    def clean_numeric_column(self, column):
+        self.df[column] = self.df[column].apply(self.extract_numeric)
 
-# =============================
-# STEP 0 — LOAD
-# =============================
-df = pd.read_csv(INPUT_PATH)
-df.to_csv(OUTPUT_DIR / "step0_raw.csv", index=False)
+    def save_step(self, filename):
+        self.df.to_csv(self.process_dir / filename, index=False)
 
-# =============================
-# STEP 1 — DROP NULL TARGET
-# =============================
-df = df[df[TARGET].notna()]
-df.to_csv(OUTPUT_DIR / "step1_drop_null_target.csv", index=False)
+    # ========================================================
+    # STEP 0 — LOAD
+    # ========================================================
 
-# =============================
-# STEP 2 — LOG TRANSFORM TARGET
-# =============================
-df[TARGET] = np.log1p(df[TARGET])
-df.to_csv(OUTPUT_DIR / "step2_log_target.csv", index=False)
+    def step0_load(self):
+        self.df = pd.read_csv(self.input_path)
+        self.save_step("step0_raw.csv")
 
-# =============================
-# STEP 3 — KEEP ONLY SELECTED COLUMNS (INCLUDE - EXCLUDE)
-# =============================
-INCLUDE_COLUMNS = [
-    'urun_fiyat',
-    'urun_puan',
-    'ekran_ekran_boyutu',
-    'ekran_ekran_teknolojisi',
-    'ekran_ekran_çözünürlüğü_standardı',
-    'ekran_ekran_yenileme_hızı',
-    'batarya_batarya_kapasitesi_tipik',
-    'batarya_hızlı_şarj',
-    'batarya_hızlı_şarj_gücü_maks.',
-    'batarya_kablosuz_şarj',
-    'kamera_kamera_çözünürlüğü',
-    'kamera_optik_görüntü_sabitleyici_ois',
-    'kamera_video_kayıt_çözünürlüğü',
-    'kamera_video_fps_değeri',
-    'kamera_ön_kamera_çözünürlüğü',
-    'temel_donanim_cpu_çekirdeği',
-    'temel_donanim_cpu_üretim_teknolojisi',
-    'temel_donanim_antutu_puanı_v10',
-    'temel_donanim_bellek_ram',
-    'temel_donanim_dahili_depolama',
-    'tasarim_kalınlık',
-    'tasarim_ağırlık',
-    'tasarim_gövde_malzemesi_kapak',
-    'ağ_bağlantilari_5g',
-    'kablosuz_bağlantilar_bluetooth_versiyonu',
-    'kablosuz_bağlantilar_nfc',
-    'i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi',
-    'özelli̇kler_suya_dayanıklılık'
-]
+    # ========================================================
+    # STEP 1 — DROP NULL TARGET
+    # ========================================================
 
-EXCLUDE_COLUMNS = [
-    EXCLUDE
-]
+    def step1_drop_null_target(self):
+        self.df = self.df[self.df[self.TARGET].notna()]
+        self.save_step("step1_drop_null_target.csv")
 
-existing_include = [col for col in INCLUDE_COLUMNS if col in df.columns]
-df = df[existing_include].copy()
+    # ========================================================
+    # STEP 2 — LOG TRANSFORM TARGET
+    # ========================================================
 
+    def step2_log_transform(self):
+        self.df[self.TARGET] = np.log1p(self.df[self.TARGET])
+        self.save_step("step2_log_target.csv")
 
-df = df.drop(columns=[col for col in EXCLUDE_COLUMNS if col in df.columns])
-df.to_csv(OUTPUT_DIR / "step3_keep_selected_columns.csv", index=False)
+    # ========================================================
+    # STEP 3 — KEEP SELECTED COLUMNS
+    # ========================================================
 
+    def step3_keep_columns(self):
 
-# =============================
-# STEP 4 — NUMERIC CLEANING
-# =============================
-numeric_columns_to_clean = [
-    "ekran_ekran_boyutu",
-    "batarya_batarya_kapasitesi_tipik",
-    "batarya_hızlı_şarj_gücü_maks.",
-    "kamera_kamera_çözünürlüğü",
-    "kamera_ön_kamera_çözünürlüğü",
-    "temel_donanim_cpu_çekirdeği",
-    "temel_donanim_cpu_üretim_teknolojisi",
-    "temel_donanim_antutu_puanı_v10",
-    "temel_donanim_bellek_ram",
-    "temel_donanim_dahili_depolama",
-    "tasarim_kalınlık",
-    "tasarim_ağırlık",
-    "ekran_ekran_yenileme_hızı",
-    "kamera_video_fps_değeri"
-]
+        include_columns = [
+            'urun_fiyat',
+            'urun_puan',
+            'ekran_ekran_boyutu',
+            'ekran_ekran_teknolojisi',
+            'ekran_ekran_çözünürlüğü_standardı',
+            'ekran_ekran_yenileme_hızı',
+            'batarya_batarya_kapasitesi_tipik',
+            'batarya_hızlı_şarj',
+            'batarya_hızlı_şarj_gücü_maks.',
+            'batarya_kablosuz_şarj',
+            'kamera_kamera_çözünürlüğü',
+            'kamera_optik_görüntü_sabitleyici_ois',
+            'kamera_video_kayıt_çözünürlüğü',
+            'kamera_video_fps_değeri',
+            'kamera_ön_kamera_çözünürlüğü',
+            'temel_donanim_cpu_çekirdeği',
+            'temel_donanim_cpu_üretim_teknolojisi',
+            'temel_donanim_antutu_puanı_v10',
+            'temel_donanim_bellek_ram',
+            'temel_donanim_dahili_depolama',
+            'tasarim_kalınlık',
+            'tasarim_ağırlık',
+            'tasarim_gövde_malzemesi_kapak',
+            'ağ_bağlantilari_5g',
+            'kablosuz_bağlantilar_bluetooth_versiyonu',
+            'kablosuz_bağlantilar_nfc',
+            'i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi',
+            'özelli̇kler_suya_dayanıklılık'
+        ]
 
-for col in numeric_columns_to_clean:
-    if col in df.columns:
-        df = clean_numeric_column(df, col)
+        existing_include = [col for col in include_columns if col in self.df.columns]
+        self.df = self.df[existing_include].copy()
 
-df.to_csv(OUTPUT_DIR / "step4_numeric_cleaned.csv", index=False)
+        if self.EXCLUDE in self.df.columns:
+            self.df.drop(columns=[self.EXCLUDE], inplace=True)
 
-# =============================
-# STEP 5 — BINARY MAPPING
-# =============================
-binary_columns = [
-    "batarya_hızlı_şarj",
-    "batarya_kablosuz_şarj",
-    "kamera_optik_görüntü_sabitleyici_ois",
-    "ağ_bağlantilari_5g",
-    "kablosuz_bağlantilar_nfc",
-    "özelli̇kler_suya_dayanıklılık"
-]
+        self.save_step("step3_keep_selected_columns.csv")
 
-for col in binary_columns:
-    if col in df.columns:
-        df[col] = df[col].str.strip().str.lower().map({"var": 1,"yok": 0})
+    # ========================================================
+    # STEP 4 — NUMERIC CLEANING
+    # ========================================================
 
-df.to_csv(OUTPUT_DIR / "step5_binary_encoded.csv", index=False)
+    def step4_numeric_cleaning(self):
 
-# =============================
-# STEP 6 — HANDLE MISSING (IMPROVED)
-# =============================
+        numeric_columns = [
+            "ekran_ekran_boyutu",
+            "batarya_batarya_kapasitesi_tipik",
+            "batarya_hızlı_şarj_gücü_maks.",
+            "kamera_kamera_çözünürlüğü",
+            "kamera_ön_kamera_çözünürlüğü",
+            "temel_donanim_cpu_çekirdeği",
+            "temel_donanim_cpu_üretim_teknolojisi",
+            "temel_donanim_antutu_puanı_v10",
+            "temel_donanim_bellek_ram",
+            "temel_donanim_dahili_depolama",
+            "tasarim_kalınlık",
+            "tasarim_ağırlık",
+            "ekran_ekran_yenileme_hızı",
+            "kamera_video_fps_değeri"
+        ]
 
-df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
+        for col in numeric_columns:
+            if col in self.df.columns:
+                self.clean_numeric_column(col)
 
-# 1️⃣ Binary kolonları önce doldur
-for col in binary_columns:
-    if col in df.columns:
-        df[col] = df[col].fillna(0)  # bilinmiyorsa "Yok" varsayımı
+        self.save_step("step4_numeric_cleaned.csv")
 
-# 2️⃣ Numeric olması gereken kolonları zorla numeric yap
-numeric_columns_expected = [
-    "batarya_hızlı_şarj_gücü_maks.",
-    "kamera_video_fps_değeri",
-    "temel_donanim_antutu_puanı_v10",
-    "tasarim_kalınlık",
-    "tasarim_ağırlık",
-    "kablosuz_bağlantilar_bluetooth_versiyonu"
-]
+    # ========================================================
+    # STEP 5 — BINARY MAPPING
+    # ========================================================
 
-for col in numeric_columns_expected:
-    if col in df.columns:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
+    def step5_binary_mapping(self):
 
-# 3️⃣ Numeric kolonları median ile doldur
-numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
-numeric_cols = [col for col in numeric_cols if col not in binary_columns]
+        self.binary_columns = [
+            "batarya_hızlı_şarj",
+            "batarya_kablosuz_şarj",
+            "kamera_optik_görüntü_sabitleyici_ois",
+            "ağ_bağlantilari_5g",
+            "kablosuz_bağlantilar_nfc",
+            "özelli̇kler_suya_dayanıklılık"
+        ]
 
-if TARGET in numeric_cols:
-    numeric_cols.remove(TARGET)
+        for col in self.binary_columns:
+            if col in self.df.columns:
+                self.df[col] = (
+                    self.df[col]
+                    .astype(str)
+                    .str.strip()
+                    .str.lower()
+                    .map({"var": 1, "yok": 0})
+                )
 
-for col in numeric_cols:
-    df[col] = df[col].fillna(df[col].median())
+        self.save_step("step5_binary_encoded.csv")
 
-# 4️⃣ Kategorik kolonları Unknown ile doldur
-categorical_cols = df.select_dtypes(include=["object"]).columns.tolist()
+    # ========================================================
+    # STEP 6 — HANDLE MISSING
+    # ========================================================
 
-for col in categorical_cols:
-    df[col] = df[col].fillna("Unknown")
+    def step6_handle_missing(self):
 
-df.to_csv(OUTPUT_DIR / "step6_missing_handled.csv", index=False)
+        self.df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
 
-print("Toplam kalan NaN:", df.isnull().sum().sum())
+        # Binary → 0
+        for col in self.binary_columns:
+            if col in self.df.columns:
+                self.df[col] = self.df[col].fillna(0)
 
-# =============================
-# STEP 7 — ONE HOT ENCODING
-# =============================
-low_cardinality_cols = []
+        # Numeric → median
+        numeric_cols = self.df.select_dtypes(include=[np.number]).columns.tolist()
 
-for col in categorical_cols:
-    if df[col].nunique() <= 20:
-        low_cardinality_cols.append(col)
+        if self.TARGET in numeric_cols:
+            numeric_cols.remove(self.TARGET)
 
-df = pd.get_dummies(df, columns=low_cardinality_cols, drop_first=True)
+        for col in numeric_cols:
+            if col not in self.binary_columns:
+                self.df[col] = self.df[col].fillna(self.df[col].median())
 
-df.to_csv(OUTPUT_DIR / "step7_onehot_encoded.csv", index=False)
+        # Categorical → Unknown
+        categorical_cols = self.df.select_dtypes(include=["object"]).columns.tolist()
 
-# =============================
-# STEP 8 — FINAL CHECK
-# =============================
-print("Final Shape:", df.shape)
-print("Missing values left:", df.isnull().sum().sum())
+        for col in categorical_cols:
+            self.df[col] = self.df[col].fillna("Unknown")
 
-df.to_csv(OUTPUT_DIR / "step8_final_model_ready.csv", index=False)
+        self.save_step("step6_missing_handled.csv")
 
-df.to_csv(FINAL_OUTPUT_DIR / "step8_final_model_ready.csv", index=False)
+    # ========================================================
+    # STEP 7 — ONE HOT ENCODING
+    # ========================================================
 
-print("Tüm adımlar tamamlandı.")
+    def step7_one_hot(self):
+
+        categorical_cols = self.df.select_dtypes(include=["object"]).columns.tolist()
+
+        low_card_cols = [
+            col for col in categorical_cols
+            if self.df[col].nunique() <= 20
+        ]
+
+        self.df = pd.get_dummies(
+            self.df,
+            columns=low_card_cols,
+            drop_first=True
+        )
+
+        self.save_step("step7_onehot_encoded.csv")
+
+    # ========================================================
+    # STEP 8 — FINAL SAVE
+    # ========================================================
+
+    def step8_finalize(self):
+
+        self.df.to_csv(
+            self.process_dir / "step8_final_model_ready.csv",
+            index=False
+        )
+
+        self.df.to_csv(
+            self.output_dir / "step8_final_model_ready.csv",
+            index=False
+        )
+
+        print("Final Shape:", self.df.shape)
+        print("Missing values left:", self.df.isnull().sum().sum())
+
+    # ========================================================
+    # RUN ALL
+    # ========================================================
+
+    def run(self):
+
+        self.step0_load()
+        self.step1_drop_null_target()
+        self.step2_log_transform()
+        self.step3_keep_columns()
+        self.step4_numeric_cleaning()
+        self.step5_binary_mapping()
+        self.step6_handle_missing()
+        self.step7_one_hot()
+        self.step8_finalize()
+
+        print("Tüm adımlar tamamlandı.")
+
+if __name__ == "__main__":
+
+    processor = ProductDataPreprocessor(
+        input_path="src/app/output/dataset/raw/full_dataset.csv",
+        process_dir="src/app/output/dataset/processed_step",
+        output_dir="src/app/output/dataset/final"
+    )
+
+    processor.run()

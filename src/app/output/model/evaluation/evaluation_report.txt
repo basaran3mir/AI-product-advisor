@@ -2,7 +2,7 @@
 MODEL EVALUATION REPORT (REAL PRICE SPACE)
 ============================================================
 
-Oluşturulma Tarihi: 2026-02-11 16:47:20.564836
+Oluşturulma Tarihi: 2026-02-12 13:35:55.918321
 
 GENEL METRİKLER
 ----------------------------
