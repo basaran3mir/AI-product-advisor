@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Advisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <div class="app-bg" aria-hidden="true">
+        <span class="glow glow-1"></span>
+        <span class="glow glow-2"></span>
+    </div>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-mark">AI</div>
+            <div>
+                <p class="brand-title" data-key="brand.title">AI Product Advisor</p>
+                <p class="brand-subtitle" data-key="brand.subtitle">Ürün Konumlandırma Asistanı</p>
+            </div>
+        </div>
+        <div class="topbar-actions">
+            <span id="apiState" class="status-pill" data-state="idle" data-key="status.idle">API durumu: Bekleniyor</span>
+            <button id="langBtn" type="button" class="ghost-btn" data-key="actions.lang">EN / TR</button>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="hero card">
+            <p class="eyebrow" data-key="hero.eyebrow">Yapay Zeka Destekli Ürün Geliştirme</p>
+            <h1 data-key="hero.title">Pazarla uyumlu ürünleri daha hızlı tasarlayın</h1>
+            <p class="hero-text" data-key="hero.text">
+                Ürün fikriniz için teknik özellik, tasarım dili ve fiyat konumlandırmasını aynı ekranda planlayın.
+                `get_features` API uç noktasından çekilen veri ile öneri akışınızı dinamik hale getirin.
+            </p>
+            <button id="scrollToForm" type="button" class="primary-btn" data-key="actions.start">Planlamaya Başla</button>
+        </section>
+
+        <section id="builder" class="builder card">
+            <h2 data-key="builder.title">Ürün Konsepti Oluşturucu</h2>
+            <p class="section-text" data-key="builder.text">
+                Formu doldurun, teknik öncelikleri seçin ve ürününüz için stratejik önerileri anında alın.
+            </p>
+
+            <div class="form-grid">
+                <label class="field">
+                    <span data-key="form.productName.label">Ürün / Seri Adı</span>
+                    <input id="productName" type="text" placeholder="Örn. Nova X1">
+                </label>
+
+                <label class="field">
+                    <span data-key="form.category.label">Ürün Kategorisi</span>
+                    <select id="category">
+                        <option value="akilli telefon">Akıllı Telefon</option>
+                        <option value="dizustu bilgisayar">Dizüstü Bilgisayar</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="akilli saat">Akıllı Saat</option>
+                    </select>
+                </label>
+
+                <label class="field">
+                    <span data-key="form.segment.label">Hedef Segment</span>
+                    <select id="segment">
+                        <option value="giris">Giriş Seviye</option>
+                        <option value="orta" selected>Orta Segment</option>
+                        <option value="ust">Üst Segment</option>
+                    </select>
+                </label>
+
+                <label class="field">
+                    <span data-key="form.designTone.label">Tasarım Dili</span>
+                    <select id="designTone">
+                        <option value="minimal">Minimal</option>
+                        <option value="sportif">Sportif</option>
+                        <option value="premium">Premium</option>
+                        <option value="fonksiyonel">Fonksiyonel</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="feature-header">
+                <h3 data-key="form.features.title">Teknik Öncelikler</h3>
+                <button id="refreshFeaturesBtn" type="button" class="ghost-btn" data-key="actions.refreshFeatures">Özellikleri Yenile</button>
+            </div>
+            <p class="feature-note" data-key="form.features.note">
+                Aşağıdaki seçenekler doğrudan `api.py` içindeki `get_features` çağrısından yüklenir.
+            </p>
+            <div id="featureContainer" class="feature-grid"></div>
+
+            <div class="builder-actions">
+                <span id="selectedCount" class="selected-count" data-key="form.features.counterZero">Seçilen özellik: 0</span>
+                <button id="generateBtn" type="button" class="primary-btn" data-key="actions.generate">Öneri Oluştur</button>
+            </div>
+        </section>
+
+        <section id="results" class="results card" aria-live="polite">
+            <div class="results-header">
+                <h2 data-key="results.title">AI Strateji Çıktısı</h2>
+                <p data-key="results.subtitle">Pazar, teknik yapı ve görsel iletişim ekseninde öneriler</p>
+            </div>
+            <div class="results-grid">
+                <article class="result-card">
+                    <h3 data-key="results.positioning.title">Pazar Konumlandırması</h3>
+                    <p id="positioningText" data-key="results.positioning.placeholder">Öneri oluşturduğunuzda burada görünecek.</p>
+                </article>
+                <article class="result-card">
+                    <h3 data-key="results.technical.title">Teknik Özellik Tavsiyeleri</h3>
+                    <ul id="technicalList" class="technical-list">
+                        <li data-key="results.technical.placeholder">Seçtiğiniz özelliklere göre listelenecek.</li>
+                    </ul>
+                </article>
+                <article class="result-card">
+                    <h3 data-key="results.design.title">Marka Görsel Tasarımı</h3>
+                    <p id="designText" data-key="results.design.placeholder">Görsel dil ve tasarım kalıbı önerileri burada yer alacak.</p>
+                </article>
+                <article class="result-card">
+                    <h3 data-key="results.marketing.title">Kampanya Kalıbı</h3>
+                    <p id="marketingText" data-key="results.marketing.placeholder">Reklam ve pazarlama şablonu önerileri burada üretilecek.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-key="footer.note">
+            Not: Bu ekran ilk stratejik yönlendirme için tasarlanmıştır; nihai karar öncesi pazar ve maliyet analizi ile doğrulama önerilir.
+        </p>
+    </footer>
+
+    <script>
+        window.__API_BASE_URL__ = "http://127.0.0.1:5000";
+    </script>
+    <script type="module" src="./static/js/script.js"></script>
+</body>
+</html>
