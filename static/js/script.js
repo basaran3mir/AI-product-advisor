@@ -12,33 +12,63 @@ document.addEventListener("DOMContentLoaded", async () => {
 // Form alanlarını API'den al ve oluştur
 async function loadFormFields() {
   try {
-    const features = await ApiService.getFeatures();
+    const categories = await ApiService.getCategories();
     const formFields = document.getElementById("formFields");
     formFields.innerHTML = "";
 
-    // urun_fiyat hariç tüm alanları form'da göster
-    features.forEach((field) => {
-      if (field === "urun_fiyat") {
-        return; // Fiyat tahmin edilen alan, form'da gösterme
-      }
+    Object.entries(categories).forEach(([cat, fields]) => {
+      if (fields.length === 0) return;
+      const section = document.createElement("div");
+      section.className = "form-category";
 
-      const fieldGroup = document.createElement("div");
-      fieldGroup.className = "form-group";
+      const title = document.createElement("h3");
+      title.className = "form-category-title";
+      title.textContent = cat;
+      section.appendChild(title);
 
-      const label = document.createElement("label");
-      label.htmlFor = field;
-      label.textContent = formatFieldName(field);
+      fields.forEach((fieldObj) => {
+        const fieldGroup = document.createElement("div");
+        fieldGroup.className = "form-group";
 
-      const input = document.createElement("input");
-      input.type = "text";
-      input.id = field;
-      input.name = field;
-      input.placeholder = `${formatFieldName(field)} girin`;
-      input.required = true;
+        const label = document.createElement("label");
+        label.htmlFor = fieldObj.name;
+        // Birimi label'a ekle
+        label.textContent = formatFieldName(fieldObj.label) + (fieldObj.unit ? ` (${fieldObj.unit})` : "");
 
-      fieldGroup.appendChild(label);
-      fieldGroup.appendChild(input);
-      formFields.appendChild(fieldGroup);
+        // Dropdown (select) oluştur
+        const select = document.createElement("select");
+        select.id = fieldObj.name;
+        select.name = fieldObj.name;
+        select.required = true;
+
+        // Varsayılan boş seçenek
+        const defaultOption = document.createElement("option");
+        defaultOption.value = "";
+        defaultOption.textContent = `${formatFieldName(fieldObj.label)}${fieldObj.unit ? ` (${fieldObj.unit})` : ""} seçin`;
+        defaultOption.disabled = true;
+        defaultOption.selected = true;
+        select.appendChild(defaultOption);
+
+        // Değerleri ekle (birimi option'a ekleme, sadece değeri göster)
+        (fieldObj.values || []).forEach((val) => {
+          const option = document.createElement("option");
+          option.value = val;
+          option.textContent = val;
+          select.appendChild(option);
+        });
+
+        fieldGroup.appendChild(label);
+        fieldGroup.appendChild(select);
+        // Birimi ayrıca sağda göstermek isterseniz:
+        // if (fieldObj.unit) {
+        //   const unitSpan = document.createElement("span");
+        //   unitSpan.className = "unit-label";
+        //   unitSpan.textContent = fieldObj.unit;
+        //   fieldGroup.appendChild(unitSpan);
+        // }
+        section.appendChild(fieldGroup);
+      });
+      formFields.appendChild(section);
     });
   } catch (error) {
     showError("Form alanları yüklenemedi: " + error.message);
