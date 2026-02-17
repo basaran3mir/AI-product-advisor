@@ -807,6 +807,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         try {
             const features = await getFeatures();
+            console.log("API features:", features);
             renderFeatures(features);
             setApiState("ready");
         } catch (err) {
