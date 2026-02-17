@@ -55,7 +55,14 @@ def predict():
 @app.route("/get_features", methods=["GET"])
 def get_features():
     try:
-        features = predict_service.get_expected_features()
+        # step4_numeric_cleaned.csv dosyasının başlığını oku
+        step4_path = os.path.join(
+            os.path.dirname(__file__),
+            "..", "app", "output", "dataset", "processed_step", "step4_numeric_cleaned.csv"
+        )
+        with open(step4_path, "r", encoding="utf-8") as f:
+            header = f.readline().strip()
+            features = header.split(",")
         return jsonify({"features": features})
     except Exception as e:
         return jsonify({"error": str(e)}), 500

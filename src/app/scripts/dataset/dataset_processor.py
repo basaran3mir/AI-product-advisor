@@ -273,11 +273,7 @@ class ProductDataPreprocessor:
         print("Tüm adımlar tamamlandı.")
 
     def transform_for_prediction(self, input_df: pd.DataFrame):
-
         self.df = input_df.copy()
-
-        # STEP 3
-        self.step3_keep_columns()
 
         # STEP 4
         self.step4_numeric_cleaning()
