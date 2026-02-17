@@ -893,7 +893,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     function buildDesignAdvice(category, segment, tone) {
         const profile = profileBySegment(segment);
         const toneMap = {
-            minimal: "Mat yuzeyler, sade logo alani ve dusuk kontrast gecisler onerilir.",
+            minimal: "Mat yüzeyler, sade logo alanı ve düşük kontrast geçişler önerilir",
             sportif: "Keskin hatlar, dinamik vurgu cizgileri ve hareket hissi veren detaylar onerilir.",
             premium: "Metal/cam dokular, kontrollu parlaklik ve guclu tipografik denge onerilir.",
             fonksiyonel: "Ergonomik form, yuksek dayanim hissi ve moduler detaylar onerilir."
