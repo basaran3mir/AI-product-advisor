@@ -12,7 +12,14 @@ sys.path.append(BASE_DIR)
 from src.app.scripts.predict_service import PredictService
 
 app = Flask(__name__)
-CORS(app)
+
+
+CORS(
+    app,
+    resources={r"/*": {"origins": "*"}},
+    methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
+)
 
 # Service instance (tek sefer yüklenir)
 predict_service = PredictService()
