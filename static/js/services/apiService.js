@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://10.0.0.239:5000";
+const API_BASE_URL = "http://100.64.0.6:5000";
 
 class ApiService {
   // Kategorili form alanlarını al

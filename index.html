@@ -4,41 +4,220 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ürün Fiyat Tahmini</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="static/css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>📱 Ürün Fiyat Tahmini</h1>
-      <p>Ürün özelliklerini girerek tahmini fiyatı öğrenin</p>
-    </div>
+  <main class="app-shell">
+    <header class="header">
+      <div class="header-row">
+        <p class="eyebrow">AI Product Advisor</p>
+        <div class="header-auth-actions">
+          <button type="button" class="header-auth-btn" data-auth-open="login">Giriş Yap</button>
+          <button type="button" class="header-auth-btn header-auth-btn-primary" data-auth-open="register">Kayıt Oluştur</button>
+        </div>
+      </div>
+      <h1>Ürün Fiyat Tahmini</h1>
+      <p class="header-text">
+        Ürün özelliklerini seçin, model tahmini fiyatı saniyeler içinde oluştursun.
+      </p>
+      <div class="header-meta">
+        <span class="meta-pill">Dinamik Form</span>
+        <span class="meta-pill">Hızlı Tahmin</span>
+        <span class="meta-pill">Kategorik Girdi</span>
+      </div>
+    </header>
 
-    <div class="content">
-      <form id="predictForm">
-        <div id="formFields" class="form-fields">
-          <p class="loading">Form alanları yükleniyor...</p>
+    <section class="content-grid">
+      <section class="content" aria-label="Tahmin Formu">
+        <div class="section-head">
+          <h2>Ürün Özellikleri</h2>
+          <p>Her kategori için en uygun seçeneği işaretleyin.</p>
         </div>
 
-        <button type="submit" class="btn-predict">
-          💰 Fiyat Tahmin Et
-        </button>
-      </form>
+        <form id="predictForm" class="predict-form">
+          <div id="formFields" class="form-fields">
+            <p class="loading">Form alanları yükleniyor...</p>
+          </div>
 
-      <div id="resultSection" class="result-section" style="display: none">
-        <div class="result-card">
-          <h3>Tahmin Edilen Fiyat</h3>
-          <div id="predictedPrice" class="predicted-price">-</div>
-          <p id="resultMessage" class="result-message"></p>
+          <button type="submit" class="btn-predict">Fiyat Tahmin Et</button>
+        </form>
+
+        <div id="resultSection" class="result-section" style="display: none">
+          <div class="result-card">
+            <h3>Tahmin Edilen Fiyat</h3>
+            <div class="result-meta">
+              <span class="result-chip">Kurumsal Ön Tahmin</span>
+              <span class="result-confidence">Güven aralığı: ±8%</span>
+            </div>
+            <div id="predictedPrice" class="predicted-price">-</div>
+            <p id="resultMessage" class="result-message"></p>
+          </div>
+        </div>
+
+        <div id="errorSection" class="error-section" style="display: none">
+          <p id="errorMessage"></p>
+        </div>
+      </section>
+
+      <aside class="side-panel" aria-label="Kullanım İpuçları">
+        <article class="panel-card">
+          <h3>Daha Doğru Sonuç İçin</h3>
+          <ul class="tip-list">
+            <li>Tüm kategorilerde gerçek ürün değerlerine yakın seçim yap.</li>
+            <li>Çok uç seçenekler yerine dengeli konfigürasyonla başla.</li>
+            <li>Farklı kombinasyonları deneyip fiyat eğilimini karşılaştır.</li>
+          </ul>
+        </article>
+        <article class="panel-card panel-card-soft">
+          <h3>Not</h3>
+          <div class="insight-metrics">
+            <div class="insight-item">
+              <div class="metric-symbol-wrap">
+                <span class="metric-badge">PR</span>
+                <span class="metric-glyph price-glyph" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 8h16l-1.2 10.2a2 2 0 0 1-2 1.8H7.2a2 2 0 0 1-2-1.8L4 8Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M9 8V6a3 3 0 1 1 6 0v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="metric-copy">
+                <p class="metric-label">Kurumsal Tahmin Fiyatı</p>
+                <p id="corporatePrice" class="metric-value">₺ --</p>
+              </div>
+            </div>
+            <div class="insight-item">
+              <div class="metric-symbol-wrap">
+                <span class="metric-badge">CI</span>
+                <span class="metric-glyph range-glyph" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 3 5 6v5.6c0 4.3 2.9 7.9 7 8.9 4.1-1 7-4.6 7-8.9V6l-7-3Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="metric-copy">
+                <p class="metric-label">Güven Aralığı</p>
+                <p id="confidenceRange" class="metric-value">±8%</p>
+                <div class="confidence-progress" aria-hidden="true">
+                  <span id="confidenceFill" class="confidence-progress-fill" style="width: 92%"></span>
+                </div>
+                <p id="confidenceScore" class="confidence-score">Skor: 92/100</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <div id="authOverlay" class="auth-overlay" hidden>
+    <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+      <button type="button" class="auth-close" data-auth-close aria-label="Kapat">×</button>
+      <p class="auth-modal-kicker">Hesap Erişimi</p>
+      <h2 id="authModalTitle">Giriş Yap</h2>
+
+      <div class="auth-modal-tabs" role="tablist" aria-label="Giriş Kayıt Sekmeleri">
+        <button type="button" class="auth-tab is-active" data-auth-tab="login">Giriş Yap</button>
+        <button type="button" class="auth-tab" data-auth-tab="register">Kayıt Ol</button>
+      </div>
+
+      <div class="auth-pane is-active" data-auth-pane="login">
+        <p class="auth-note">Mevcut hesabın ile giriş yaparak devam et.</p>
+        <label class="auth-field">
+          <span>E-posta</span>
+          <input type="email" placeholder="ornek@firma.com" />
+        </label>
+        <label class="auth-field">
+          <span>Şifre</span>
+          <input type="password" placeholder="••••••••" />
+        </label>
+        <div class="auth-actions">
+          <button type="button" class="auth-btn">Giriş Yap</button>
+          <button type="button" class="auth-link">Şifremi Unuttum</button>
         </div>
       </div>
 
-      <div id="errorSection" class="error-section" style="display: none">
-        <p id="errorMessage"></p>
+      <div class="auth-pane" data-auth-pane="register">
+        <p class="auth-note">Yeni bir hesap oluşturarak platforma katıl.</p>
+        <label class="auth-field">
+          <span>Ad Soyad</span>
+          <input type="text" placeholder="Ad Soyad" />
+        </label>
+        <label class="auth-field">
+          <span>E-posta</span>
+          <input type="email" placeholder="ornek@firma.com" />
+        </label>
+        <label class="auth-field">
+          <span>Şifre</span>
+          <input type="password" placeholder="En az 8 karakter" />
+        </label>
+        <div class="auth-actions">
+          <button type="button" class="auth-btn">Kayıt Oluştur</button>
+          <p class="auth-mini">Hesap oluşturarak kullanım koşullarını kabul etmiş olursun.</p>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="static/js/services/apiService.js"></script>
   <script src="static/js/script.js"></script>
+  <script>
+    (() => {
+      const overlay = document.getElementById("authOverlay");
+      const openButtons = document.querySelectorAll("[data-auth-open]");
+      const closeButton = document.querySelector("[data-auth-close]");
+      const tabs = document.querySelectorAll("[data-auth-tab]");
+      const panes = document.querySelectorAll("[data-auth-pane]");
+      const title = document.getElementById("authModalTitle");
+
+      function setTab(tabName) {
+        tabs.forEach((tab) => {
+          tab.classList.toggle("is-active", tab.dataset.authTab === tabName);
+        });
+        panes.forEach((pane) => {
+          pane.classList.toggle("is-active", pane.dataset.authPane === tabName);
+        });
+        if (title) {
+          title.textContent = tabName === "register" ? "Kayıt Ol" : "Giriş Yap";
+        }
+      }
+
+      function openModal(tabName) {
+        setTab(tabName);
+        overlay.hidden = false;
+        document.body.classList.add("modal-open");
+      }
+
+      function closeModal() {
+        overlay.hidden = true;
+        document.body.classList.remove("modal-open");
+      }
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => openModal(button.dataset.authOpen || "login"));
+      });
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => setTab(tab.dataset.authTab || "login"));
+      });
+      closeButton?.addEventListener("click", closeModal);
+      overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) {
+          closeModal();
+        }
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !overlay.hidden) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
