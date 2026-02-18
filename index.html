@@ -15,7 +15,13 @@
 <body>
   <main class="app-shell">
     <header class="header">
-      <p class="eyebrow">AI Product Advisor</p>
+      <div class="header-row">
+        <p class="eyebrow">AI Product Advisor</p>
+        <div class="header-auth-actions">
+          <button type="button" class="header-auth-btn" data-auth-open="login">Giriş Yap</button>
+          <button type="button" class="header-auth-btn header-auth-btn-primary" data-auth-open="register">Kayıt Oluştur</button>
+        </div>
+      </div>
       <h1>Ürün Fiyat Tahmini</h1>
       <p class="header-text">
         Ürün özelliklerini seçin, model tahmini fiyatı saniyeler içinde oluştursun.
@@ -111,7 +117,107 @@
     </section>
   </main>
 
+  <div id="authOverlay" class="auth-overlay" hidden>
+    <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+      <button type="button" class="auth-close" data-auth-close aria-label="Kapat">×</button>
+      <p class="auth-modal-kicker">Hesap Erişimi</p>
+      <h2 id="authModalTitle">Giriş Yap</h2>
+
+      <div class="auth-modal-tabs" role="tablist" aria-label="Giriş Kayıt Sekmeleri">
+        <button type="button" class="auth-tab is-active" data-auth-tab="login">Giriş Yap</button>
+        <button type="button" class="auth-tab" data-auth-tab="register">Kayıt Ol</button>
+      </div>
+
+      <div class="auth-pane is-active" data-auth-pane="login">
+        <p class="auth-note">Mevcut hesabın ile giriş yaparak devam et.</p>
+        <label class="auth-field">
+          <span>E-posta</span>
+          <input type="email" placeholder="ornek@firma.com" />
+        </label>
+        <label class="auth-field">
+          <span>Şifre</span>
+          <input type="password" placeholder="••••••••" />
+        </label>
+        <div class="auth-actions">
+          <button type="button" class="auth-btn">Giriş Yap</button>
+          <button type="button" class="auth-link">Şifremi Unuttum</button>
+        </div>
+      </div>
+
+      <div class="auth-pane" data-auth-pane="register">
+        <p class="auth-note">Yeni bir hesap oluşturarak platforma katıl.</p>
+        <label class="auth-field">
+          <span>Ad Soyad</span>
+          <input type="text" placeholder="Ad Soyad" />
+        </label>
+        <label class="auth-field">
+          <span>E-posta</span>
+          <input type="email" placeholder="ornek@firma.com" />
+        </label>
+        <label class="auth-field">
+          <span>Şifre</span>
+          <input type="password" placeholder="En az 8 karakter" />
+        </label>
+        <div class="auth-actions">
+          <button type="button" class="auth-btn">Kayıt Oluştur</button>
+          <p class="auth-mini">Hesap oluşturarak kullanım koşullarını kabul etmiş olursun.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="static/js/services/apiService.js"></script>
   <script src="static/js/script.js"></script>
+  <script>
+    (() => {
+      const overlay = document.getElementById("authOverlay");
+      const openButtons = document.querySelectorAll("[data-auth-open]");
+      const closeButton = document.querySelector("[data-auth-close]");
+      const tabs = document.querySelectorAll("[data-auth-tab]");
+      const panes = document.querySelectorAll("[data-auth-pane]");
+      const title = document.getElementById("authModalTitle");
+
+      function setTab(tabName) {
+        tabs.forEach((tab) => {
+          tab.classList.toggle("is-active", tab.dataset.authTab === tabName);
+        });
+        panes.forEach((pane) => {
+          pane.classList.toggle("is-active", pane.dataset.authPane === tabName);
+        });
+        if (title) {
+          title.textContent = tabName === "register" ? "Kayıt Ol" : "Giriş Yap";
+        }
+      }
+
+      function openModal(tabName) {
+        setTab(tabName);
+        overlay.hidden = false;
+        document.body.classList.add("modal-open");
+      }
+
+      function closeModal() {
+        overlay.hidden = true;
+        document.body.classList.remove("modal-open");
+      }
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => openModal(button.dataset.authOpen || "login"));
+      });
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => setTab(tab.dataset.authTab || "login"));
+      });
+      closeButton?.addEventListener("click", closeModal);
+      overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) {
+          closeModal();
+        }
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !overlay.hidden) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
