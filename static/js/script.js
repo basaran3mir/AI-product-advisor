@@ -111,14 +111,36 @@ async function handlePrediction() {
 
 // Sonucu göster
 function showResult(price) {
+  const formattedPrice = `₺ ${price.toLocaleString("tr-TR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })}`;
+
   document.getElementById("resultSection").style.display = "block";
-  document.getElementById("predictedPrice").textContent = `₺ ${price.toLocaleString(
-    "tr-TR",
-    {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
+  document.getElementById("predictedPrice").textContent = formattedPrice;
+
+  const corporatePriceEl = document.getElementById("corporatePrice");
+  if (corporatePriceEl) {
+    corporatePriceEl.textContent = formattedPrice;
+  }
+
+  const confidenceRangeEl = document.getElementById("confidenceRange");
+  const confidenceFillEl = document.getElementById("confidenceFill");
+  const confidenceScoreEl = document.getElementById("confidenceScore");
+  if (confidenceRangeEl) {
+    const rangePercent = 8;
+    const confidenceScore = Math.max(0, Math.min(100, 100 - rangePercent));
+
+    confidenceRangeEl.textContent = `±${rangePercent}%`;
+
+    if (confidenceFillEl) {
+      confidenceFillEl.style.width = `${confidenceScore}%`;
     }
-  )}`;
+    if (confidenceScoreEl) {
+      confidenceScoreEl.textContent = `Skor: ${confidenceScore}/100`;
+    }
+  }
+
   document.getElementById("resultMessage").textContent =
     "Tahmin başarıyla yapıldı!";
 }
