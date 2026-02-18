@@ -2,7 +2,7 @@
 XGBOOST FİYAT TAHMİN MODELİ – PERFORMANS RAPORU
 ============================================================
 
-Oluşturulma Tarihi: 2026-02-17 09:07:44.007374
+Oluşturulma Tarihi: 2026-02-18 15:32:40.957854
 
 VERİ SETİ BOYUTLARI
 ------------------------------
@@ -13,41 +13,41 @@ Test: 67
 
 TRAIN METRİKLERİ
 ------------------------------
-RMSE: 0.017912
-MAE:  0.012031
-R2:   0.999534
+RMSE: 0.030931
+MAE:  0.021156
+R2:   0.998609
 
 VALIDATION METRİKLERİ
 ------------------------------
-RMSE: 0.160757
-MAE:  0.104060
-R2:   0.969744
+RMSE: 0.167001
+MAE:  0.108867
+R2:   0.967347
 
 TEST METRİKLERİ
 ------------------------------
-RMSE: 0.204304
-MAE:  0.132991
-R2:   0.930858
+RMSE: 0.209887
+MAE:  0.141009
+R2:   0.927027
 
 EN ÖNEMLİ 20 FEATURE
 ------------------------------
-batarya_kablosuz_şarj: 0.368600
-kamera_optik_görüntü_sabitleyici_ois: 0.203364
-temel_donanim_cpu_üretim_teknolojisi: 0.078309
-temel_donanim_antutu_puanı_v10: 0.055449
-i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_iOS: 0.046847
-ekran_ekran_teknolojisi_OLED: 0.045418
-batarya_hızlı_şarj: 0.042027
-temel_donanim_cpu_çekirdeği: 0.020104
-kamera_video_kayıt_çözünürlüğü_4320p (Ultra HD) 8K: 0.018685
-temel_donanim_bellek_ram: 0.014016
-ağ_bağlantilari_5g: 0.013978
-ekran_ekran_teknolojisi_IPS LCD: 0.010659
-kamera_video_kayıt_çözünürlüğü_2160p (Ultra HD) 4K: 0.010438
-tasarim_gövde_malzemesi_kapak_Polikarbonat: 0.008245
-kablosuz_bağlantilar_nfc: 0.004891
-tasarim_gövde_malzemesi_kapak_Fiberglass: 0.004862
-kamera_ön_kamera_çözünürlüğü: 0.004613
-tasarim_ağırlık: 0.004367
-tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü): 0.004258
-tasarim_gövde_malzemesi_kapak_Plastik (Cam Görünümlü): 0.003607
+kamera_optik_görüntü_sabitleyici_ois: 0.254679
+batarya_kablosuz_şarj: 0.238633
+temel_donanim_antutu_puanı_v10: 0.103685
+temel_donanim_cpu_üretim_teknolojisi: 0.088748
+ekran_ekran_teknolojisi_OLED: 0.065766
+temel_donanim_cpu_çekirdeği: 0.038751
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_iOS: 0.036495
+batarya_hızlı_şarj: 0.031579
+kamera_video_kayıt_çözünürlüğü_4320p (Ultra HD) 8K: 0.019505
+kamera_video_kayıt_çözünürlüğü_2160p (Ultra HD) 4K: 0.010862
+ekran_ekran_teknolojisi_IPS LCD: 0.009067
+temel_donanim_bellek_ram: 0.009046
+tasarim_ağırlık: 0.006886
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü): 0.006355
+ekran_ekran_teknolojisi_Super AMOLED: 0.006145
+kamera_ön_kamera_çözünürlüğü: 0.006078
+tasarim_gövde_malzemesi_kapak_Fiberglass: 0.005905
+batarya_hızlı_şarj_gücü_maks.: 0.005361
+tasarim_gövde_malzemesi_kapak_Plastik (Cam Görünümlü): 0.004640
+batarya_batarya_kapasitesi_tipik: 0.004431

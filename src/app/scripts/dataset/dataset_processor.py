@@ -113,6 +113,10 @@ class ProductDataPreprocessor:
             'tasarim_ağırlık',
             'tasarim_gövde_malzemesi_kapak',
             'ağ_bağlantilari_5g',
+            'ağ_bağlantilari_4.5g_desteği',
+            'ağ_bağlantilari_4g',
+            'ağ_bağlantilari_2g',
+            'ağ_bağlantilari_3g',
             'kablosuz_bağlantilar_bluetooth_versiyonu',
             'kablosuz_bağlantilar_nfc',
             'i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi',
@@ -167,6 +171,11 @@ class ProductDataPreprocessor:
             "batarya_kablosuz_şarj",
             "kamera_optik_görüntü_sabitleyici_ois",
             "ağ_bağlantilari_5g",
+            'ağ_bağlantilari_5g',
+            'ağ_bağlantilari_4.5g_desteği',
+            'ağ_bağlantilari_4g',
+            'ağ_bağlantilari_2g',
+            'ağ_bağlantilari_3g',
             "kablosuz_bağlantilar_nfc",
             "özelli̇kler_suya_dayanıklılık"
         ]
@@ -289,14 +298,13 @@ class ProductDataPreprocessor:
 
         return self.df
 
-###
-###if __name__ == "__main__":
-###
-###    processor = ProductDataPreprocessor(
-###        input_path="src/app/output/dataset/raw/full_dataset.csv",
-###        process_dir="src/app/output/dataset/processed_step",
-###        output_dir="src/app/output/dataset/final"
-###    )
-###
-###    processor.run()
-###
+
+if __name__ == "__main__":
+
+    processor = ProductDataPreprocessor(
+        input_path="src/app/output/dataset/raw/full_dataset.csv",
+        process_dir="src/app/output/dataset/processed_step",
+        output_dir="src/app/output/dataset/final"
+    )
+
+    processor.run()
