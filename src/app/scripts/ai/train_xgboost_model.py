@@ -24,7 +24,6 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 TARGET = "urun_fiyat"
 EXCLUDE_FROM_MODEL = ["urun_puan"]  # bilinçli olarak dışarıda
 
-
 # =====================================
 # LOAD DATA
 # =====================================
@@ -38,6 +37,16 @@ if TARGET not in df.columns:
 X = df.drop(columns=[TARGET] + EXCLUDE_FROM_MODEL, errors="ignore")
 y = df[TARGET]
 
+# =====================================
+# SAVE FEATURE ORDER
+# =====================================
+
+feature_path = OUTPUT_DIR / "model_features.json"
+
+with open(feature_path, "w", encoding="utf-8") as f:
+    json.dump(list(X.columns), f)
+
+print("Feature list kaydedildi.")
 
 # =====================================
 # TRAIN / VALIDATION / TEST SPLIT

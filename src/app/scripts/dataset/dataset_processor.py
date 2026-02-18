@@ -7,7 +7,6 @@ import numpy as np
 import re
 from pathlib import Path
 
-
 class ProductDataPreprocessor:
 
     def __init__(self,
@@ -15,11 +14,13 @@ class ProductDataPreprocessor:
                  process_dir: str,
                  output_dir: str,
                  target: str = "urun_fiyat",
-                 exclude: str = "urun_puan"):
+                 exclude: str = "urun_puan",
+                 mode: str = "train"):
 
         self.input_path = input_path
         self.process_dir = Path(process_dir)
         self.output_dir = Path(output_dir)
+        self.mode = mode
 
         self.process_dir.mkdir(parents=True, exist_ok=True)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -54,7 +55,8 @@ class ProductDataPreprocessor:
         self.df[column] = self.df[column].apply(self.extract_numeric)
 
     def save_step(self, filename):
-        self.df.to_csv(self.process_dir / filename, index=False)
+        if self.mode == "train":
+            self.df.to_csv(self.process_dir / filename, index=False)
 
     # ========================================================
     # STEP 0 — LOAD
@@ -111,6 +113,10 @@ class ProductDataPreprocessor:
             'tasarim_ağırlık',
             'tasarim_gövde_malzemesi_kapak',
             'ağ_bağlantilari_5g',
+            'ağ_bağlantilari_4.5g_desteği',
+            'ağ_bağlantilari_4g',
+            'ağ_bağlantilari_2g',
+            'ağ_bağlantilari_3g',
             'kablosuz_bağlantilar_bluetooth_versiyonu',
             'kablosuz_bağlantilar_nfc',
             'i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi',
@@ -165,6 +171,11 @@ class ProductDataPreprocessor:
             "batarya_kablosuz_şarj",
             "kamera_optik_görüntü_sabitleyici_ois",
             "ağ_bağlantilari_5g",
+            'ağ_bağlantilari_5g',
+            'ağ_bağlantilari_4.5g_desteği',
+            'ağ_bağlantilari_4g',
+            'ağ_bağlantilari_2g',
+            'ağ_bağlantilari_3g',
             "kablosuz_bağlantilar_nfc",
             "özelli̇kler_suya_dayanıklılık"
         ]
@@ -269,6 +280,24 @@ class ProductDataPreprocessor:
         self.step8_finalize()
 
         print("Tüm adımlar tamamlandı.")
+
+    def transform_for_prediction(self, input_df: pd.DataFrame):
+        self.df = input_df.copy()
+
+        # STEP 4
+        self.step4_numeric_cleaning()
+
+        # STEP 5
+        self.step5_binary_mapping()
+
+        # STEP 6
+        self.step6_handle_missing()
+
+        # STEP 7
+        self.step7_one_hot()
+
+        return self.df
+
 
 if __name__ == "__main__":
 
