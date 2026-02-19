@@ -1,167 +1,237 @@
-# ============================================================
-# DATASET ANALYSIS SCRIPT
-# Target: urun_fiyat
-# Excluded (ilk aşama): urun_puan
-# Output: dataset_analysis.txt
-# ============================================================
-
 import pandas as pd
 import numpy as np
 from pathlib import Path
 from datetime import datetime
 
-# =============================
-# CONFIG
-# =============================
-INPUT_PATH = "src/app/output/dataset/raw/full_dataset.csv"   # Dosya yolunu değiştir
-OUTPUT_PATH = "src/app/output/dataset/dataset_analysis.txt"
 
-TARGET_COLUMN = "urun_fiyat"
-EXCLUDE_COLUMN = "urun_puan"
+class DatasetAnalyzer:
+    """
+    Dataset EDA ve kalite analiz sınıfı
+    - Genel istatistikler
+    - Missing analizi
+    - Cardinality analizi
+    - Numeric summary
+    - Target analizi
+    """
 
-# =============================
-# LOAD DATA
-# =============================
-df = pd.read_csv(INPUT_PATH)
+    def __init__(
+        self,
+        input_path: str | Path,
+        output_path: str | Path,
+        target_column: str = "urun_fiyat",
+        exclude_column: str | None = "urun_puan"
+    ):
+        self.input_path = Path(input_path)
+        self.output_path = Path(output_path)
+        self.target_column = target_column
+        self.exclude_column = exclude_column
 
-# =============================
-# BASIC INFO
-# =============================
-num_products = df.shape[0]
-num_features_total = df.shape[1]
+        self.df: pd.DataFrame | None = None
 
-feature_columns = df.columns.tolist()
+    # =====================================
+    # LOAD DATA
+    # =====================================
 
-if TARGET_COLUMN in feature_columns:
-    feature_columns.remove(TARGET_COLUMN)
+    def load_data(self):
+        self.df = pd.read_csv(self.input_path)
+        print("Dataset yüklendi.")
 
-if EXCLUDE_COLUMN in feature_columns:
-    feature_columns.remove(EXCLUDE_COLUMN)
+    # =====================================
+    # GENERAL INFO
+    # =====================================
 
-num_features_model = len(feature_columns)
+    def _general_info(self):
+        num_products = self.df.shape[0]
+        num_features_total = self.df.shape[1]
 
-# =============================
-# DATA TYPE ANALYSIS
-# =============================
-dtype_counts = df.dtypes.value_counts()
+        feature_columns = self.df.columns.tolist()
 
-dtype_table = pd.DataFrame({
-    "column": df.columns,
-    "dtype": df.dtypes.astype(str)
-})
+        if self.target_column in feature_columns:
+            feature_columns.remove(self.target_column)
 
-# =============================
-# MISSING VALUE ANALYSIS
-# =============================
-missing_count = df.isnull().sum()
-missing_percentage = (missing_count / num_products) * 100
+        if self.exclude_column and self.exclude_column in feature_columns:
+            feature_columns.remove(self.exclude_column)
 
-missing_df = pd.DataFrame({
-    "missing_count": missing_count,
-    "missing_percentage": missing_percentage
-}).sort_values(by="missing_count", ascending=False)
+        num_features_model = len(feature_columns)
 
-total_missing_cells = missing_count.sum()
+        total_missing_cells = self.df.isnull().sum().sum()
 
-# Row bazlı eksik feature sayısı
-missing_per_row = df.isnull().sum(axis=1)
+        return {
+            "num_products": num_products,
+            "num_features_total": num_features_total,
+            "num_features_model": num_features_model,
+            "total_missing_cells": total_missing_cells
+        }
 
-row_missing_distribution = {
-    "eksiksiz_urun": (missing_per_row == 0).sum(),
-    "1_3_eksik": ((missing_per_row >= 1) & (missing_per_row <= 3)).sum(),
-    "4_7_eksik": ((missing_per_row >= 4) & (missing_per_row <= 7)).sum(),
-    "8_15_eksik": ((missing_per_row >= 8) & (missing_per_row <= 15)).sum(),
-    "15_plus_eksik": (missing_per_row > 15).sum()
-}
+    # =====================================
+    # DATA TYPE ANALYSIS
+    # =====================================
 
-# =============================
-# UNIQUE VALUE ANALYSIS (Cardinality)
-# =============================
-unique_counts = df.nunique().sort_values(ascending=False)
+    def _dtype_analysis(self):
+        dtype_counts = self.df.dtypes.value_counts()
+        dtype_table = pd.DataFrame({
+            "column": self.df.columns,
+            "dtype": self.df.dtypes.astype(str)
+        })
 
-high_cardinality_columns = unique_counts[unique_counts > 50]
+        return dtype_counts, dtype_table
 
-# =============================
-# NUMERIC SUMMARY
-# =============================
-numeric_df = df.select_dtypes(include=[np.number])
-numeric_summary = numeric_df.describe().T if not numeric_df.empty else pd.DataFrame()
+    # =====================================
+    # MISSING ANALYSIS
+    # =====================================
 
-# =============================
-# TARGET ANALYSIS
-# =============================
-target_analysis = None
-if TARGET_COLUMN in df.columns:
-    target_analysis = df[TARGET_COLUMN].describe()
+    def _missing_analysis(self):
+        missing_count = self.df.isnull().sum()
+        missing_percentage = (
+            missing_count / self.df.shape[0]
+        ) * 100
 
-# =============================
-# BUILD REPORT
-# =============================
-report = []
-report.append("============================================================")
-report.append("DATASET ANALYSIS REPORT")
-report.append("============================================================")
-report.append(f"Generated at: {datetime.now()}")
-report.append("")
+        missing_df = pd.DataFrame({
+            "missing_count": missing_count,
+            "missing_percentage": missing_percentage
+        }).sort_values(by="missing_count", ascending=False)
 
-report.append("------------------------------------------------------------")
-report.append("GENERAL INFORMATION")
-report.append("------------------------------------------------------------")
-report.append(f"Toplam Ürün Sayısı: {num_products}")
-report.append(f"Toplam Feature Sayısı (Target dahil): {num_features_total}")
-report.append(f"Modelde Kullanılacak Feature Sayısı (urun_puan hariç): {num_features_model}")
-report.append(f"Toplam Eksik Hücre Sayısı: {total_missing_cells}")
-report.append("")
+        missing_per_row = self.df.isnull().sum(axis=1)
 
-report.append("------------------------------------------------------------")
-report.append("DATA TYPE DISTRIBUTION")
-report.append("------------------------------------------------------------")
-report.append(dtype_counts.to_string())
-report.append("")
+        row_missing_distribution = {
+            "eksiksiz_urun": (missing_per_row == 0).sum(),
+            "1_3_eksik": ((missing_per_row >= 1) & (missing_per_row <= 3)).sum(),
+            "4_7_eksik": ((missing_per_row >= 4) & (missing_per_row <= 7)).sum(),
+            "8_15_eksik": ((missing_per_row >= 8) & (missing_per_row <= 15)).sum(),
+            "15_plus_eksik": (missing_per_row > 15).sum()
+        }
 
-report.append("------------------------------------------------------------")
-report.append("COLUMN BAZLI EKSİK VERİ ANALİZİ")
-report.append("------------------------------------------------------------")
-report.append(missing_df.to_string())
-report.append("")
+        return missing_df, row_missing_distribution
 
-report.append("------------------------------------------------------------")
-report.append("ÜRÜN BAZLI EKSİK FEATURE DAĞILIMI")
-report.append("------------------------------------------------------------")
-for k, v in row_missing_distribution.items():
-    report.append(f"{k}: {v}")
-report.append("")
+    # =====================================
+    # CARDINALITY ANALYSIS
+    # =====================================
 
-report.append("------------------------------------------------------------")
-report.append("UNIQUE VALUE (CARDINALITY) ANALİZİ")
-report.append("------------------------------------------------------------")
-report.append(unique_counts.to_string())
-report.append("")
-report.append("High Cardinality Columns (>50 unique value):")
-report.append(high_cardinality_columns.to_string())
-report.append("")
+    def _cardinality_analysis(self):
+        unique_counts = self.df.nunique().sort_values(ascending=False)
+        high_cardinality_columns = unique_counts[unique_counts > 50]
+        return unique_counts, high_cardinality_columns
 
-if not numeric_summary.empty:
-    report.append("------------------------------------------------------------")
-    report.append("NUMERIC FEATURE SUMMARY")
-    report.append("------------------------------------------------------------")
-    report.append(numeric_summary.to_string())
-    report.append("")
+    # =====================================
+    # NUMERIC SUMMARY
+    # =====================================
 
-if target_analysis is not None:
-    report.append("------------------------------------------------------------")
-    report.append("TARGET (urun_fiyat) ANALYSIS")
-    report.append("------------------------------------------------------------")
-    report.append(target_analysis.to_string())
-    report.append("")
+    def _numeric_summary(self):
+        numeric_df = self.df.select_dtypes(include=[np.number])
+        if numeric_df.empty:
+            return pd.DataFrame()
+        return numeric_df.describe().T
 
-report_text = "\n".join(report)
+    # =====================================
+    # TARGET ANALYSIS
+    # =====================================
 
-# =============================
-# SAVE REPORT
-# =============================
-with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-    f.write(report_text)
+    def _target_analysis(self):
+        if self.target_column in self.df.columns:
+            return self.df[self.target_column].describe()
+        return None
 
-print("Analiz tamamlandı.")
-print(f"Rapor kaydedildi: {OUTPUT_PATH}")
+    # =====================================
+    # BUILD REPORT
+    # =====================================
+
+    def build_report(self) -> str:
+        general = self._general_info()
+        dtype_counts, _ = self._dtype_analysis()
+        missing_df, row_missing_dist = self._missing_analysis()
+        unique_counts, high_card = self._cardinality_analysis()
+        numeric_summary = self._numeric_summary()
+        target_analysis = self._target_analysis()
+
+        report = []
+        report.append("=" * 60)
+        report.append("DATASET ANALYSIS REPORT")
+        report.append("=" * 60)
+        report.append(f"Generated at: {datetime.now()}")
+        report.append("")
+
+        report.append("GENERAL INFORMATION")
+        report.append("-" * 40)
+        report.append(f"Toplam Ürün Sayısı: {general['num_products']}")
+        report.append(f"Toplam Feature Sayısı (Target dahil): {general['num_features_total']}")
+        report.append(f"Model Feature Sayısı (exclude hariç): {general['num_features_model']}")
+        report.append(f"Toplam Eksik Hücre Sayısı: {general['total_missing_cells']}")
+        report.append("")
+
+        report.append("DATA TYPE DISTRIBUTION")
+        report.append("-" * 40)
+        report.append(dtype_counts.to_string())
+        report.append("")
+
+        report.append("COLUMN BAZLI EKSİK VERİ ANALİZİ")
+        report.append("-" * 40)
+        report.append(missing_df.to_string())
+        report.append("")
+
+        report.append("ÜRÜN BAZLI EKSİK FEATURE DAĞILIMI")
+        report.append("-" * 40)
+        for k, v in row_missing_dist.items():
+            report.append(f"{k}: {v}")
+        report.append("")
+
+        report.append("CARDINALITY ANALİZİ")
+        report.append("-" * 40)
+        report.append(unique_counts.to_string())
+        report.append("")
+        report.append("High Cardinality Columns (>50):")
+        report.append(high_card.to_string())
+        report.append("")
+
+        if not numeric_summary.empty:
+            report.append("NUMERIC FEATURE SUMMARY")
+            report.append("-" * 40)
+            report.append(numeric_summary.to_string())
+            report.append("")
+
+        if target_analysis is not None:
+            report.append(f"TARGET ({self.target_column}) ANALYSIS")
+            report.append("-" * 40)
+            report.append(target_analysis.to_string())
+            report.append("")
+
+        return "\n".join(report)
+
+    # =====================================
+    # SAVE REPORT
+    # =====================================
+
+    def save_report(self, report_text: str):
+        self.output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with open(self.output_path, "w", encoding="utf-8") as f:
+            f.write(report_text)
+
+        print(f"Rapor kaydedildi: {self.output_path}")
+
+    # =====================================
+    # FULL PIPELINE
+    # =====================================
+
+    def run(self):
+        self.load_data()
+        report_text = self.build_report()
+        self.save_report(report_text)
+        print("Dataset analizi tamamlandı.")
+
+if __name__ == "__main__":
+    price_analyzer = DatasetAnalyzer(
+        input_path="src/app/output/dataset/raw/full_dataset.csv",
+        output_path="src/app/output/dataset/price/dataset_analysis.txt",
+        target_column="urun_fiyat",
+        exclude_column="urun_puan"
+    )
+
+    point_analyzer = DatasetAnalyzer(
+        input_path="src/app/output/dataset/raw/full_dataset.csv",
+        output_path="src/app/output/dataset/point/dataset_analysis.txt",
+        target_column="urun_puan",
+        exclude_column="urun_fiyat"
+    )
+
+    price_analyzer.run()
+    point_analyzer.run()

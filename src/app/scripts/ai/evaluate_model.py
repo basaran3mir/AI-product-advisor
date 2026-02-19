@@ -6,140 +6,289 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-# =============================
-# PATH CONFIG
-# =============================
-BASE_DIR = Path(__file__).resolve().parents[4]
-DATA_PATH = BASE_DIR / "src/app/output/dataset/final/step8_final_model_ready.csv"
-MODEL_PATH = BASE_DIR / "src/app/output/model/xgboost_price_model.pkl"
-OUTPUT_DIR = BASE_DIR / "src/app/output/model/evaluation"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-TARGET = "urun_fiyat"
+class ModelEvaluator:
+    """
+    Generic model evaluation class
+    Supports both log-transformed and normal targets
+    """
 
-# =============================
-# LOAD DATA & MODEL
-# =============================
-df = pd.read_csv(DATA_PATH)
-model = joblib.load(MODEL_PATH)
+    def __init__(
+        self,
+        data_path: Path,
+        model_path: Path,
+        output_dir: Path,
+        target_column: str,
+        task_name: str,
+        log_transformed: bool = False,
+        unit: str = "",
+        segment_type: str = None
+    ):
+        self.data_path = data_path
+        self.model_path = model_path
+        self.output_dir = output_dir
+        self.target_column = target_column
+        self.task_name = task_name
+        self.log_transformed = log_transformed
+        self.unit = unit
+        self.segment_type = segment_type
 
-X = df.drop(columns=[TARGET])
-y_log = df[TARGET]
+        self.output_dir.mkdir(parents=True, exist_ok=True)
 
-# =============================
-# PREDICTION
-# =============================
-y_pred_log = model.predict(X)
+        self.df = None
+        self.model = None
+        self.results = None
 
-# Log dönüşümünü geri al
-y_true = np.expm1(y_log)
-y_pred = np.expm1(y_pred_log)
+    # =====================================
+    # LOAD
+    # =====================================
 
-# =============================
-# METRICS (REAL TL SPACE)
-# =============================
-rmse = np.sqrt(mean_squared_error(y_true, y_pred))
-mae = mean_absolute_error(y_true, y_pred)
-r2 = r2_score(y_true, y_pred)
-mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+    def load(self):
+        self.df = pd.read_csv(self.data_path)
+        self.model = joblib.load(self.model_path)
+        print(f"{self.task_name} veri ve model yüklendi.")
 
-# =============================
-# DETAILED ERROR TABLE
-# =============================
-results = pd.DataFrame({
-    "Gerçek_Fiyat": y_true,
-    "Tahmin_Fiyat": y_pred,
-})
+    # =====================================
+    # PREDICT
+    # =====================================
 
-results["Mutlak_Hata"] = np.abs(results["Gerçek_Fiyat"] - results["Tahmin_Fiyat"])
-results["Yuzde_Hata"] = (
-    results["Mutlak_Hata"] / results["Gerçek_Fiyat"] * 100
-)
+    def predict(self):
+        X = self.df.drop(columns=[self.target_column])
+        y_true_raw = self.df[self.target_column]
 
-results.sort_values("Mutlak_Hata", inplace=True)
+        y_pred_raw = self.model.predict(X)
 
-results.to_csv(OUTPUT_DIR / "all_predictions.csv", index=False)
+        # Eğer log model ise dönüşümü geri al
+        if self.log_transformed:
+            y_true = np.expm1(y_true_raw)
+            y_pred = np.expm1(y_pred_raw)
+        else:
+            y_true = y_true_raw
+            y_pred = y_pred_raw
 
-# =============================
-# BEST & WORST 10
-# =============================
-best_10 = results.head(10)
-worst_10 = results.tail(10)
+        self.results = pd.DataFrame({
+            "Gerçek": y_true,
+            "Tahmin": y_pred,
+        })
 
-best_10.to_csv(OUTPUT_DIR / "best_10_predictions.csv", index=False)
-worst_10.to_csv(OUTPUT_DIR / "worst_10_predictions.csv", index=False)
+        self.results["Mutlak_Hata"] = np.abs(
+            self.results["Gerçek"] -
+            self.results["Tahmin"]
+        )
 
-# =============================
-# SEGMENT ANALYSIS
-# =============================
-def price_segment(price):
-    if price < 10000:
-        return "0-10K"
-    elif price < 25000:
-        return "10K-25K"
-    elif price < 50000:
-        return "25K-50K"
-    elif price < 100000:
-        return "50K-100K"
-    else:
-        return "100K+"
+        self.results["Yuzde_Hata"] = (
+            self.results["Mutlak_Hata"] /
+            self.results["Gerçek"].replace(0, np.nan) * 100
+        )
 
-results["Segment"] = results["Gerçek_Fiyat"].apply(price_segment)
+        self.results.sort_values("Mutlak_Hata", inplace=True)
 
-segment_analysis = results.groupby("Segment").agg({
-    "Mutlak_Hata": "mean",
-    "Yuzde_Hata": "mean",
-    "Gerçek_Fiyat": "count"
-}).rename(columns={"Gerçek_Fiyat": "Adet"})
+        print("Tahminler üretildi.")
 
-segment_analysis.to_csv(OUTPUT_DIR / "segment_analysis.csv")
+    # =====================================
+    # SAVE PREDICTIONS (BEST / WORST)
+    # =====================================
 
-# =============================
-# PLOTS
-# =============================
+    def save_predictions(self):
 
-# Gerçek vs Tahmin
-plt.figure()
-plt.scatter(y_true, y_pred)
-plt.xlabel("Gerçek Fiyat")
-plt.ylabel("Tahmin Fiyat")
-plt.title("Gerçek vs Tahmin")
-plt.savefig(OUTPUT_DIR / "real_vs_pred.png")
-plt.close()
+        # Tüm tahminler
+        self.results.to_csv(
+            self.output_dir / "all_predictions.csv",
+            index=False
+        )
 
-# Residual Plot
-residuals = y_true - y_pred
-plt.figure()
-plt.scatter(y_pred, residuals)
-plt.axhline(0)
-plt.xlabel("Tahmin Fiyat")
-plt.ylabel("Residual (Gerçek - Tahmin)")
-plt.title("Residual Plot")
-plt.savefig(OUTPUT_DIR / "residual_plot.png")
-plt.close()
+        # Mutlak hataya göre sıralanmış kopya
+        sorted_results = self.results.sort_values(
+            "Mutlak_Hata",
+            ascending=True
+        )
 
-# =============================
-# SAVE METRICS REPORT
-# =============================
-report_path = OUTPUT_DIR / "evaluation_report.txt"
+        best_10 = sorted_results.head(10)
+        worst_10 = sorted_results.tail(10)
 
-with open(report_path, "w", encoding="utf-8") as f:
-    f.write("============================================================\n")
-    f.write("MODEL EVALUATION REPORT (REAL PRICE SPACE)\n")
-    f.write("============================================================\n\n")
-    f.write(f"Oluşturulma Tarihi: {datetime.now()}\n\n")
+        best_10.to_csv(
+            self.output_dir / "best_10_predictions.csv",
+            index=False
+        )
 
-    f.write("GENEL METRİKLER\n")
-    f.write("----------------------------\n")
-    f.write(f"RMSE (TL): {rmse:.2f}\n")
-    f.write(f"MAE (TL): {mae:.2f}\n")
-    f.write(f"R2: {r2:.4f}\n")
-    f.write(f"MAPE (%): {mape:.2f}\n\n")
+        worst_10.to_csv(
+            self.output_dir / "worst_10_predictions.csv",
+            index=False
+        )
 
-    f.write("Segment Bazlı Ortalama Hata\n")
-    f.write("----------------------------\n")
-    f.write(segment_analysis.to_string())
-    f.write("\n\n")
+        print("Best ve Worst 10 kayıtları kaydedildi.")
 
-print("Evaluation tamamlandı.")
-print(f"Rapor kaydedildi: {report_path}")
+    # =====================================
+    # METRICS
+    # =====================================
+
+    def calculate_metrics(self):
+        y_true = self.results["Gerçek"]
+        y_pred = self.results["Tahmin"]
+
+        rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+        mae = mean_absolute_error(y_true, y_pred)
+        r2 = r2_score(y_true, y_pred)
+        mape = np.nanmean(np.abs((y_true - y_pred) / y_true)) * 100
+
+        return {
+            "rmse": rmse,
+            "mae": mae,
+            "r2": r2,
+            "mape": mape
+        }
+
+    # =====================================
+    # SEGMENT ANALYSIS (only if enabled)
+    # =====================================
+
+    def _segment_price(self, value):
+        if value < 10000:
+            return "0-10K"
+        elif value < 25000:
+            return "10K-25K"
+        elif value < 50000:
+            return "25K-50K"
+        elif value < 100000:
+            return "50K-100K"
+        else:
+            return "100K+"
+
+    def _segment_point(self, value):
+        if value < 20:
+            return "0-20"
+        elif value < 40:
+            return "20-40"
+        elif value < 60:
+            return "40-60"
+        elif value < 80:
+            return "60-80"
+        else:
+            return "80-100"
+        
+    def segment_analysis(self):
+        if self.segment_type is None:
+            return None
+
+        if self.segment_type == "price":
+            self.results["Segment"] = self.results["Gerçek"].apply(
+                self._segment_price
+            )
+
+        elif self.segment_type == "point":
+            self.results["Segment"] = self.results["Gerçek"].apply(
+                self._segment_point
+            )
+
+        segment_df = self.results.groupby("Segment").agg({
+            "Mutlak_Hata": "mean",
+            "Yuzde_Hata": "mean",
+            "Gerçek": "count"
+        }).rename(columns={"Gerçek": "Adet"})
+
+        segment_df.to_csv(
+            self.output_dir / "segment_analysis.csv"
+        )
+
+        return segment_df
+
+    # =====================================
+    # PLOTS
+    # =====================================
+
+    def generate_plots(self):
+        y_true = self.results["Gerçek"]
+        y_pred = self.results["Tahmin"]
+
+        plt.figure()
+        plt.scatter(y_true, y_pred)
+        plt.xlabel("Gerçek")
+        plt.ylabel("Tahmin")
+        plt.title(f"{self.task_name} - Gerçek vs Tahmin")
+        plt.savefig(self.output_dir / "real_vs_pred.png")
+        plt.close()
+
+        residuals = y_true - y_pred
+        plt.figure()
+        plt.scatter(y_pred, residuals)
+        plt.axhline(0)
+        plt.xlabel("Tahmin")
+        plt.ylabel("Residual")
+        plt.title(f"{self.task_name} - Residual Plot")
+        plt.savefig(self.output_dir / "residual_plot.png")
+        plt.close()
+
+    # =====================================
+    # REPORT
+    # =====================================
+
+    def save_report(self, metrics: dict, segment_df):
+
+        report_path = self.output_dir / "evaluation_report.txt"
+
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write("=" * 60 + "\n")
+            f.write(f"{self.task_name.upper()} MODEL EVALUATION REPORT\n")
+            f.write("=" * 60 + "\n\n")
+            f.write(f"Oluşturulma Tarihi: {datetime.now()}\n\n")
+
+            f.write("GENEL METRİKLER\n")
+            f.write("-" * 30 + "\n")
+            f.write(f"RMSE: {metrics['rmse']:.4f} {self.unit}\n")
+            f.write(f"MAE: {metrics['mae']:.4f} {self.unit}\n")
+            f.write(f"R2: {metrics['r2']:.4f}\n")
+            f.write(f"MAPE (%): {metrics['mape']:.2f}\n\n")
+
+            if segment_df is not None:
+                f.write("Segment Bazlı Ortalama Hata\n")
+                f.write("-" * 30 + "\n")
+                f.write(segment_df.to_string())
+                f.write("\n")
+
+        print(f"Rapor kaydedildi: {report_path}")
+
+    # =====================================
+    # PIPELINE
+    # =====================================
+
+    def run(self):
+        self.load()
+        self.predict()
+        self.save_predictions()
+        metrics = self.calculate_metrics()
+        segment_df = self.segment_analysis()
+        self.generate_plots()
+        self.save_report(metrics, segment_df)
+
+        print(f"{self.task_name} evaluation tamamlandı.")
+
+if __name__ == "__main__":
+    BASE_DIR = Path(__file__).resolve().parents[4]
+
+    # PRICE MODEL (log trained)
+    price_evaluator = ModelEvaluator(
+        data_path=BASE_DIR / "src/app/output/dataset/price/final/step8_final_model_ready.csv",
+        model_path=BASE_DIR / "src/app/output/model/price/xgboost_urun_fiyat_model.pkl",
+        output_dir=BASE_DIR / "src/app/output/model/price/evaluation",
+        target_column="urun_fiyat",
+        task_name="price",
+        log_transformed=True,
+        unit="TL",
+        segment_type="price"
+    )
+
+    price_evaluator.run()
+
+    # POINT MODEL (no log)
+    point_evaluator = ModelEvaluator(
+        data_path=BASE_DIR / "src/app/output/dataset/point/final/step8_final_model_ready.csv",
+        model_path=BASE_DIR / "src/app/output/model/point/xgboost_urun_puan_model.pkl",
+        output_dir=BASE_DIR / "src/app/output/model/point/evaluation",
+        target_column="urun_puan",
+        task_name="point",
+        log_transformed=False,
+        unit="Puan",
+        segment_type="point"
+    )
+
+    point_evaluator.run()

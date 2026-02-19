@@ -13,8 +13,8 @@ class ProductDataPreprocessor:
                  input_path: str,
                  process_dir: str,
                  output_dir: str,
-                 target: str = "urun_fiyat",
-                 exclude: str = "urun_puan",
+                 target: str,
+                 exclude: str,
                  mode: str = "train"):
 
         self.input_path = input_path
@@ -271,7 +271,10 @@ class ProductDataPreprocessor:
 
         self.step0_load()
         self.step1_drop_null_target()
-        self.step2_log_transform()
+
+        if self.TARGET == "urun_fiyat":
+            self.step2_log_transform()
+
         self.step3_keep_columns()
         self.step4_numeric_cleaning()
         self.step5_binary_mapping()
@@ -301,10 +304,24 @@ class ProductDataPreprocessor:
 
 if __name__ == "__main__":
 
-    processor = ProductDataPreprocessor(
+    price_processor = ProductDataPreprocessor(
         input_path="src/app/output/dataset/raw/full_dataset.csv",
-        process_dir="src/app/output/dataset/processed_step",
-        output_dir="src/app/output/dataset/final"
+        process_dir="src/app/output/dataset/price/processed_step",
+        output_dir="src/app/output/dataset/price/final",
+        target="urun_fiyat",
+        exclude="urun_puan"
     )
 
-    processor.run()
+    price_processor.run()
+
+
+    point_processor = ProductDataPreprocessor(
+        input_path="src/app/output/dataset/raw/full_dataset.csv",
+        process_dir="src/app/output/dataset/point/processed_step",
+        output_dir="src/app/output/dataset/point/final",
+        target="urun_puan",
+        exclude="urun_fiyat"
+    )
+
+    point_processor.run()
+    

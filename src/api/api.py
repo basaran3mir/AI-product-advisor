@@ -13,7 +13,6 @@ from src.app.scripts.predict_service import PredictService
 
 app = Flask(__name__)
 
-
 CORS(
     app,
     resources={r"/*": {"origins": "*"}},
@@ -22,8 +21,8 @@ CORS(
 )
 
 # Service instance (tek sefer yüklenir)
-predict_service = PredictService()
-
+price_service = PredictService(task="price")
+point_service = PredictService(task="point")
 
 @app.route("/")
 def home():
@@ -43,10 +42,12 @@ def predict():
 
         input_df = pd.DataFrame([data])
 
-        predicted_price = predict_service.predict(input_df)
+        predicted_price = price_service.predict(input_df)
+        predicted_point = point_service.predict(input_df)
 
         return jsonify({
-            "predicted_price": round(predicted_price, 2)
+            "predicted_price": round(predicted_price, 2),
+            "predicted_point": round(predicted_point, 2)
         })
 
     except Exception as e:
@@ -65,7 +66,7 @@ def get_features():
         # step4_numeric_cleaned.csv dosyasının başlığını oku
         step4_path = os.path.join(
             os.path.dirname(__file__),
-            "..", "app", "output", "dataset", "processed_step", "step4_numeric_cleaned.csv"
+            "..", "app", "output", "dataset", "price", "processed_step", "step4_numeric_cleaned.csv"
         )
         # step4_numeric_cleaned.csv dosyasını oku
         df = pd.read_csv(step4_path, encoding="utf-8")

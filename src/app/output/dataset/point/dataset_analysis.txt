@@ -1,25 +1,22 @@
 ============================================================
 DATASET ANALYSIS REPORT
 ============================================================
-Generated at: 2026-02-11 09:32:25.163392
+Generated at: 2026-02-18 17:10:40.885324
 
-------------------------------------------------------------
 GENERAL INFORMATION
-------------------------------------------------------------
+----------------------------------------
 Toplam Ürün Sayısı: 500
 Toplam Feature Sayısı (Target dahil): 211
-Modelde Kullanılacak Feature Sayısı (urun_puan hariç): 209
+Model Feature Sayısı (exclude hariç): 209
 Toplam Eksik Hücre Sayısı: 46225
 
-------------------------------------------------------------
 DATA TYPE DISTRIBUTION
-------------------------------------------------------------
+----------------------------------------
 str        207
 float64      4
 
-------------------------------------------------------------
 COLUMN BAZLI EKSİK VERİ ANALİZİ
-------------------------------------------------------------
+----------------------------------------
                                                                   missing_count  missing_percentage
 kamera_dxomark_eski_v1                                                      499                99.8
 temel_donanim_antutu_puanı_v5                                               499                99.8
@@ -233,18 +230,16 @@ temel_donanim_cpu_üretim_teknolojisi                                          0
 batarya_değişir_batarya                                                       0                 0.0
 kamera_ön_kamera_çözünürlüğü                                                  0                 0.0
 
-------------------------------------------------------------
 ÜRÜN BAZLI EKSİK FEATURE DAĞILIMI
-------------------------------------------------------------
+----------------------------------------
 eksiksiz_urun: 0
 1_3_eksik: 0
 4_7_eksik: 0
 8_15_eksik: 0
 15_plus_eksik: 500
 
-------------------------------------------------------------
-UNIQUE VALUE (CARDINALITY) ANALİZİ
-------------------------------------------------------------
+CARDINALITY ANALİZİ
+----------------------------------------
 urun_url                                                            400
 urun_fiyat                                                          338
 urun_ad                                                             309
@@ -457,7 +452,7 @@ kamera_beşinci_arka_kamera_özellikleri                                1
 kamera_dxomark_eski_v1                                                1
 temel_donanim_antutu_puanı_v5                                         1
 
-High Cardinality Columns (>50 unique value):
+High Cardinality Columns (>50):
 urun_url                                                      400
 urun_fiyat                                                    338
 urun_ad                                                       309
@@ -504,23 +499,21 @@ batarya_müzik_oynatma                                          67
 kamera_video_kayıt_seçenekleri                                 60
 temel_donanim_antutu_puanı_v8                                  60
 
-------------------------------------------------------------
 NUMERIC FEATURE SUMMARY
-------------------------------------------------------------
+----------------------------------------
                                           count          mean           std     min      25%      50%      75%        max
 urun_fiyat                                441.0  31985.541224  28252.678604  1399.0  11599.0  21500.0  42999.0  161314.45
 urun_puan                                 435.0     63.156322     16.086272    11.0     51.0     63.0     75.0     100.00
 kablosuz_bağlantilar_bluetooth_versiyonu  485.0      5.235670      0.321711     4.0      5.0      5.3      5.4       6.00
 temel_bi̇lgi̇ler_çıkış_yılı               499.0   2023.108216      2.182514  2012.0   2022.0   2024.0   2025.0    2026.00
 
-------------------------------------------------------------
-TARGET (urun_fiyat) ANALYSIS
-------------------------------------------------------------
-count       441.000000
-mean      31985.541224
-std       28252.678604
-min        1399.000000
-25%       11599.000000
-50%       21500.000000
-75%       42999.000000
-max      161314.450000
+TARGET (urun_puan) ANALYSIS
+----------------------------------------
+count    435.000000
+mean      63.156322
+std       16.086272
+min       11.000000
+25%       51.000000
+50%       63.000000
+75%       75.000000
+max      100.000000
