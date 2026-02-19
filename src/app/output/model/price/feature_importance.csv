@@ -1,54 +1,60 @@
 feature,importance
-kamera_optik_görüntü_sabitleyici_ois,0.2546786
-batarya_kablosuz_şarj,0.23863293
-temel_donanim_antutu_puanı_v10,0.10368525
-temel_donanim_cpu_üretim_teknolojisi,0.08874794
-ekran_ekran_teknolojisi_OLED,0.065765716
-temel_donanim_cpu_çekirdeği,0.038751263
-i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_iOS,0.03649461
-batarya_hızlı_şarj,0.031579494
-kamera_video_kayıt_çözünürlüğü_4320p (Ultra HD) 8K,0.019504525
-kamera_video_kayıt_çözünürlüğü_2160p (Ultra HD) 4K,0.010861682
-ekran_ekran_teknolojisi_IPS LCD,0.009067268
-temel_donanim_bellek_ram,0.009046494
-tasarim_ağırlık,0.0068861623
-tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü),0.006354775
-ekran_ekran_teknolojisi_Super AMOLED,0.0061453343
-kamera_ön_kamera_çözünürlüğü,0.0060780155
-tasarim_gövde_malzemesi_kapak_Fiberglass,0.0059047495
-batarya_hızlı_şarj_gücü_maks.,0.005361481
-tasarim_gövde_malzemesi_kapak_Plastik (Cam Görünümlü),0.0046402044
-batarya_batarya_kapasitesi_tipik,0.004431231
-özelli̇kler_suya_dayanıklılık,0.0042898664
-tasarim_gövde_malzemesi_kapak_Polikarbonat,0.003988308
-kablosuz_bağlantilar_bluetooth_versiyonu,0.0036310544
-kamera_kamera_çözünürlüğü,0.0034730318
-ekran_ekran_yenileme_hızı,0.0031308555
-ekran_ekran_boyutu,0.0030755873
-tasarim_gövde_malzemesi_kapak_Unknown,0.0030443436
-tasarim_gövde_malzemesi_kapak_Polimer (Cam Görünümlü),0.0028872574
-kamera_video_fps_değeri,0.0027041251
-kablosuz_bağlantilar_nfc,0.0024480857
-tasarim_kalınlık,0.0022269688
-ekran_ekran_teknolojisi_PLS,0.001919528
-ekran_ekran_çözünürlüğü_standardı_HD+,0.0018906667
-temel_donanim_dahili_depolama,0.001874109
-ekran_ekran_teknolojisi_Dynamic AMOLED,0.0017710708
-kamera_video_kayıt_çözünürlüğü_Unknown,0.0012631698
-tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü),0.0008981133
-kamera_video_kayıt_çözünürlüğü_1440p (Quad HD) 2K,0.00088381744
-ekran_ekran_çözünürlüğü_standardı_QHD+,0.00078117824
-tasarim_gövde_malzemesi_kapak_Plastik,0.0007089103
-tasarim_gövde_malzemesi_kapak_Cam | Kauçuk/Plastik (Deri Görünümlü),0.00033674497
-tasarim_gövde_malzemesi_kapak_Cam | Plastik (Cam Görünümlü),9.766567e-05
-ekran_ekran_çözünürlüğü_standardı_HD,4.615929e-05
-tasarim_gövde_malzemesi_kapak_Plastik (Metalik Görünümlü),1.1658497e-05
+kamera_optik_görüntü_sabitleyici_ois,0.68331414
+temel_donanim_cpu_üretim_teknolojisi,0.056383215
+batarya_hızlı_şarj,0.05301505
+batarya_kablosuz_şarj,0.04671992
+ekran_ekran_teknolojisi_OLED,0.026536401
+ekran_ekran_çözünürlüğü_standardı_FHD+,0.016779713
+temel_donanim_antutu_puanı_v10,0.015712675
+kamera_video_kayıt_çözünürlüğü_4320p (Ultra HD) 8K,0.01298008
+ekran_ekran_teknolojisi_IPS LCD,0.00710679
+temel_donanim_bellek_ram,0.0048487945
+batarya_hızlı_şarj_gücü_maks.,0.004554138
+tasarim_ağırlık,0.0044302377
+kamera_video_kayıt_çözünürlüğü_2160p (Ultra HD) 4K,0.004185629
+kablosuz_bağlantilar_nfc,0.004025745
+temel_donanim_cpu_çekirdeği,0.0038660252
+kamera_video_kayıt_çözünürlüğü_Unknown,0.003523493
+kamera_video_kayıt_çözünürlüğü_1440p (Quad HD) 2K,0.003422121
+kablosuz_bağlantilar_bluetooth_versiyonu,0.0034177839
+kamera_ön_kamera_çözünürlüğü,0.0027620117
+ekran_ekran_teknolojisi_Super AMOLED,0.0026821168
+tasarim_kalınlık,0.0025962968
+tasarim_gövde_malzemesi_kapak_Plastik (Cam Görünümlü),0.002450322
+batarya_batarya_kapasitesi_tipik,0.002357082
+tasarim_gövde_malzemesi_kapak_Plastik (Metalik Görünümlü),0.0022693886
+ekran_ekran_teknolojisi_PLS,0.0022427258
+tasarim_gövde_malzemesi_kapak_Polikarbonat,0.0020594914
+ekran_ekran_boyutu,0.0019550563
+kamera_kamera_çözünürlüğü,0.0018434118
+kamera_video_fps_değeri,0.0018137775
+temel_donanim_dahili_depolama,0.0017971202
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü),0.0017019019
+özelli̇kler_suya_dayanıklılık,0.0016005491
+tasarim_gövde_malzemesi_kapak_Fiberglass,0.0015310555
+ekran_ekran_çözünürlüğü_standardı_HD+,0.0014668267
+tasarim_gövde_malzemesi_kapak_Unknown,0.0014262507
+ekran_ekran_teknolojisi_TFT LCD,0.001404061
+ekran_ekran_yenileme_hızı,0.001252216
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü),0.0012501706
+ekran_ekran_teknolojisi_Unknown,0.0010161097
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_iOS,0.000981506
+tasarim_gövde_malzemesi_kapak_Polimer (Cam Görünümlü),0.00093267654
+tasarim_gövde_malzemesi_kapak_Plastik,0.00091255724
+ekran_ekran_teknolojisi_Dynamic AMOLED,0.000680973
+tasarim_gövde_malzemesi_kapak_Metal,0.0005223591
+tasarim_gövde_malzemesi_kapak_Cam | Kauçuk/Plastik (Deri Görünümlü),0.00041204618
+ekran_ekran_çözünürlüğü_standardı_QHD+,0.00040777965
+ekran_ekran_çözünürlüğü_standardı_SD,0.00031666225
+kamera_video_kayıt_çözünürlüğü_720p (HD),0.00027102293
+tasarim_gövde_malzemesi_kapak_Cam | Plastik (Cam Görünümlü),9.3415576e-05
+tasarim_gövde_malzemesi_kapak_Fiberglass | Kauçuk/Plastik (Deri Görünümlü),7.215045e-05
+ağ_bağlantilari_4.5g_desteği,5.1158167e-05
+tasarim_gövde_malzemesi_kapak_PoliKarbonat (Metalik Görünümlü),3.117618e-05
+kamera_video_kayıt_çözünürlüğü_480p,1.089522e-05
+ağ_bağlantilari_4g,3.6686426e-06
 ağ_bağlantilari_5g,0.0
 ağ_bağlantilari_2g,0.0
-ağ_bağlantilari_4g,0.0
-ağ_bağlantilari_4.5g_desteği,0.0
 ağ_bağlantilari_3g,0.0
-ekran_ekran_çözünürlüğü_standardı_SD,0.0
-ekran_ekran_teknolojisi_Unknown,0.0
-kamera_video_kayıt_çözünürlüğü_720p (HD),0.0
-tasarim_gövde_malzemesi_kapak_Metal,0.0
+ekran_ekran_çözünürlüğü_standardı_HD,0.0
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_BlackBerry OS,0.0

@@ -22,13 +22,17 @@ class EpeyPhoneScraper:
         list_base: str = "https://www.epey.com/akilli-telefonlar",
         output_csv: str | Path = "src/app/output/dataset/raw/full_dataset.csv",
         min_delay: float = 1.2,
-        max_delay: float = 3.0
+        max_delay: float = 3.0,
+        image_dir: str | Path = "src/app/output/image"
     ):
         self.base_url = base_url
         self.list_base = list_base
         self.output_csv = Path(output_csv)
         self.min_delay = min_delay
         self.max_delay = max_delay
+
+        self.image_dir = Path(image_dir).resolve()
+        self.image_dir.mkdir(parents=True, exist_ok=True)
 
         self.scraper = self._create_scraper()
 
@@ -129,7 +133,7 @@ class EpeyPhoneScraper:
     # PRODUCT DETAIL
     # =====================================
 
-    def get_product_detail(self, product_url: str) -> dict:
+    def get_product_detail(self, product_url: str, product_id: int) -> dict:
         resp = self.scraper.get(
             product_url,
             headers={"Referer": self.list_base},
@@ -138,6 +142,12 @@ class EpeyPhoneScraper:
         resp.raise_for_status()
 
         soup = BeautifulSoup(resp.text, "lxml")
+
+        big_image = soup.select_one("div.buyuk img")
+        if big_image and big_image.get("src"):
+            image_url = big_image["src"]
+            self._download_image(image_url, product_id)
+
         data = {}
 
         for group in soup.select("div#ozellikler div#grup"):
@@ -184,6 +194,19 @@ class EpeyPhoneScraper:
 
         return col_name, value
 
+    def _download_image(self, image_url: str, product_id: int):
+        try:
+            response = self.scraper.get(image_url, timeout=30)
+            response.raise_for_status()
+
+            image_path = self.image_dir / f"{product_id}.jpg"
+
+            with open(image_path, "wb") as f:
+                f.write(response.content)
+
+        except Exception as e:
+            print(f"⚠️ Resim indirilemedi ({product_id}):", e)
+
     # =====================================
     # FULL SCRAPE PIPELINE
     # =====================================
@@ -199,7 +222,10 @@ class EpeyPhoneScraper:
             print(f"[{i}/{len(products)}] {p['urun_ad']}")
 
             try:
-                detail = self.get_product_detail(p["urun_url"])
+                detail = self.get_product_detail(
+                    p["urun_url"],
+                    product_id=i
+                )
                 merged = {**p, **detail}
                 all_data.append(merged)
                 self._sleep()
@@ -207,6 +233,7 @@ class EpeyPhoneScraper:
                 print("❌ Hata:", p["urun_url"], e)
 
         df = pd.DataFrame(all_data)
+        df.insert(0, "urun_id", range(1, len(df) + 1))
         return df
 
     def save(self, df: pd.DataFrame):
@@ -232,4 +259,4 @@ class EpeyPhoneScraper:
 
 if __name__ == "__main__":
     scraper = EpeyPhoneScraper()
-    scraper.run(limit=500)
+    scraper.run(limit=1000)

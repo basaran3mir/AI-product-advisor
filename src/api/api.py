@@ -2,12 +2,33 @@ import os
 import sys
 import traceback
 import pandas as pd
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
+import numpy as np
 
 # path ayarı
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 sys.path.append(BASE_DIR)
+
+# Ürün datası (price dataset final hali)
+PRICE_DATA_PATH = os.path.join(
+    BASE_DIR,
+    "src/app/output/dataset/price/processed_step/step4_numeric_cleaned.csv"
+)
+POINT_DATA_PATH = os.path.join(
+    BASE_DIR,
+    "src/app/output/dataset/point/processed_step/step4_numeric_cleaned.csv"
+)
+product_df = pd.read_csv(PRICE_DATA_PATH)
+point_df = pd.read_csv(POINT_DATA_PATH)
+
+# --------------------------------------------------
+# IMAGE SERVING ENDPOINT
+# --------------------------------------------------
+IMAGE_DIR = os.path.join(
+    BASE_DIR,
+    "src/app/output/image"
+)
 
 from src.app.scripts.predict_service import PredictService
 
@@ -24,10 +45,27 @@ CORS(
 price_service = PredictService(task="price")
 point_service = PredictService(task="point")
 
+def get_closest_products(df, column, target_value, top_n=10):
+    df_copy = df.copy()
+
+    df_copy["distance"] = (df_copy[column] - target_value).abs()
+
+    closest = df_copy.sort_values("distance").head(top_n)
+
+    result_df = closest.drop(columns=["distance"])
+
+    # 🔥 JSON-safe hale getir
+    result_df = result_df.replace([np.nan, np.inf, -np.inf], None)
+
+    return result_df.to_dict(orient="records")
+
 @app.route("/")
 def home():
-    return "Price Prediction API is running."
+    return "API is running."
 
+@app.route("/images/<path:filename>")
+def serve_image(filename):
+    return send_from_directory(IMAGE_DIR, filename)
 
 # --------------------------------------------------
 # PREDICT ENDPOINT
@@ -45,9 +83,25 @@ def predict():
         predicted_price = price_service.predict(input_df)
         predicted_point = point_service.predict(input_df)
 
+        closest_by_price = get_closest_products(
+            product_df,
+            "urun_fiyat",
+            predicted_price,
+            top_n=10
+        )
+
+        closest_by_point = get_closest_products(
+            point_df,
+            "urun_puan",
+            predicted_point,
+            top_n=10
+        )
+
         return jsonify({
             "predicted_price": round(predicted_price, 2),
-            "predicted_point": round(predicted_point, 2)
+            "predicted_point": round(predicted_point, 2),
+            "closest_by_price": closest_by_price,
+            "closest_by_point": closest_by_point
         })
 
     except Exception as e:

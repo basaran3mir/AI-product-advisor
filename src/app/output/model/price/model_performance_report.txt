@@ -2,30 +2,30 @@
 XGBOOST FİYAT TAHMİN MODELİ – PERFORMANS RAPORU
 ============================================================
 
-Oluşturulma Tarihi: 2026-02-18 17:16:33.106890
+Oluşturulma Tarihi: 2026-02-19 11:04:50.498030
 
 VERİ SETİ BOYUTLARI
 ------------------------------
-Toplam kayıt: 441
-Eğitim: 308
-Validation: 66
-Test: 67
+Toplam kayıt: 747
+Eğitim: 522
+Validation: 112
+Test: 113
 
 TRAIN METRİKLERİ
 ------------------------------
-RMSE: 0.030931
-MAE:  0.021156
-R2:   0.998609
+RMSE: 0.044558
+MAE:  0.030117
+R2:   0.997304
 
 VALIDATION METRİKLERİ
 ------------------------------
-RMSE: 0.167001
-MAE:  0.108867
-R2:   0.967347
+RMSE: 0.220918
+MAE:  0.147088
+R2:   0.940665
 
 TEST METRİKLERİ
 ------------------------------
-RMSE: 0.209887
-MAE:  0.141009
-R2:   0.927027
+RMSE: 0.252973
+MAE:  0.156964
+R2:   0.912474
 

@@ -89,6 +89,7 @@ class ProductDataPreprocessor:
     def step3_keep_columns(self):
 
         include_columns = [
+            'urun_id',
             'urun_fiyat',
             'urun_puan',
             'ekran_ekran_boyutu',

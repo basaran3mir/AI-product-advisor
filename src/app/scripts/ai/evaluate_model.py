@@ -22,7 +22,8 @@ class ModelEvaluator:
         task_name: str,
         log_transformed: bool = False,
         unit: str = "",
-        segment_type: str = None
+        segment_type: str = None,
+        ignore_columns: list | None = None
     ):
         self.data_path = data_path
         self.model_path = model_path
@@ -32,6 +33,8 @@ class ModelEvaluator:
         self.log_transformed = log_transformed
         self.unit = unit
         self.segment_type = segment_type
+
+        self.ignore_columns = ignore_columns if ignore_columns else []
 
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -53,12 +56,21 @@ class ModelEvaluator:
     # =====================================
 
     def predict(self):
-        X = self.df.drop(columns=[self.target_column])
-        y_true_raw = self.df[self.target_column]
+        df_copy = self.df.copy()
+
+        # 🔥 Ignore columns güvenli şekilde düşürülür
+        cols_to_drop = [
+            col for col in self.ignore_columns
+            if col in df_copy.columns
+        ]
+
+        df_copy = df_copy.drop(columns=cols_to_drop)
+
+        X = df_copy.drop(columns=[self.target_column])
+        y_true_raw = df_copy[self.target_column]
 
         y_pred_raw = self.model.predict(X)
 
-        # Eğer log model ise dönüşümü geri al
         if self.log_transformed:
             y_true = np.expm1(y_true_raw)
             y_pred = np.expm1(y_pred_raw)
@@ -84,6 +96,7 @@ class ModelEvaluator:
         self.results.sort_values("Mutlak_Hata", inplace=True)
 
         print("Tahminler üretildi.")
+
 
     # =====================================
     # SAVE PREDICTIONS (BEST / WORST)
@@ -274,7 +287,8 @@ if __name__ == "__main__":
         task_name="price",
         log_transformed=True,
         unit="TL",
-        segment_type="price"
+        segment_type="price",
+        ignore_columns=["urun_id"]
     )
 
     price_evaluator.run()
@@ -288,7 +302,8 @@ if __name__ == "__main__":
         task_name="point",
         log_transformed=False,
         unit="Puan",
-        segment_type="point"
+        segment_type="point",
+        ignore_columns=["urun_id"]
     )
 
     point_evaluator.run()
