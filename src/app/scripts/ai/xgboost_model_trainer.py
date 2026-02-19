@@ -230,7 +230,7 @@ if __name__ == "__main__":
         data_path=BASE_DIR / "src/app/output/dataset/final/final_dataset.csv",
         output_dir=BASE_DIR / "src/app/output/model/price",
         target="urun_fiyat",
-        exclude_from_model=["urun_puan", "urun_id"]
+        exclude_from_model=["urun_puan", "urun_id", "urun_ad"]
     )
 
     price_trainer.run()
@@ -239,7 +239,7 @@ if __name__ == "__main__":
         data_path=BASE_DIR / "src/app/output/dataset/final/final_dataset.csv",
         output_dir=BASE_DIR / "src/app/output/model/point",
         target="urun_puan",
-        exclude_from_model=["urun_fiyat", "urun_id"]
+        exclude_from_model=["urun_fiyat", "urun_id", "urun_ad"]
     )
 
     point_trainer.run()

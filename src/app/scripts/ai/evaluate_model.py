@@ -280,7 +280,7 @@ if __name__ == "__main__":
         task_name="price",
         unit="TL",
         segment_type="price",
-        ignore_columns=["urun_puan","urun_id"]
+        ignore_columns=["urun_puan", "urun_id", "urun_ad"]
     )
 
     price_evaluator.run()
@@ -293,7 +293,7 @@ if __name__ == "__main__":
         task_name="point",
         unit="Puan",
         segment_type="point",
-        ignore_columns=["urun_fiyat","urun_id"]
+        ignore_columns=["urun_fiyat", "urun_id", "urun_ad"]
     )
 
     point_evaluator.run()

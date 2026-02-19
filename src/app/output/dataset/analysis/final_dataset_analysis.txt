@@ -1,12 +1,12 @@
 ======================================================================
 FINAL DATASET ANALYSIS
 ======================================================================
-Generated at: 2026-02-19 15:05:45.178330
+Generated at: 2026-02-19 16:13:04.899667
 
 GENERAL INFO
 ----------------------------------------
 Satır Sayısı: 611
-Sütun Sayısı: 61
+Sütun Sayısı: 62
 Toplam Eksik Hücre: 0
 
 DATA TYPE DISTRIBUTION
@@ -14,11 +14,13 @@ DATA TYPE DISTRIBUTION
 bool       33
 float64    21
 int64       7
+str         1
 
 MISSING ANALYSIS
 ----------------------------------------
                                                                                          missing_count  missing_percentage
 urun_id                                                                                              0                 0.0
+urun_ad                                                                                              0                 0.0
 urun_fiyat                                                                                           0                 0.0
 urun_puan                                                                                            0                 0.0
 ekran_ekran_boyutu                                                                                   0                 0.0
@@ -84,6 +86,7 @@ CARDINALITY ANALYSIS
 ----------------------------------------
 urun_id                                                                                    611
 urun_fiyat                                                                                 488
+urun_ad                                                                                    401
 temel_donanim_antutu_puanı_v10                                                             326
 tasarim_kalınlık                                                                           125
 tasarim_ağırlık                                                                            111

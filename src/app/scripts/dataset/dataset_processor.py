@@ -73,6 +73,7 @@ class ProductDataPreprocessor:
 
         include_columns = [
             'urun_id',
+            'urun_ad',
             'urun_fiyat',
             'urun_puan',
             'ekran_ekran_boyutu',

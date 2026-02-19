@@ -2,7 +2,7 @@
 PRICE MODEL EVALUATION REPORT
 ============================================================
 
-Oluşturulma Tarihi: 2026-02-19 15:07:29.465375
+Oluşturulma Tarihi: 2026-02-19 16:13:27.316894
 
 GENEL METRİKLER
 ------------------------------

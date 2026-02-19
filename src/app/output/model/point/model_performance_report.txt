@@ -2,7 +2,7 @@
 XGBOOST FİYAT TAHMİN MODELİ – PERFORMANS RAPORU
 ============================================================
 
-Oluşturulma Tarihi: 2026-02-19 15:05:53.304057
+Oluşturulma Tarihi: 2026-02-19 16:13:19.729448
 
 VERİ SETİ BOYUTLARI
 ------------------------------
