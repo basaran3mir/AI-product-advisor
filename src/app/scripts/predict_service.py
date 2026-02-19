@@ -16,8 +16,8 @@ class PredictService:
 
         self.task = task
 
-        BASE_DIR = Path(__file__).resolve().parents[4]
-        MODEL_DIR = BASE_DIR / "AI-product-advisor/src/app/output/model"
+        BASE_DIR = Path(__file__).resolve().parents[3]
+        MODEL_DIR = BASE_DIR / "src/app/output/model"
 
         if task == "price":
             model_path = MODEL_DIR / "price/xgboost_urun_fiyat_model.pkl"
@@ -37,24 +37,12 @@ class PredictService:
         with open(features_path, "r", encoding="utf-8") as f:
             self.model_features = json.load(f)
 
-        if task == "price":
-            self.processor = ProductDataPreprocessor(
-                input_path="",
-                process_dir="",
-                output_dir="",
-                mode="predict",
-                target="urun_fiyat",
-                exclude="urun_puan"
-            )
-        elif task == "point":
-            self.processor = ProductDataPreprocessor(
-                input_path="",
-                process_dir="",
-                output_dir="",
-                mode="predict",
-                target="urun_puan",
-                exclude="urun_fiyat"
-            )
+        self.processor = ProductDataPreprocessor(
+            input_path="",
+            processed_dir="",
+            output_dir="",
+            mode="predict"
+        )
 
     # =====================================
     # PREDICT
@@ -71,16 +59,6 @@ class PredictService:
 
         raw_pred = self.model.predict(X_processed)[0]
 
-        if self.log_transformed:
-            result = float(np.expm1(raw_pred))
-        else:
-            result = float(raw_pred)
+        result = float(np.expm1(raw_pred))
 
         return result
-
-    # =====================================
-    # EXPECTED FEATURES
-    # =====================================
-
-    def get_expected_features(self):
-        return self.model_features

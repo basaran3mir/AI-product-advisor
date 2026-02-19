@@ -20,7 +20,7 @@ class EpeyPhoneScraper:
         self,
         base_url: str = "https://www.epey.com",
         list_base: str = "https://www.epey.com/akilli-telefonlar",
-        output_csv: str | Path = "src/app/output/dataset/raw/full_dataset.csv",
+        output_csv: str | Path = "src/app/output/dataset/raw/raw_dataset.csv",
         min_delay: float = 1.2,
         max_delay: float = 3.0,
         image_dir: str | Path = "src/app/output/image"

@@ -20,7 +20,6 @@ class ModelEvaluator:
         output_dir: Path,
         target_column: str,
         task_name: str,
-        log_transformed: bool = False,
         unit: str = "",
         segment_type: str = None,
         ignore_columns: list | None = None
@@ -30,7 +29,6 @@ class ModelEvaluator:
         self.output_dir = output_dir
         self.target_column = target_column
         self.task_name = task_name
-        self.log_transformed = log_transformed
         self.unit = unit
         self.segment_type = segment_type
 
@@ -71,12 +69,8 @@ class ModelEvaluator:
 
         y_pred_raw = self.model.predict(X)
 
-        if self.log_transformed:
-            y_true = np.expm1(y_true_raw)
-            y_pred = np.expm1(y_pred_raw)
-        else:
-            y_true = y_true_raw
-            y_pred = y_pred_raw
+        y_true = np.expm1(y_true_raw)
+        y_pred = np.expm1(y_pred_raw)
 
         self.results = pd.DataFrame({
             "Gerçek": y_true,
@@ -278,32 +272,28 @@ class ModelEvaluator:
 if __name__ == "__main__":
     BASE_DIR = Path(__file__).resolve().parents[4]
 
-    # PRICE MODEL (log trained)
     price_evaluator = ModelEvaluator(
-        data_path=BASE_DIR / "src/app/output/dataset/price/final/step8_final_model_ready.csv",
+        data_path=BASE_DIR / "src/app/output/dataset/final/final_dataset.csv",
         model_path=BASE_DIR / "src/app/output/model/price/xgboost_urun_fiyat_model.pkl",
         output_dir=BASE_DIR / "src/app/output/model/price/evaluation",
         target_column="urun_fiyat",
         task_name="price",
-        log_transformed=True,
         unit="TL",
         segment_type="price",
-        ignore_columns=["urun_id"]
+        ignore_columns=["urun_puan","urun_id"]
     )
 
     price_evaluator.run()
 
-    # POINT MODEL (no log)
     point_evaluator = ModelEvaluator(
-        data_path=BASE_DIR / "src/app/output/dataset/point/final/step8_final_model_ready.csv",
+        data_path=BASE_DIR / "src/app/output/dataset/final/final_dataset.csv",
         model_path=BASE_DIR / "src/app/output/model/point/xgboost_urun_puan_model.pkl",
         output_dir=BASE_DIR / "src/app/output/model/point/evaluation",
         target_column="urun_puan",
         task_name="point",
-        log_transformed=False,
         unit="Puan",
         segment_type="point",
-        ignore_columns=["urun_id"]
+        ignore_columns=["urun_fiyat","urun_id"]
     )
 
     point_evaluator.run()

@@ -1,0 +1,199 @@
+======================================================================
+FINAL DATASET ANALYSIS
+======================================================================
+Generated at: 2026-02-19 15:05:45.178330
+
+GENERAL INFO
+----------------------------------------
+Satır Sayısı: 611
+Sütun Sayısı: 61
+Toplam Eksik Hücre: 0
+
+DATA TYPE DISTRIBUTION
+----------------------------------------
+bool       33
+float64    21
+int64       7
+
+MISSING ANALYSIS
+----------------------------------------
+                                                                                         missing_count  missing_percentage
+urun_id                                                                                              0                 0.0
+urun_fiyat                                                                                           0                 0.0
+urun_puan                                                                                            0                 0.0
+ekran_ekran_boyutu                                                                                   0                 0.0
+ekran_ekran_yenileme_hızı                                                                            0                 0.0
+batarya_batarya_kapasitesi_tipik                                                                     0                 0.0
+batarya_hızlı_şarj                                                                                   0                 0.0
+batarya_hızlı_şarj_gücü_maks.                                                                        0                 0.0
+batarya_kablosuz_şarj                                                                                0                 0.0
+kamera_kamera_çözünürlüğü                                                                            0                 0.0
+kamera_optik_görüntü_sabitleyici_ois                                                                 0                 0.0
+kamera_video_fps_değeri                                                                              0                 0.0
+kamera_ön_kamera_çözünürlüğü                                                                         0                 0.0
+temel_donanim_cpu_çekirdeği                                                                          0                 0.0
+temel_donanim_cpu_üretim_teknolojisi                                                                 0                 0.0
+temel_donanim_antutu_puanı_v10                                                                       0                 0.0
+temel_donanim_bellek_ram                                                                             0                 0.0
+temel_donanim_dahili_depolama                                                                        0                 0.0
+tasarim_kalınlık                                                                                     0                 0.0
+tasarim_ağırlık                                                                                      0                 0.0
+ağ_bağlantilari_5g                                                                                   0                 0.0
+ağ_bağlantilari_4.5g_desteği                                                                         0                 0.0
+ağ_bağlantilari_4g                                                                                   0                 0.0
+ağ_bağlantilari_2g                                                                                   0                 0.0
+ağ_bağlantilari_3g                                                                                   0                 0.0
+kablosuz_bağlantilar_bluetooth_versiyonu                                                             0                 0.0
+kablosuz_bağlantilar_nfc                                                                             0                 0.0
+özelli̇kler_suya_dayanıklılık                                                                        0                 0.0
+ekran_ekran_teknolojisi_Dynamic AMOLED                                                               0                 0.0
+ekran_ekran_teknolojisi_IPS LCD                                                                      0                 0.0
+ekran_ekran_teknolojisi_OLED                                                                         0                 0.0
+ekran_ekran_teknolojisi_PLS                                                                          0                 0.0
+ekran_ekran_teknolojisi_Super AMOLED                                                                 0                 0.0
+ekran_ekran_teknolojisi_TFT LCD                                                                      0                 0.0
+ekran_ekran_çözünürlüğü_standardı_FHD+                                                               0                 0.0
+ekran_ekran_çözünürlüğü_standardı_HD                                                                 0                 0.0
+ekran_ekran_çözünürlüğü_standardı_HD+                                                                0                 0.0
+ekran_ekran_çözünürlüğü_standardı_QHD+                                                               0                 0.0
+ekran_ekran_çözünürlüğü_standardı_SD                                                                 0                 0.0
+kamera_video_kayıt_çözünürlüğü_1440p (Quad HD) 2K                                                    0                 0.0
+kamera_video_kayıt_çözünürlüğü_2160p (Ultra HD) 4K                                                   0                 0.0
+kamera_video_kayıt_çözünürlüğü_4320p (Ultra HD) 8K                                                   0                 0.0
+kamera_video_kayıt_çözünürlüğü_480p                                                                  0                 0.0
+kamera_video_kayıt_çözünürlüğü_720p (HD)                                                             0                 0.0
+kamera_video_kayıt_çözünürlüğü_Unknown                                                               0                 0.0
+tasarim_gövde_malzemesi_kapak_Cam | Kauçuk/Plastik (Deri Görünümlü)                                  0                 0.0
+tasarim_gövde_malzemesi_kapak_Cam | Plastik (Cam Görünümlü)                                          0                 0.0
+tasarim_gövde_malzemesi_kapak_Fiberglass                                                             0                 0.0
+tasarim_gövde_malzemesi_kapak_Fiberglass | Kauçuk/Plastik (Deri Görünümlü)                           0                 0.0
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü)                                        0                 0.0
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü)              0                 0.0
+tasarim_gövde_malzemesi_kapak_Metal                                                                  0                 0.0
+tasarim_gövde_malzemesi_kapak_Plastik                                                                0                 0.0
+tasarim_gövde_malzemesi_kapak_Plastik (Cam Görünümlü)                                                0                 0.0
+tasarim_gövde_malzemesi_kapak_Plastik (Metalik Görünümlü)                                            0                 0.0
+tasarim_gövde_malzemesi_kapak_PoliKarbonat (Metalik Görünümlü)                                       0                 0.0
+tasarim_gövde_malzemesi_kapak_Polikarbonat                                                           0                 0.0
+tasarim_gövde_malzemesi_kapak_Polimer (Cam Görünümlü)                                                0                 0.0
+tasarim_gövde_malzemesi_kapak_Unknown                                                                0                 0.0
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_BlackBerry OS                                                   0                 0.0
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_iOS                                                             0                 0.0
+
+CARDINALITY ANALYSIS
+----------------------------------------
+urun_id                                                                                    611
+urun_fiyat                                                                                 488
+temel_donanim_antutu_puanı_v10                                                             326
+tasarim_kalınlık                                                                           125
+tasarim_ağırlık                                                                            111
+batarya_batarya_kapasitesi_tipik                                                            85
+urun_puan                                                                                   85
+ekran_ekran_boyutu                                                                          48
+batarya_hızlı_şarj_gücü_maks.                                                               23
+kamera_ön_kamera_çözünürlüğü                                                                19
+temel_donanim_cpu_üretim_teknolojisi                                                        15
+kamera_kamera_çözünürlüğü                                                                   14
+temel_donanim_bellek_ram                                                                    11
+kablosuz_bağlantilar_bluetooth_versiyonu                                                    10
+temel_donanim_dahili_depolama                                                               10
+temel_donanim_cpu_çekirdeği                                                                  7
+ekran_ekran_yenileme_hızı                                                                    5
+kamera_video_fps_değeri                                                                      3
+kamera_optik_görüntü_sabitleyici_ois                                                         2
+batarya_hızlı_şarj                                                                           2
+batarya_kablosuz_şarj                                                                        2
+özelli̇kler_suya_dayanıklılık                                                                2
+ağ_bağlantilari_4.5g_desteği                                                                 2
+kablosuz_bağlantilar_nfc                                                                     2
+ağ_bağlantilari_4g                                                                           2
+ekran_ekran_teknolojisi_Dynamic AMOLED                                                       2
+ekran_ekran_teknolojisi_PLS                                                                  2
+ekran_ekran_teknolojisi_OLED                                                                 2
+ekran_ekran_teknolojisi_IPS LCD                                                              2
+tasarim_gövde_malzemesi_kapak_Cam | Kauçuk/Plastik (Deri Görünümlü)                          2
+tasarim_gövde_malzemesi_kapak_Cam | Plastik (Cam Görünümlü)                                  2
+tasarim_gövde_malzemesi_kapak_Fiberglass                                                     2
+ekran_ekran_teknolojisi_Super AMOLED                                                         2
+ekran_ekran_teknolojisi_TFT LCD                                                              2
+ekran_ekran_çözünürlüğü_standardı_FHD+                                                       2
+ekran_ekran_çözünürlüğü_standardı_HD                                                         2
+ekran_ekran_çözünürlüğü_standardı_HD+                                                        2
+ekran_ekran_çözünürlüğü_standardı_QHD+                                                       2
+ekran_ekran_çözünürlüğü_standardı_SD                                                         2
+kamera_video_kayıt_çözünürlüğü_1440p (Quad HD) 2K                                            2
+kamera_video_kayıt_çözünürlüğü_2160p (Ultra HD) 4K                                           2
+kamera_video_kayıt_çözünürlüğü_4320p (Ultra HD) 8K                                           2
+kamera_video_kayıt_çözünürlüğü_480p                                                          2
+kamera_video_kayıt_çözünürlüğü_720p (HD)                                                     2
+kamera_video_kayıt_çözünürlüğü_Unknown                                                       2
+tasarim_gövde_malzemesi_kapak_Plastik (Cam Görünümlü)                                        2
+tasarim_gövde_malzemesi_kapak_Plastik (Metalik Görünümlü)                                    2
+tasarim_gövde_malzemesi_kapak_PoliKarbonat (Metalik Görünümlü)                               2
+tasarim_gövde_malzemesi_kapak_Fiberglass | Kauçuk/Plastik (Deri Görünümlü)                   2
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü)                                2
+tasarim_gövde_malzemesi_kapak_Kauçuk/Plastik (Deri Görünümlü) | Plastik (Cam Görünümlü)      2
+tasarim_gövde_malzemesi_kapak_Metal                                                          2
+tasarim_gövde_malzemesi_kapak_Plastik                                                        2
+tasarim_gövde_malzemesi_kapak_Polimer (Cam Görünümlü)                                        2
+tasarim_gövde_malzemesi_kapak_Unknown                                                        2
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_BlackBerry OS                                           2
+tasarim_gövde_malzemesi_kapak_Polikarbonat                                                   2
+i̇şleti̇m_si̇stemi̇_i̇şletim_sistemi_iOS                                                     2
+ağ_bağlantilari_2g                                                                           1
+ağ_bağlantilari_5g                                                                           1
+ağ_bağlantilari_3g                                                                           1
+
+NUMERIC SUMMARY
+----------------------------------------
+                                          count           mean            std          min          25%          50%           75%           max
+urun_id                                   611.0     408.145663     268.861681     1.000000   170.500000   380.000000  6.295000e+02  9.440000e+02
+urun_fiyat                                611.0       9.904342       0.855944     7.244228     9.234651     9.778881  1.055858e+01  1.199112e+01
+urun_puan                                 611.0       4.004887       0.374512     1.945910     3.806662     4.043051  4.290459e+00  4.615121e+00
+ekran_ekran_boyutu                        611.0       6.536367       0.439667     2.450000     6.500000     6.670000  6.720000e+00  6.950000e+00
+ekran_ekran_yenileme_hızı                 611.0     100.256956      26.875324    60.000000    60.000000   120.000000  1.200000e+02  1.650000e+02
+batarya_batarya_kapasitesi_tipik          611.0    4847.952537     916.778434  1230.000000  4500.000000  5000.000000  5.000000e+03  7.500000e+03
+batarya_hızlı_şarj                        611.0       0.887070       0.316766     0.000000     1.000000     1.000000  1.000000e+00  1.000000e+00
+batarya_hızlı_şarj_gücü_maks.             611.0      43.063830      27.948519    10.000000    23.750000    33.000000  6.550000e+01  1.200000e+02
+batarya_kablosuz_şarj                     611.0       0.284779       0.451679     0.000000     0.000000     0.000000  1.000000e+00  1.000000e+00
+kamera_kamera_çözünürlüğü                 611.0      57.284779      42.256369     5.000000    48.000000    50.000000  5.000000e+01  2.000000e+02
+kamera_optik_görüntü_sabitleyici_ois      611.0       0.500818       0.500409     0.000000     0.000000     1.000000  1.000000e+00  1.000000e+00
+kamera_video_fps_değeri                   611.0      37.198036      13.122065    24.000000    30.000000    30.000000  3.000000e+01  6.000000e+01
+kamera_ön_kamera_çözünürlüğü              611.0      16.774795      11.809107     0.300000     8.000000    13.000000  2.000000e+01  6.000000e+01
+temel_donanim_cpu_çekirdeği               611.0       7.708674       1.078967     1.000000     8.000000     8.000000  8.000000e+00  1.200000e+01
+temel_donanim_cpu_üretim_teknolojisi      611.0       7.423895       5.015257     3.000000     4.000000     6.000000  1.100000e+01  4.500000e+01
+temel_donanim_antutu_puanı_v10            611.0  547887.798044  872093.359086   132.500000   423.500000   655.200000  1.364200e+06  2.982900e+06
+temel_donanim_bellek_ram                  611.0      11.162848      48.077534     1.000000     6.000000     8.000000  1.200000e+01  7.680000e+02
+temel_donanim_dahili_depolama             611.0     219.551555     148.032036     1.000000   128.000000   256.000000  2.560000e+02  5.120000e+02
+tasarim_kalınlık                          611.0       8.254534       0.836742     5.640000     7.800000     8.200000  8.700000e+00  1.340000e+01
+tasarim_ağırlık                           611.0     194.394599      19.905475   107.000000   186.000000   193.500000  2.045000e+02  2.530000e+02
+ağ_bağlantilari_5g                        611.0       0.000000       0.000000     0.000000     0.000000     0.000000  0.000000e+00  0.000000e+00
+ağ_bağlantilari_4.5g_desteği              611.0       0.986907       0.113767     0.000000     1.000000     1.000000  1.000000e+00  1.000000e+00
+ağ_bağlantilari_4g                        611.0       0.986907       0.113767     0.000000     1.000000     1.000000  1.000000e+00  1.000000e+00
+ağ_bağlantilari_2g                        611.0       1.000000       0.000000     1.000000     1.000000     1.000000  1.000000e+00  1.000000e+00
+ağ_bağlantilari_3g                        611.0       1.000000       0.000000     1.000000     1.000000     1.000000  1.000000e+00  1.000000e+00
+kablosuz_bağlantilar_bluetooth_versiyonu  611.0       5.162848       0.380092     2.100000     5.000000     5.200000  5.300000e+00  6.000000e+00
+kablosuz_bağlantilar_nfc                  611.0       0.782324       0.413004     0.000000     1.000000     1.000000  1.000000e+00  1.000000e+00
+özelli̇kler_suya_dayanıklılık             611.0       0.675941       0.468406     0.000000     0.000000     1.000000  1.000000e+00  1.000000e+00
+
+URUN_FIYAT SUMMARY
+----------------------------------------
+count    611.000000
+mean       9.904342
+std        0.855944
+min        7.244228
+25%        9.234651
+50%        9.778881
+75%       10.558579
+max       11.991117
+
+URUN_PUAN SUMMARY
+----------------------------------------
+count    611.000000
+mean       4.004887
+std        0.374512
+min        1.945910
+25%        3.806662
+50%        4.043051
+75%        4.290459
+max        4.615121

@@ -10,17 +10,16 @@ import numpy as np
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 sys.path.append(BASE_DIR)
 
+from src.app.scripts.predict_service import PredictService
+
 # Ürün datası (price dataset final hali)
-PRICE_DATA_PATH = os.path.join(
+DATA_PATH = os.path.join(
     BASE_DIR,
-    "src/app/output/dataset/price/processed_step/step4_numeric_cleaned.csv"
+    "src/app/output/dataset/processed/step4_numeric_cleaned.csv"
 )
-POINT_DATA_PATH = os.path.join(
-    BASE_DIR,
-    "src/app/output/dataset/point/processed_step/step4_numeric_cleaned.csv"
-)
-product_df = pd.read_csv(PRICE_DATA_PATH)
-point_df = pd.read_csv(POINT_DATA_PATH)
+print("Loading dataset from:", DATA_PATH)
+
+df = pd.read_csv(DATA_PATH)
 
 # --------------------------------------------------
 # IMAGE SERVING ENDPOINT
@@ -29,8 +28,6 @@ IMAGE_DIR = os.path.join(
     BASE_DIR,
     "src/app/output/image"
 )
-
-from src.app.scripts.predict_service import PredictService
 
 app = Flask(__name__)
 
@@ -45,8 +42,11 @@ CORS(
 price_service = PredictService(task="price")
 point_service = PredictService(task="point")
 
-def get_closest_products(df, column, target_value, top_n=10):
+def get_closest_products(column, target_value, top_n=10):
     df_copy = df.copy()
+
+    df_copy["urun_fiyat"] = np.expm1(df_copy["urun_fiyat"])
+    df_copy["urun_puan"]  = np.expm1(df_copy["urun_puan"])
 
     df_copy["distance"] = (df_copy[column] - target_value).abs()
 
@@ -84,14 +84,12 @@ def predict():
         predicted_point = point_service.predict(input_df)
 
         closest_by_price = get_closest_products(
-            product_df,
             "urun_fiyat",
             predicted_price,
             top_n=10
         )
 
         closest_by_point = get_closest_products(
-            point_df,
             "urun_puan",
             predicted_point,
             top_n=10
@@ -120,7 +118,7 @@ def get_features():
         # step4_numeric_cleaned.csv dosyasının başlığını oku
         step4_path = os.path.join(
             os.path.dirname(__file__),
-            "..", "app", "output", "dataset", "price", "processed_step", "step4_numeric_cleaned.csv"
+            "..", "app", "output", "dataset", "processed", "step4_numeric_cleaned.csv"
         )
         # step4_numeric_cleaned.csv dosyasını oku
         df = pd.read_csv(step4_path, encoding="utf-8")
@@ -179,7 +177,7 @@ def get_features():
         }
 
         for field in features:
-            if field == "urun_fiyat":
+            if field in ["urun_fiyat", "urun_puan", "urun_id"]:
                 continue
             matched = False
             unit = unit_map.get(field, "")

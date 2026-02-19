@@ -227,7 +227,7 @@ if __name__ == "__main__":
     BASE_DIR = Path(__file__).resolve().parents[4]
 
     price_trainer = XGBoostModelTrainer(
-        data_path=BASE_DIR / "src/app/output/dataset/price/final/step8_final_model_ready.csv",
+        data_path=BASE_DIR / "src/app/output/dataset/final/final_dataset.csv",
         output_dir=BASE_DIR / "src/app/output/model/price",
         target="urun_fiyat",
         exclude_from_model=["urun_puan", "urun_id"]
@@ -236,7 +236,7 @@ if __name__ == "__main__":
     price_trainer.run()
 
     point_trainer = XGBoostModelTrainer(
-        data_path=BASE_DIR / "src/app/output/dataset/point/final/step8_final_model_ready.csv",
+        data_path=BASE_DIR / "src/app/output/dataset/final/final_dataset.csv",
         output_dir=BASE_DIR / "src/app/output/model/point",
         target="urun_puan",
         exclude_from_model=["urun_fiyat", "urun_id"]
